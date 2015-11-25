@@ -62,7 +62,7 @@
 			<div id="navbar" class="navbar-collapse collapse">
 				<?php echo public_nav_main_bootstrap(); ?>
 				<form class="navbar-form navbar-right" role="search" action="<?php echo public_url(''); ?>search">
-					<?php echo search_form(array('show_advanced' => false, 'submit_value' => '<span class="glyphicon glyphicon-search" aria-label="search"></span>')); ?>
+					<?php echo search_form(array('show_advanced' => false, 'submit_value' => 'testing')); ?>
 				</form>
 			</div><!--/.nav-collapse -->
 		</div>
