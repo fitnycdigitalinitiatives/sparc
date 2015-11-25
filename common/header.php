@@ -23,7 +23,6 @@
     <!-- Need to add custom and third-party CSS files? Include them here -->
     <?php
         queue_css_file('lib/bootstrap.min');
-		queue_css_file('lib/bootstrap-theme.min');
         queue_css_file('style');
         echo head_css();
     ?>
@@ -48,26 +47,27 @@
             <h5 class="text-center"><?php echo __('A Sample Omeka Theme'); ?></h5>
         </div>
 
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation">
-                        <span class="sr-only">Menu</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <div class="collapse navbar-collapse" id="primary-navigation">
-                    <?php echo public_nav_main_bootstrap(); ?>
-
-                    <form class="navbar-form navbar-right" role="search" action="<?php echo public_url(''); ?>search">
-                        <?php echo search_form(array('show_advanced' => false)); ?>
-                    </form>
-                </div>
-            </div>
-        </nav>
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Project name</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<?php echo public_nav_main_bootstrap(); ?>
+				<form class="navbar-form navbar-right" role="search" action="<?php echo public_url(''); ?>search">
+					<?php echo search_form(array('show_advanced' => false)); ?>
+				</form>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	
     </header>
     <main id="content" role="main">
       <div class="container">

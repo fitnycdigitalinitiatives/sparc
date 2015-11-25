@@ -1,5 +1,6 @@
-// Add your custom CSS here
+/*! fixed-top nav-bar */
 
-img {
-    max-width: 100%;
+body {
+  min-height: 2000px;
+  padding-top: 70px;
 }
