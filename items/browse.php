@@ -34,7 +34,7 @@
             <div class="item">
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
 					<?php if (metadata('item', 'has thumbnail')): ?>
-						<?php echo link_to_item(item_image('square_thumbnail')); ?>
+						<?php echo link_to_item(item_image('square_thumbnail', array(class => 'img-responsive')), array(class => 'thumbnail')); ?>
 					<?php endif; ?>
 				</div>
             </div>
