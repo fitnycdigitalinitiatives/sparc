@@ -57,12 +57,12 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Project name</a>
+				<a class="navbar-brand" href="/">SPARC</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<?php echo public_nav_main_bootstrap(); ?>
 				<form class="navbar-form navbar-right" role="search" action="<?php echo public_url(''); ?>search">
-					<?php echo search_form(array('show_advanced' => false)); ?>
+					<?php echo search_form(array('show_advanced' => false, 'submit_value' => '<span class="glyphicon glyphicon-search" aria-label="search"></span>')); ?>
 				</form>
 			</div><!--/.nav-collapse -->
 		</div>
