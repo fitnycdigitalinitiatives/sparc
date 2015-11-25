@@ -41,12 +41,6 @@
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
     <header role="banner">
-        <div class="container">
-            <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
-            <h1 class="site-title text-center"><?php echo link_to_home_page(theme_logo()); ?></h1>
-            <h5 class="text-center"><?php echo __('A Sample Omeka Theme'); ?></h5>
-        </div>
-
 	<!-- Fixed navbar -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">

@@ -32,31 +32,11 @@
         
             <?php foreach (loop('items') as $item): ?>
             <div class="item">
-                <div class="row">
-                    <div class="col-sm-2 col-md-2">
-                        <?php $image = $item->Files; ?>
-                        <?php if ($image) {
-                                echo link_to_item('<div style="background-image: url(' . file_display_url($image[0], 'original') . ');" class="img"></div>');
-                            } else {
-                                echo link_to_item('<div style="background-image: url(' . img('defaultImage@2x.jpg') . ');" class="img"></div>');
-                            }
-                        ?>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <?php echo metadata('item', array('Dublin Core', 'Creator')); ?>
-                    </div>
-                    <div class="hidden-sm col-md-2">
-                        <?php echo metadata('item', array('Dublin Core', 'Subject')); ?>
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                        <?php echo metadata('item', array('Dublin Core', 'Description'), array('snippet'=>150)); ?>
-                    </div>
-                
-                    <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>
-                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+					<?php if (metadata('item', 'has thumbnail')): ?>
+						<?php echo link_to_item(item_image('square_thumbnail')); ?>
+					<?php endif; ?>
+				</div>
             </div>
             <?php endforeach; ?>
             <div id="outputs">
