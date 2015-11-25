@@ -23,6 +23,7 @@
     <!-- Need to add custom and third-party CSS files? Include them here -->
     <?php
         queue_css_file('lib/bootstrap.min');
+		queue_css_file('lib/bootstrap-theme.min');
         queue_css_file('style');
         echo head_css();
     ?>
