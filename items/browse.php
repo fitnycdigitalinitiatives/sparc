@@ -5,7 +5,7 @@
 
     <h1><?php echo 'Browse all items'; ?></h1>
     <?php $subnav = public_nav_items(); ?> 
-	<?php echo $subnav->setUlClass('dropdown'); ?>
+	<?php echo $subnav->setUlId('dropdown'); ?>
     <hr>    
 
     <div class="browse-items">
