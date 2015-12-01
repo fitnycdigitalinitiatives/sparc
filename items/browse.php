@@ -13,23 +13,7 @@
             $sortLinks[__('Title')] = 'Dublin Core,Title';
             $sortLinks[__('Creator')] = 'Dublin Core,Creator';
             ?>
-            <div class="browse-items-header hidden-xs">
-                <div class="row">
-                    <div class="col-sm-3 col-sm-offset-2 col-md-2 col-md-offset-2">
-                        <?php echo browse_sort_links(array('Title'=>'Dublin Core,Title'), array('')); ?>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <?php echo browse_sort_links(array('Creator'=>'Dublin Core,Creator'), array('')); ?>
-                    </div>
-                    <div class="hidden-sm col-md-2">
-                        Subject
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                        Description
-                    </div>
-                </div>
-            </div>
-        
+			<!-- Image Grid -->
             <?php foreach (loop('items') as $item): ?>
             <div class="item">
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
