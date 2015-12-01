@@ -4,7 +4,8 @@
 ?>
 
     <h1><?php echo 'Browse all items'; ?></h1>
-    <?php $subnav = public_nav_items(); echo $subnav->setUlClass('nav nav-pills boxer'); ?>
+    <?php $subnav = public_nav_items(); ?> 
+	<?php echo $subnav->setUlClass('dropdown'); ?>
     <hr>    
 
     <div class="browse-items">
