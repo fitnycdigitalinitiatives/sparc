@@ -4,7 +4,7 @@
 ?>
 
     <h1><?php echo 'Browse all items'; ?></h1>
-    <?php $subnav = public_nav_items(); echo $subnav->setUlClass('nav nav-pills'); ?>
+    <?php echo public_nav_items(); ?>
     <hr>    
 
     <div class="browse-items">
