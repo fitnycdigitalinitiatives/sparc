@@ -4,8 +4,7 @@
 ?>
 
     <h1><?php echo $pageTitle; ?></h1>
-    <?php $subnav = public_nav_items_bootstrap(); echo $subnav->setUlClass('nav nav-pills'); ?>
-    <hr>
+    <?php echo public_nav_items_bootstrap(); ?>
 
     <?php echo $this->partial('items/search-form.php', array('formAttributes' => array('id'=>'advanced-search-form'))); ?>
 

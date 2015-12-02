@@ -3,8 +3,7 @@
     echo head(array('title'=>$pageTitle, 'bodyclass'=>'items tags'));
 ?>
     <h1><?php echo $pageTitle; ?></h1>
-    <?php $subnav = public_nav_items_bootstrap(); echo $subnav->setUlClass('nav nav-pills'); ?>
-    <hr>
+    <?php echo public_nav_items_bootstrap(); ?>
 
     <?php echo tag_cloud($tags, 'items/browse'); ?>
 

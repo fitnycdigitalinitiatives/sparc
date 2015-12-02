@@ -4,8 +4,7 @@
 ?>
 
     <h1><?php echo 'Browse all items'; ?></h1>
-    <?php echo public_nav_items_bootstrap(); ?>
-    <hr>    
+    <?php echo public_nav_items_bootstrap(); ?>  
 
     <div class="browse-items">
         <?php if ($total_results > 0): ?>
