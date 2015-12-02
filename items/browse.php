@@ -5,11 +5,11 @@
 
     <h1><?php echo 'Browse all items'; ?></h1>
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-sm-6">
 			<?php echo public_nav_items_bootstrap(); ?>  
 		</div>
-		<div class="col-md-4">
-			<div class="dropdown">
+		<div class="col-sm-6">
+			<div class="dropdown pull-right">
 				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 				Sort by:
 				<span class="caret"></span>
