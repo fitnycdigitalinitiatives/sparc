@@ -23,7 +23,7 @@ function browse_sort_links_bootstrap($links, $wrapperTags = array())
         'link_tag' => 'li',
         'list_tag' => 'ul',
         'link_attr' => array( 'role' => 'presentation' ),
-        'list_attr' => array( 'id' => 'sort-links-list', 'class' => 'nav nav-pills' )
+        'list_attr' => array( 'id' => 'sort-links-list', 'class' => 'dropdown-menu' )
     );
     $sortlistWrappers = array_merge($defaults, $wrapperTags);
     $linkAttrArray = array();

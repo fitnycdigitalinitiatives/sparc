@@ -9,12 +9,18 @@
 			<?php echo public_nav_items_bootstrap(); ?>  
 		</div>
 		<div class="col-md-4">
-			<?php
-			$sortLinks[__('Title')] = 'Dublin Core,Title';
-			$sortLinks[__('Creator')] = 'Dublin Core,Creator';
-			$sortLinks[__('Date Added')] = 'added';
-			?>
-			<?php echo browse_sort_links_bootstrap($sortLinks); ?>
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				Sort by:
+				<span class="caret"></span>
+				</button>
+				<?php
+				$sortLinks[__('Title')] = 'Dublin Core,Title';
+				$sortLinks[__('Creator')] = 'Dublin Core,Creator';
+				$sortLinks[__('Date Added')] = 'added';
+				?>
+				<?php echo browse_sort_links_bootstrap($sortLinks); ?>
+			</div>
 		</div>
 	</div>
 
