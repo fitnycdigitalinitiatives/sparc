@@ -4,25 +4,24 @@
 ?>
 
     <h1><?php echo 'Browse all items'; ?></h1>
-    <?php echo public_nav_items_bootstrap(); ?>  
-	<hr>
+	<div class="row">
+		<div class="col-md-4">
+			<?php echo public_nav_items_bootstrap(); ?>  
+		</div>
+		<div class="col-md-4">
+			<?php
+			$sortLinks[__('Title')] = 'Dublin Core,Title';
+			$sortLinks[__('Creator')] = 'Dublin Core,Creator';
+			$sortLinks[__('Date Added')] = 'added';
+			?>
+			<div id="sort-links">
+				<span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+			</div>
+		</div>
+	</div>
 
     <div class="browse-items">
         <?php if ($total_results > 0): ?>
-			<div class="browse-items-header hidden-xs">
-                <div class="row">
-                    <div class="col-sm-3 col-sm-offset-2 col-md-2 col-md-offset-2">
-                        <?php echo browse_sort_links(array('Title'=>'Dublin Core,Title'), array('')); ?>
-                    </div>
-                    <div class="col-sm-3 col-md-2">
-                        <?php echo browse_sort_links(array('Creator'=>'Dublin Core,Creator'), array('')); ?>
-                    </div>
-					<div class="col-sm-3 col-md-2">
-                        <?php echo browse_sort_links(array('Date Added'=>'added'), array('')); ?>
-                    </div>
-                </div>
-            </div>
-
 			<!-- Image Grid -->
 			<div class="row" id="grid">
 				<?php foreach (loop('items') as $item): ?>
@@ -35,10 +34,6 @@
 					</div>
 				<?php endforeach; ?>
 			</div>
-            <div id="outputs">
-                <span class="outputs-label"><?php echo __('Output Formats'); ?></span>
-                <?php echo output_format_list(false); ?>
-            </div>
         <?php else : ?>
             <p><?php echo 'No items added, yet.'; ?></p>
         <?php endif; ?>
