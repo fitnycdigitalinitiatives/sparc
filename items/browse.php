@@ -23,6 +23,8 @@
 			</div>
 		</div>
 	</div>
+	
+	<hr>
 
     <div class="browse-items">
         <?php if ($total_results > 0): ?>
@@ -34,6 +36,9 @@
 							<?php if (metadata('item', 'has thumbnail')): ?>
 								<?php echo link_to_item(item_image('square_thumbnail', array('class' => 'img-responsive')), array('class' => 'thumbnail')); ?>
 							<?php endif; ?>
+							<div class="caption">
+								<h3><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h3>
+							</div>
 						</div>
 					</div>
 				<?php endforeach; ?>
