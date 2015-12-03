@@ -31,13 +31,13 @@
 			<!-- Image Grid -->
 			<div class="row" id="grid">
 				<?php foreach (loop('items') as $item): ?>
-					<div class="item">
-						<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+						<div class="thumbnail">
 							<?php if (metadata('item', 'has thumbnail')): ?>
-								<?php echo link_to_item(item_image('square_thumbnail', array('class' => 'img-responsive')), array('class' => 'thumbnail')); ?>
+								<?php echo link_to_item(item_image('square_thumbnail', array('class' => 'img-responsive'))); ?>
 							<?php endif; ?>
 							<div class="caption">
-								<h3><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h3>
+								<h5><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h5>
 							</div>
 						</div>
 					</div>
