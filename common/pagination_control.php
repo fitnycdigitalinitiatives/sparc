@@ -20,7 +20,7 @@
         <?php if ($page != $this->current): ?>
         <li class="pagination_range"><a href="<?php echo html_escape($this->url(array('page' => $page), null, $_GET)); ?>"><?php echo $page; ?></a></li>
         <?php else: ?>
-        <li class="active"><?php echo $page; ?></li>
+        <li class="active"><a href="<?php echo html_escape($this->url(array('page' => $page), null, $_GET)); ?>"><?php echo $page; ?><span class="sr-only">(current)</span></a></li>
         <?php endif; ?>
         <?php endforeach; ?>
         
