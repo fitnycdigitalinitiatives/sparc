@@ -1,5 +1,5 @@
 <?php if ($this->pageCount > 1): $getParams = $_GET; ?>
-<ul class="pagination">
+<ul class="pagination test">
     <?php if (isset($this->previous)): ?>
         <li>
             <?php $getParams['page'] = $previous; ?>
