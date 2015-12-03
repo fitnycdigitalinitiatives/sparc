@@ -9,7 +9,10 @@
 			<?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
         </div>
 	</div>
-	<div class="row">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h2 class="panel-title">Metadata</h1>
+		</div>
         <div class="col-sm-6">
             <?php echo all_element_texts('item'); ?>
         </div>
