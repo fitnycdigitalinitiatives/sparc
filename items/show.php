@@ -10,17 +10,10 @@
         </div>
 	</div>
 	<div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-6">
             <?php echo all_element_texts('item'); ?>
-        
-            <!-- The following returns all of the files associated with an item. -->
-            <?php if (metadata('item', 'has files')): ?>
-                <div id="itemfiles" class="element">
-                    <h3><?php echo __('Files'); ?></h3>
-                    <div class="element-text"><?php echo files_for_item(); ?></div>
-                </div>
-            <?php endif; ?>
-            
+        </div>
+        <div class="col-sm-6">    
             <!-- If the item belongs to a collection, the following creates a link to that collection. -->
             <?php if (metadata('item', 'Collection Name')): ?>
                 <div id="collection" class="element">
