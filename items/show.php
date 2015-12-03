@@ -11,7 +11,7 @@
 	</div>
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<h2 class="panel-title">Metadata</h1>
+			<h2>Metadata</h1>
 		</div>
 		<div class="panel-body">
 			<div class="col-sm-6">
