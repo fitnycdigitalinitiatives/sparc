@@ -18,11 +18,11 @@
 		<div class="col-md-8">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h2>Metadata</h2>
+					<h4>Metadata</h4>
 				</div>
 				<div class="panel-body">
 					<div class="row">
-						<div class="col-md-6 col-sm-9">
+						<div class="col-md-12">
 							<?php echo all_element_texts('item'); ?>   
 							<!-- If the item belongs to a collection, the following creates a link to that collection. -->
 							<?php if (metadata('item', 'Collection Name')): ?>
@@ -58,7 +58,7 @@
 		<div class="col-md-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h2>Related Items</h2>
+					<h4>Related Items</h4>
 				</div>
 					<div class="list-group">
 						<a href="#" class="list-group-item">
