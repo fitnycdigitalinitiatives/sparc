@@ -35,19 +35,19 @@
 							<!-- The following prints a list of all tags associated with the item -->
 							<?php if (metadata('item', 'has tags')): ?>
 								<div id="item-tags" class="element">
-									<h3><?php echo __('Tags'); ?></h3>
+									<h4><?php echo __('Tags'); ?></h4>
 									<div class="element-text"><?php echo tag_string('item'); ?></div>
 								</div>
 							<?php endif;?>
 							
 							<!-- The following prints a citation for this item. -->
 							<div id="item-citation" class="element">
-								<h3><?php echo __('Citation'); ?></h3>
+								<h4><?php echo __('Citation'); ?></h4>
 								<div class="element-text"><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></div>
 							</div>
 							
 							<div id="item-output-formats" class="element">
-								<h3><?php echo __('Output Formats'); ?></h3>
+								<h4><?php echo __('Output Formats'); ?></h4>
 								<div class="element-text"><?php echo output_format_list(); ?></div>
 							</div>
 						</div>
