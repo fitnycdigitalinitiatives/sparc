@@ -8,6 +8,12 @@
 			<?php echo $this->openseadragon($item->Files); ?>
         </div>
 	</div>
+	<div class="row">
+        <div class="col-sm-3 pull-right">
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<div class="addthis_sharing_toolbox"></div>
+		</div>
+	</div>
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
