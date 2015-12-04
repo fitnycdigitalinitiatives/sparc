@@ -2,8 +2,6 @@
     echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show'));
 ?>
 
-    <h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
-
     <div class="row">
         <div class="col-sm-12">
 			<!-- Fire OpenSeadragon Separately from other plugins for placement -->
@@ -12,7 +10,7 @@
 	</div>
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<h2>Metadata</h1>
+			<h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
 		</div>
 		<div class="panel-body">
 			<div class="col-sm-6">
