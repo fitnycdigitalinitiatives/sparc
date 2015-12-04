@@ -60,50 +60,59 @@
 				<div class="panel-heading">
 					<h2>Related Items</h2>
 				</div>
-				<div class="panel-body">
 					<div class="list-group">
 						<a href="#" class="list-group-item">
-							<div class="media"> 
-								<div class="media-left">
-									<img class="media-object" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
+							<div class="row"> 
+								<div class="col-xs-4">
+									<img class="img-responsive" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
 								</div> 
-								<div class="media-body"> 
-									<h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. 
-								</div> 
-							</div>
-						</a>
-						<a href="#" class="list-group-item">
-							<div class="media"> 
-								<div class="media-left">
-									<img class="media-object" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
-								</div> 
-								<div class="media-body"> 
-									<h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. 
+								<div class="col-xs-8"> 
+									<h4>Related Item Title</h4>
 								</div> 
 							</div>
 						</a>
 						<a href="#" class="list-group-item">
-							<div class="media"> 
-								<div class="media-left">
-									<img class="media-object" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
+							<div class="row"> 
+								<div class="col-xs-4">
+									<img class="img-responsive" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
 								</div> 
-								<div class="media-body"> 
-									<h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. 
+								<div class="col-xs-8"> 
+									<h4>Related Item Title</h4>
 								</div> 
 							</div>
 						</a>
 						<a href="#" class="list-group-item">
-							<div class="media"> 
-								<div class="media-left">
-									<img class="media-object" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
+							<div class="row"> 
+								<div class="col-xs-4">
+									<img class="img-responsive" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
 								</div> 
-								<div class="media-body"> 
-									<h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. 
+								<div class="col-xs-8"> 
+									<h4>Related Item Title</h4>
 								</div> 
 							</div>
 						</a>
+						<a href="#" class="list-group-item">
+							<div class="row"> 
+								<div class="col-xs-4">
+									<img class="img-responsive" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
+								</div> 
+								<div class="col-xs-8"> 
+									<h4>Related Item Title</h4>
+								</div> 
+							</div>
+						</a>
+						<a href="#" class="list-group-item">
+							<div class="row"> 
+								<div class="col-xs-4">
+									<img class="img-responsive" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
+								</div> 
+								<div class="col-xs-8"> 
+									<h4>Related Item Title</h4>
+								</div> 
+							</div>
+						</a>
+						
 					</div>
-				</div>
 			</div>
 		</div>
 	</div>
