@@ -6,7 +6,7 @@
     <?php foreach ($setElements as $elementName => $elementInfo): ?>
     <div id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element row">
 		<div class="col-sm-2">
-        <h4><?php echo html_escape(__($elementName)); ?>:</h4>
+        <h4><?php echo html_escape(__($elementName)); ?></h4>
 		</div>
 		<div class="col-sm-10">
 			<div class="row">
