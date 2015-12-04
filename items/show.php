@@ -9,10 +9,8 @@
         </div>
 	</div>
 	<div class="row">
-        <div class="col-sm-3 pull-right">
-			<!-- Go to www.addthis.com/dashboard to customize your tools -->
-			<div class="addthis_sharing_toolbox"></div>
-		</div>
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<div class="addthis_sharing_toolbox pull-right"></div>
 	</div>
 	<div class="panel panel-default">
 		<div class="panel-heading">
