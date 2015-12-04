@@ -14,9 +14,7 @@
 		</div>
 		<div class="panel-body">
 			<div class="col-sm-6">
-				<?php echo all_element_texts('item'); ?>
-			</div>
-			<div class="col-sm-6">    
+				<?php echo all_element_texts('item'); ?>   
 				<!-- If the item belongs to a collection, the following creates a link to that collection. -->
 				<?php if (metadata('item', 'Collection Name')): ?>
 					<div id="collection" class="element">
