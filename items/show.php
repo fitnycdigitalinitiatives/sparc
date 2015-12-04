@@ -27,7 +27,7 @@
 							<!-- If the item belongs to a collection, the following creates a link to that collection. -->
 							<?php if (metadata('item', 'Collection Name')): ?>
 								<div id="collection" class="element">
-									<h3><?php echo __('Collection'); ?></h3>
+									<h4><?php echo __('Collection'); ?></h4>
 									<div class="element-text"><p><?php echo link_to_collection_for_item(); ?></p></div>
 								</div>
 							<?php endif; ?>
