@@ -23,3 +23,7 @@ body {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+/*! item-show */
+.addthis_sharing_toolbox {
+	margin-bottom: 20px;
+}

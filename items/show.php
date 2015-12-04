@@ -18,7 +18,7 @@
 		<div class="col-md-8">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h4>Metadata</h4>
+					<h4>Item Information</h4>
 				</div>
 				<div class="panel-body">
 					<div class="row">
