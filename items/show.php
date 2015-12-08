@@ -56,7 +56,7 @@
 			</div>
 		</div>
 		<!-- Related Items sidebar -->
-		<?php echo related_items('item'); ?>
+		<?php echo related_items($item); ?>
 	</div>
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
     <ul class="pager">
