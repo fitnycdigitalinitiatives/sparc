@@ -55,66 +55,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4>Related Items</h4>
-				</div>
-					<div class="list-group">
-						<a href="#" class="list-group-item">
-							<div class="row"> 
-								<div class="col-xs-4">
-									<img class="img-responsive" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
-								</div> 
-								<div class="col-xs-8"> 
-									<h3>Related Item Title</h3>
-								</div> 
-							</div>
-						</a>
-						<a href="#" class="list-group-item">
-							<div class="row"> 
-								<div class="col-xs-4">
-									<img class="img-responsive" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
-								</div> 
-								<div class="col-xs-8"> 
-									<h3>Related Item Title</h3>
-								</div> 
-							</div>
-						</a>
-						<a href="#" class="list-group-item">
-							<div class="row"> 
-								<div class="col-xs-4">
-									<img class="img-responsive" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
-								</div> 
-								<div class="col-xs-8"> 
-									<h3>Related Item Title</h3>
-								</div> 
-							</div>
-						</a>
-						<a href="#" class="list-group-item">
-							<div class="row"> 
-								<div class="col-xs-4">
-									<img class="img-responsive" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
-								</div> 
-								<div class="col-xs-8"> 
-									<h3>Related Item Title</h3>
-								</div> 
-							</div>
-						</a>
-						<a href="#" class="list-group-item">
-							<div class="row"> 
-								<div class="col-xs-4">
-									<img class="img-responsive" src="http://192.168.99.100/files/square_thumbnails/06ef9c0d3c242a4f320bf29dd9a875ff.jpg">
-								</div> 
-								<div class="col-xs-8"> 
-									<h3>Related Item Title</h3>
-								</div> 
-							</div>
-						</a>
-						
-					</div>
-			</div>
-		</div>
+		<!-- Related Items sidebar -->
+		<?php echo related_items('item'); ?>
 	</div>
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
     <ul class="pager">

@@ -69,3 +69,20 @@ function browse_sort_links_bootstrap($links, $wrapperTags = array())
     }
     return $sortlist;
 }
+
+function related_items($current_item)
+{
+	if (metadata($current_item, 'Collection Name')) {
+		$collection = get_collection_for_item($current_item);
+		$items = get_records('Item', array('collection' => metadata($collection, 'id'), 'sort_field' => 'random'), 7);
+		if ($items) {
+			$html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
+			foreach ($items as $item) {
+				$html .= link_to_item('<div class="row"><div class="col-xs-4">' . item_image('square_thumbnail', array('class' => 'img-responsive')) . '</div><div class="col-xs-8"><h3>' . metadata($item, array('Dublin Core', 'Title')) . '</h3></div></div>', array('class'=>'list-group-item'), 'show', $item);
+				release_object($item);
+			}
+			$html .= '</div></div></div></div>';
+			return $html;
+		}
+	}
+}
