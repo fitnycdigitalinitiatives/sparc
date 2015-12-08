@@ -74,7 +74,7 @@ function related_items($current_item)
 {
 	if (metadata($current_item, 'Collection Name')) {
 		$collection = get_collection_for_item($current_item);
-		$items = get_records('Item', array('collection' => metadata($collection, 'id'), 'sort_field' => 'random'), 7);
+		$items = get_records('Item', array('collection' => metadata($collection[0], 'id'), 'sort_field' => 'random'), 7);
 		if ($items) {
 			$html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
 			foreach ($items as $item) {
