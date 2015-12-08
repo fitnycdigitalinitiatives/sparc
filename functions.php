@@ -75,12 +75,12 @@ function related_items($current_item)
 	if (metadata($current_item, 'Collection Name')) {
 		$collection = get_collection_for_item($current_item);
 		if ($collection) {
-			$items = get_records('Item', array('collection' => metadata($collection, 'id'), 'sort_field' => 'random'), 7);
-			if ($items) {
+			$related_items = get_records('Item', array('collection' => metadata($collection, 'id'), 'sort_field' => 'random'), 7);
+			if ($related_items) {
 				$html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
-				foreach ($items as $item) {
-					$html .= link_to_item('<div class="row"><div class="col-xs-4">' . item_image('square_thumbnail', array('class' => 'img-responsive')) . '</div><div class="col-xs-8"><h3>' . metadata($item, array('Dublin Core', 'Title')) . '</h3></div></div>', array('class'=>'list-group-item'), 'show', $item);
-					release_object($item);
+				foreach ($related_items as $related_item) {
+					$html .= link_to_item('<div class="row"><div class="col-xs-4">' . item_image('square_thumbnail', array('class' => 'img-responsive'), 0, $related_item) . '</div><div class="col-xs-8"><h3>' . metadata($related_item, array('Dublin Core', 'Title')) . '</h3></div></div>', array('class'=>'list-group-item'), 'show', $related_item);
+					release_object($related_item);
 				}
 				$html .= '</div></div></div></div>';
 				return $html;
