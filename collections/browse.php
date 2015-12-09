@@ -4,9 +4,11 @@
 ?>
 
 <h1><?php echo $pageTitle;; ?> <small><?php echo __('(%s total)', $total_results); ?></small></h1>
+<hr>
 
 <div class="browse-collections">
 	<?php if ($total_results > 0): ?>
+	<?php /* Drop-down sort isn't needed at the moment
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="dropdown pull-right">
@@ -23,11 +25,12 @@
 			</div>
 		</div>
 	</div>
+	*/ ?>
 
 	<!-- Image Grid -->
 	<div class="row" id="grid">
 		<?php foreach (loop('collections') as $collection): ?>
-		<div class="col-lg-4 col-md-6 item-thumb">
+		<div class="col-md-4 col-sm-6 item-thumb">
 			<?php if ($collectionImage = record_image('collection', 'square_thumbnail', array('class' => 'img-responsive'))): ?>
 			<?php echo link_to_items_browse($collectionImage . '<div class="caption"><h5>' . metadata('collection', array('Dublin Core', 'Title')) . '</h5></div>', array('collection' => metadata($collection, 'id')), array('class' => 'thumbnail')); ?>
 			<?php endif; ?>
