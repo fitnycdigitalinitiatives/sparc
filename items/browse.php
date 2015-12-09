@@ -4,7 +4,7 @@
 ?>
 
 	<h1><?php echo $pageTitle;; ?> <small><?php echo __('(%s total)', $total_results); ?></small></h1>
-	<?php echo item_search_filters(); ?>
+	<?php echo item_search_filters_bootstrap(); ?>
 	
 	<div class="browse-items">
 	<?php if ($total_results > 0): ?>

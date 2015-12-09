@@ -70,6 +70,107 @@ function browse_sort_links_bootstrap($links, $wrapperTags = array())
     return $sortlist;
 }
 
+function item_search_filters_bootstrap(array $params = null)
+    {
+        if ($params === null) {
+            $request = Zend_Controller_Front::getInstance()->getRequest(); 
+            $requestArray = $request->getParams();
+        } else {
+            $requestArray = $params;
+        }
+        
+        $db = get_db();
+        $displayArray = array();
+        foreach ($requestArray as $key => $value) {
+            if($value != null) {
+                $filter = ucfirst($key);
+                $displayValue = null;
+                switch ($key) {
+                    case 'type':
+                        $filter = 'Item Type';
+                        $itemType = $db->getTable('ItemType')->find($value);
+                        if ($itemType) {
+                            $displayValue = $itemType->name;
+                        }
+                        break;
+                    
+                    case 'collection':
+                        $collection = $db->getTable('Collection')->find($value);
+                        if ($collection) {
+                            $displayValue = strip_formatting(
+                                metadata(
+                                    $collection,
+                                    array('Dublin Core', 'Title'),
+                                    array('no_escape' => true)
+                                )
+                            );
+                        }
+                        break;
+
+                    case 'user':
+                        $user = $db->getTable('User')->find($value);
+                        if ($user) {
+                            $displayValue = $user->name;
+                        }
+                        break;
+
+                    case 'public':
+                    case 'featured':
+                        $displayValue = ($value == 1 ? __('Yes') : $displayValue = __('No'));
+                        break;
+                        
+                    case 'search':
+                    case 'tags':
+                    case 'range':
+                        $displayValue = $value;
+                        break;
+                }
+                if ($displayValue) {
+                    $displayArray[$filter] = $displayValue;
+                }
+            }
+        }
+
+        $displayArray = apply_filters('item_search_filters', $displayArray, array('request_array' => $requestArray));
+        
+        // Advanced needs a separate array from $displayValue because it's
+        // possible for "Specific Fields" to have multiple values due to 
+        // the ability to add fields.
+        if(array_key_exists('advanced', $requestArray)) {
+            $advancedArray = array();
+            foreach ($requestArray['advanced'] as $i => $row) {
+                if (!$row['element_id'] || !$row['type']) {
+                    continue;
+                }
+                $elementID = $row['element_id'];
+                $elementDb = $db->getTable('Element')->find($elementID);
+                $element = __($elementDb->name);
+                $type = __($row['type']);
+                $advancedValue = $element . ' ' . $type;
+                if (isset($row['terms'])) {
+                    $advancedValue .= ' "' . $row['terms'] . '"';
+                }
+                $advancedArray[$i] = $advancedValue;
+            }
+        }
+
+        $html = '';
+        if (!empty($displayArray) || !empty($advancedArray)) {
+            $html .= '<div id="item-filters">';
+            foreach($displayArray as $name => $query) {
+                $class = html_escape(strtolower(str_replace(' ', '-', $name)));
+                $html .= '<span class="label label-default ' . $class . '">' . html_escape(__($name)) . ': ' . html_escape($query) . '</span>';
+            }
+            if(!empty($advancedArray)) {
+                foreach($advancedArray as $j => $advanced) {
+                    $html .= '<span class="label label-default advanced">' . html_escape($advanced) . '</span>';
+                }
+            }
+            $html .= '</div>';
+        }
+        return $html;
+    }
+
 function related_items($current_item)
 {
 	if (metadata($current_item, 'Collection Name')) {
