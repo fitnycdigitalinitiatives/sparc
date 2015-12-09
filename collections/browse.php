@@ -26,7 +26,7 @@
 		<?php foreach (loop('collections') as $collection): ?>
 		<div class="col-md-4 col-xs-6 item-thumb">
 			<?php if ($collectionImage = record_image('collection', 'square_thumbnail', array('class' => 'img-responsive'))): ?>
-			<?php echo link_to_items_browse($collectionImage . '<div class="caption"><h5>' . metadata('collection', array('Dublin Core', 'Title')) . '</h5></div>', array('collection' => metadata($collection, 'id')), array('class' => 'thumbnail'))); ?>
+			<?php echo link_to_items_browse($collectionImage . '<div class="caption"><h5>' . metadata('collection', array('Dublin Core', 'Title')) . '</h5></div>', array('collection' => metadata($collection, 'id')), array('class' => 'thumbnail')); ?>
 			<?php endif; ?>
 			<?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
 		</div>
