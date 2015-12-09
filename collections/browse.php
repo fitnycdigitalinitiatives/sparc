@@ -3,7 +3,7 @@
     echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
 
-<h1><?php echo $pageTitle;; ?> <small><?php echo __('(%s total)', $total_results); ?></small></h1>
+<h1><?php echo $pageTitle;; ?> <<span class="badge">><?php echo __('(%s total)', $total_results); ?></span></h1>
 <hr>
 
 <div class="browse-collections">

@@ -3,8 +3,7 @@
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 
-	<h1><?php echo $pageTitle;; ?> <small><?php echo __('(%s total)', $total_results); ?></small></h1>
-	<?php echo item_search_filters_bootstrap(); ?>
+	<h1><?php echo $pageTitle;; ?> <span class="badge"><?php echo item_search_filters_bootstrap(); ?> <?php echo __('(%s total)', $total_results); ?> </span></h1>
 	
 	<div class="browse-items">
 	<?php if ($total_results > 0): ?>

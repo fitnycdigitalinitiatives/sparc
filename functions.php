@@ -156,17 +156,15 @@ function item_search_filters_bootstrap(array $params = null)
 
         $html = '';
         if (!empty($displayArray) || !empty($advancedArray)) {
-            $html .= '<div id="item-filters">';
             foreach($displayArray as $name => $query) {
                 $class = html_escape(strtolower(str_replace(' ', '-', $name)));
-                $html .= '<span class="label label-default ' . $class . '">' . html_escape(__($name)) . ': ' . html_escape($query) . '</span>';
+                $html .= '<span class="badge ' . $class . '">' . html_escape(__($name)) . ': ' . html_escape($query) . '</span>';
             }
             if(!empty($advancedArray)) {
                 foreach($advancedArray as $j => $advanced) {
-                    $html .= '<span class="label label-default advanced">' . html_escape($advanced) . '</span>';
+                    $html .= '<span class="badge advanced">' . html_escape($advanced) . '</span>';
                 }
             }
-            $html .= '</div>';
         }
         return $html;
     }
