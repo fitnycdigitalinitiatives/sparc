@@ -6,19 +6,20 @@ echo head(array(
 </div>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-sm-9" id="exhibit-blocks">
-		<?php exhibit_builder_render_exhibit_page(); ?>
-		</div>
-
-		<div class="col-sm-3">
-			<div class="row">
-				<div class="col-sm-9">
-					<nav id="exhibit-pages">
-						<h4><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
-						<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
-					</nav>
-				</div>
+		<div class="col-sm-8 col-sm-offset-2">
+			<div class="page-header">
+				<h1><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h1>
 			</div>
+		</div>
+	</div>
+	<div class="row">
+		<?php exhibit_builder_render_exhibit_page(); ?>
+
+		<div class="col-sm-2">
+			<nav id="exhibit-pages">
+				<h4><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
+				<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
+			</nav>
 		</div>
 	</div>
 	<nav class="text-center">
