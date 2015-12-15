@@ -24,7 +24,6 @@
     <?php
         queue_css_file('lib/bootstrap.min');
         queue_css_file('style');
-		queue_css_file('exhibits');
         echo head_css();
     ?>
 
