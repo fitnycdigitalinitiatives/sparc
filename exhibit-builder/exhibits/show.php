@@ -10,14 +10,14 @@ echo head(array(
 			</div>
 		</div>
 		<div class="col-sm-1">
-		<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Sections<span class="caret"></span></button>
+				<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
+			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="dropdown">
-			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Sections<span class="caret"></span></button>
-			<?php exhibit_builder_render_exhibit_page(); ?>
-		</div>
+		<?php exhibit_builder_render_exhibit_page(); ?>
 	</div>
 	<nav class="text-center">
 		<ul class="pagination">
