@@ -20,9 +20,7 @@ echo head(array(
 				<div class="panel-heading">
 					<h4>Sections</h4>
 				</div>
-				<div class="list-group">
-					<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
-				</div>
+				<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
 			</div>
 		</div>
 	</div>
