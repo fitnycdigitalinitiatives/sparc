@@ -16,10 +16,14 @@ echo head(array(
 		<?php exhibit_builder_render_exhibit_page(); ?>
 
 		<div class="col-sm-2">
-			<nav id="exhibit-pages">
-				<h4><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
-				<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
-			</nav>
+			<div class="panel panel-default" id="exhibit-pages">
+				<div class="panel-heading">
+					<h4>Sections</h4>
+				</div>
+				<div class="list-group">
+					<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
+				</div>
+			</div>
 		</div>
 	</div>
 	<nav class="text-center">
