@@ -5,9 +5,7 @@ echo head(array(
 ?>
 	<div class="row">
 		<div class="col-sm-11">
-			<div class="page-header">
-				<h1><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h1>
-			</div>
+			<h1><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h1>
 		</div>
 		<div class="col-sm-1">
 			<div class="dropdown">
