@@ -3,19 +3,21 @@ echo head(array(
     'title' => metadata('exhibit_page', 'title') . ' &middot; ' . metadata('exhibit', 'title'),
     'bodyclass' => 'exhibits show'));
 ?>
+
+	<h1><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h1>
+	
 	<div class="row">
-		<div class="col-sm-11">
-			<h1><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h1>
+		<div class="col-sm-9">
+		<?php exhibit_builder_render_exhibit_page(); ?>
 		</div>
-		<div class="col-sm-1">
-			<div class="dropdown">
-				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Sections<span class="caret"></span></button>
+		<div class="col-sm-3">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4>Related Items</h4>
+				</div>
 				<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<?php exhibit_builder_render_exhibit_page(); ?>
 	</div>
 	<nav class="text-center">
 		<ul class="pagination">
