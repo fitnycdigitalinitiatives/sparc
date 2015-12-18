@@ -13,7 +13,7 @@ echo head(array(
 		<div class="col-sm-3">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h4>Related Items</h4>
+					<h4>Sections</h4>
 				</div>
 				<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
 			</div>

@@ -8,12 +8,6 @@ body {
 	font-family: "Archivo Narrow", sans-serif;
 }
 
-/*! fixed-top nav-bar */
-
-body {
-	min-height: 2000px;
-	padding-top: 70px;
-}
 /*! browse-gallery */
 .item-thumb {
 	margin-bottom: 30px;

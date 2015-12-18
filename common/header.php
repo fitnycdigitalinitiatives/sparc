@@ -43,7 +43,7 @@
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
     <header role="banner">
 	<!-- Fixed navbar -->
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
