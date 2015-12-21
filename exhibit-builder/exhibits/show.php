@@ -78,51 +78,30 @@
 						<div class="container-fluid">
 							<?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
 
-							<h1><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h1>
-
-							<div class="row">	
+							<?php exhibit_builder_render_exhibit_page(); ?>
 							
-								<?php exhibit_builder_render_exhibit_page(); ?>
-								
-								<div class="col-sm-3">
-									<div class="panel panel-default">
-										<div class="panel-heading">
-											<h4>Sections</h4>
-										</div>
-										<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
-									</div>
-								</div>
-							</div>
-							<nav class="text-center">
-								<ul class="pagination">
-									<?php if ($prevLink = exhibit_builder_link_to_previous_page()): ?>
-									<li>
-										<?php echo $prevLink; ?>
-									</li>
-									<?php endif; ?>
-									<li class="active">
-										<?php echo exhibit_builder_page_trail(); ?>
-									</li>
-									<?php if ($nextLink = exhibit_builder_link_to_next_page()): ?>
-									<li>
-										<?php echo $nextLink; ?>
-									</li>
-									<?php endif; ?>			
-								</ul>
-							</nav>
 						</div>
 					</main>
 				</div>
 
 				<div class="mastfoot">
 					<footer role="contentinfo">
-						<hr>
-						<div class="container">
-							<p class="text-center">
-								<?php echo __('Copyright &copy; ') . date('Y') . ' ' . link_to_home_page() . ', All Rights Reserved.'; ?><br>
-								<?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?>
-							</p>
-						</div>
+						<nav class="navbar navbar-default navbar-static-bottom">
+							<div class="container">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sub-navbar" aria-expanded="false" aria-controls="navbar">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<?php echo exhibit_builder_link_to_exhibit($exhibit, null, array('class' => 'navbar-brand')); ?>
+								</div>
+								<div id="sub-navbar" class="navbar-collapse collapse">
+									<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
+								</div><!--/.nav-collapse -->
+							</div>
+						</nav>	
 						<?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
 					</footer>
 				</div>
