@@ -75,7 +75,7 @@
 
 				<div class="inner cover">
 					<main id="content" role="main">
-						<div class="container-fluid">
+						<div class="container">
 							<?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
 
 							<?php exhibit_builder_render_exhibit_page(); ?>
@@ -86,7 +86,7 @@
 
 				<div class="mastfoot">
 					<footer role="contentinfo">
-						<nav class="navbar navbar-default navbar-static-bottom">
+						<nav class="navbar navbar-inverse navbar-static-bottom">
 							<div class="container">
 								<div class="navbar-header">
 									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sub-navbar" aria-expanded="false" aria-controls="navbar">

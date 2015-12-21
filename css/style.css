@@ -21,3 +21,10 @@ body {
 .addthis_sharing_toolbox {
 	margin-bottom: 20px;
 }
+/*! exhibition-show */
+.static-bottom {
+	z-index: 1000;
+    border-width: 1px 0 0;
+	border-radius: 0;
+	margin-bottom: 0;
+}
