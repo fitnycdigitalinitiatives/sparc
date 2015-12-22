@@ -10,7 +10,7 @@
 
     <!-- Will build the page <title> -->
     <?php
-        $titleParts[] = metadata('exhibit_page', 'title') . ' &middot; ' . metadata('exhibit', 'title');
+        $titleParts[] = metadata('exhibit', 'title');
         $titleParts[] = option('site_title');
     ?>
     <title><?php echo implode(' &middot; ', $titleParts); ?></title>
@@ -40,7 +40,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<?php echo body_tag(array('class' => 'exhibits show')); ?>
+<?php echo body_tag(array('class' => 'exhibits summary')); ?>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
 	<div class="site-wrapper">
 
@@ -108,12 +108,10 @@
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 									</button>
-									<?php /*
-									<?php echo exhibit_builder_link_to_exhibit('exhibit', null, array('class' => 'navbar-brand')); ?>
-									*/ ?>
+									<?php echo exhibit_builder_link_to_exhibit($exhibit, null, array('class' => 'navbar-brand')); ?>
 								</div>
 								<div id="sub-navbar" class="navbar-collapse collapse">
-									<?php echo exhibit_builder_page_tree(); ?>									
+									<?php echo exhibit_builder_page_tree($exhibit); ?>									
 								</div><!--/.nav-collapse -->
 							</div>
 						</nav>	
