@@ -30,13 +30,14 @@ body {
 }
 #viewer {
 	background-color: #f8f8f8;
+	padding-bottom: 10px;
 }
 #viewer .caption {
 	padding: 0 15px;
 }
 #viewer .nav-tabs {
 	border: none;
-	padding: 0 15px 10px;
+	padding: 0 15px;
 }
 #viewer .nav-tabs>li {
 	width: 10%;
