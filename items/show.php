@@ -56,9 +56,7 @@
 			</div>
 		</div>
 		<!-- Related Items sidebar -->
-		<?php /* Drop-down sort isn't needed at the moment
 		<?php echo related_items($item); ?>
-		*/ ?>
 	</div>
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
     <ul class="pager">
