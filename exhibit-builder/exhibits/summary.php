@@ -79,6 +79,7 @@
 							<div class="row">
 								<div class="col-sm-9">
 								<h1><?php echo metadata('exhibit', 'title'); ?></h1>
+								<?php echo exhibit_builder_page_nav(); ?>
 								<?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
 								<div class="exhibit-description">
 									<?php echo $exhibitDescription; ?>
