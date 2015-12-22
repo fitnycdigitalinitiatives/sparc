@@ -108,7 +108,7 @@
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 									</button>
-									<?php echo exhibit_builder_link_to_exhibit($exhibit, null, array('class' => 'navbar-brand')); ?>
+									<?php echo exhibit_builder_link_to_exhibit('exhibit', null, array('class' => 'navbar-brand')); ?>
 								</div>
 								<div id="sub-navbar" class="navbar-collapse collapse">
 									<?php echo exhibit_builder_page_tree(); ?>
