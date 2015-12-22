@@ -36,13 +36,19 @@ body {
 }
 #viewer .nav-tabs {
 	border: none;
-	padding: 0 15px;
+	padding: 0 15px 10px;
 }
 #viewer .nav-tabs>li {
 	width: 10%;
 }
 #viewer .nav-tabs>li>a {
 	border-radius: 4px;
+}
+#viewer .nav-tabs>li>a:hover {
+	border-color: #ddd;
+}
+#viewer .nav-tabs>li.active>a, #viewer .nav-tabs>li.active>a:focus, #viewer .nav-tabs>li.active>a:hover {
+	border-bottom-color: #ddd;
 }
 #viewer .nav-tabs>li img {
 	width: 100%;
