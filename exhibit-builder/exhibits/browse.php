@@ -2,45 +2,45 @@
 $title = __('Browse Exhibits');
 echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 ?>
-<h1><?php echo $title; ?> <?php echo __('(%s total)', $total_results); ?></h1>
-<?php if (count($exhibits) > 0): ?>
+<h1><?php echo $pageTitle;; ?> <span class="badge"><?php echo $total_results; ?></span></h1>
+<hr>
 
-<nav class="navigation secondary-nav">
-    <?php echo nav(array(
-        array(
-            'label' => __('Browse All'),
-            'uri' => url('exhibits')
-        ),
-        array(
-            'label' => __('Browse by Tag'),
-            'uri' => url('exhibits/tags')
-        )
-    )); ?>
-</nav>
+<div class="browse-exhibits">
+	<?php if ($total_results > 0): ?>
+	<?php /* Drop-down sort isn't needed at the moment
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="dropdown pull-right">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							Sort by:
+					<span class="caret"></span>
+				</button>
+				<?php
+							$sortLinks[__('Title')] = 'Dublin Core,Title';
+							$sortLinks[__('Creator')] = 'Dublin Core,Creator';
+							$sortLinks[__('Date Added')] = 'added';
+							?>
+				<?php echo browse_sort_links_bootstrap($sortLinks); ?>
+			</div>
+		</div>
+	</div>
+	*/ ?>
 
-<?php echo pagination_links(); ?>
-
-<?php $exhibitCount = 0; ?>
-<?php foreach (loop('exhibit') as $exhibit): ?>
-    <?php $exhibitCount++; ?>
-    <div class="exhibit <?php if ($exhibitCount%2==1) echo ' even'; else echo ' odd'; ?>">
-        <h2><?php echo link_to_exhibit(); ?></h2>
-        <?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail')): ?>
-            <?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage, array('class' => 'image')); ?>
-        <?php endif; ?>
-        <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
-        <div class="description"><?php echo $exhibitDescription; ?></div>
-        <?php endif; ?>
-        <?php if ($exhibitTags = tag_string('exhibit', 'exhibits')): ?>
-        <p class="tags"><?php echo $exhibitTags; ?></p>
-        <?php endif; ?>
-    </div>
-<?php endforeach; ?>
-
-<?php echo pagination_links(); ?>
-
-<?php else: ?>
-<p><?php echo __('There are no exhibits available yet.'); ?></p>
-<?php endif; ?>
+	<!-- Image Grid -->
+	<div class="row" id="grid">
+		<?php foreach (loop('exhibit') as $exhibit): ?>
+		<div class="col-md-4 col-sm-6 item-thumb">
+			<?php if ($exhibitImage = record_image('collection', 'square_thumbnail', array('class' => 'img-responsive'))): ?>
+			<?php echo exhibit_builder_link_to_exhibit($exhibitImage . '<div class="caption"><h5>' . metadata('exhibit', 'title') . '</h5></div>', array('class' => 'thumbnail')); ?>
+			<?php endif; ?>
+		</div>
+		<?php endforeach; ?>
+	</div>
+	<?php echo pagination_links(); ?>
+	
+	<?php else : ?>
+	<p><?php echo 'No exhibiyd added, yet.'; ?></p>
+	<?php endif; ?>
+</div>
 
 <?php echo foot(); ?>
