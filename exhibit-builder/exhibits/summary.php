@@ -111,7 +111,7 @@
 									<?php echo exhibit_builder_link_to_exhibit($exhibit, null, array('class' => 'navbar-brand')); ?>
 								</div>
 								<div id="sub-navbar" class="navbar-collapse collapse">
-									<?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
+									<?php echo exhibit_builder_page_tree($exhibit); ?>
 								</div><!--/.nav-collapse -->
 							</div>
 						</nav>	
