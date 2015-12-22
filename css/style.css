@@ -32,17 +32,18 @@ body {
 	background-color: #f8f8f8;
 }
 #viewer .caption {
-	padding: 0 15px 10px;
+	padding: 0 20px 10px;
 }
 #viewer .nav-tabs {
 	border: none;
-	padding: 0 15px 15px;
+	padding: 0 20px 20px;
 }
 #viewer .nav-tabs>li {
 	width: 10%;
 }
 #viewer .nav-tabs>li>a {
 	border-radius: 4px;
+	padding: 5px;
 }
 #viewer .nav-tabs>li>a:hover {
 	border-color: #ddd;
