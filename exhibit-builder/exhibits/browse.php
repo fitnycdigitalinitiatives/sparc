@@ -30,7 +30,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 	<div class="row" id="grid">
 		<?php foreach (loop('exhibit') as $exhibit): ?>
 		<div class="col-md-4 col-sm-6 item-thumb">
-			<?php if ($exhibitImage = record_image('collection', 'square_thumbnail', array('class' => 'img-responsive'))): ?>
+			<?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail', array('class' => 'img-responsive'))): ?>
 			<?php echo exhibit_builder_link_to_exhibit($exhibitImage . '<div class="caption"><h5>' . metadata('exhibit', 'title') . '</h5></div>', array('class' => 'thumbnail')); ?>
 			<?php endif; ?>
 		</div>
