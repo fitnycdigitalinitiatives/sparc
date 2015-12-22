@@ -2,7 +2,7 @@
 $title = __('Browse Exhibits');
 echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 ?>
-<h1><?php echo $pageTitle;; ?> <span class="badge"><?php echo $total_results; ?></span></h1>
+<h1><?php echo $title; ?> <span class="badge"><?php echo $total_results; ?></span></h1>
 <hr>
 
 <div class="browse-exhibits">
