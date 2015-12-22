@@ -77,7 +77,7 @@
 					<main id="content" role="main">
 						<div class="container">
 							<?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
-
+							<?php echo exhibit_builder_page_nav(); ?>
 							<?php exhibit_builder_render_exhibit_page(); ?>
 							
 						</div>
