@@ -94,7 +94,7 @@
 								</div>
 								<div class="col-sm-5">
 									<?php if ($exhibitImage = record_image($exhibit, 'fullsize', array('class' => 'img-responsive'))): ?>
-										<?php $firstPage = getFirstTopPage(); ?>
+										<?php $firstPage = $exhibit->getFirstTopPage();; ?>
 										<?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage . '<div class="caption"><h5>' . metadata('exhibit', 'title') . '</h5></div>', array('class' => 'thumbnail'), $firstPage); ?>
 									<?php endif; ?>
 								</div>
