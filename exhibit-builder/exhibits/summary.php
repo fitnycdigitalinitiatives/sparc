@@ -91,11 +91,11 @@
 											<p><?php echo $exhibitCredits; ?></p>
 										</div>
 									<?php endif; ?>
-									<?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage . 'Launch Exhibit', array('type' => 'button', 'class' => 'btn btn-default btn-lg center-block'), $firstPage); ?>
+									<?php $firstPage = $exhibit->getFirstTopPage();; ?>
+									<?php echo exhibit_builder_link_to_exhibit($exhibit, 'Launch Exhibit', array('type' => 'button', 'class' => 'btn btn-default btn-lg center-block'), $firstPage); ?>
 								</div>
 								<div class="col-sm-5">
 									<?php if ($exhibitImage = record_image($exhibit, 'fullsize', array('class' => 'img-responsive'))): ?>
-										<?php $firstPage = $exhibit->getFirstTopPage();; ?>
 										<?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage, array('class' => 'thumbnail'), $firstPage); ?>
 									<?php endif; ?>
 								</div>
