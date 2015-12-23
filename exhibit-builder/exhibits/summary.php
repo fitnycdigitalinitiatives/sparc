@@ -77,20 +77,26 @@
 					<main id="content" role="main">
 						<div class="container">
 							<div class="row">
-								<div class="col-sm-9">
-								<h1><?php echo metadata('exhibit', 'title'); ?></h1>
-								<?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
-								<div class="exhibit-description">
-									<?php echo $exhibitDescription; ?>
-								</div>
-								<?php endif; ?>
+								<div class="col-sm-7">
+									<h1><?php echo metadata('exhibit', 'title'); ?></h1>
+									<?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
+										<div class="exhibit-description">
+											<?php echo $exhibitDescription; ?>
+										</div>
+									<?php endif; ?>
 
-								<?php if (($exhibitCredits = metadata('exhibit', 'credits'))): ?>
-								<div class="exhibit-credits">
-									<h3><?php echo __('Credits'); ?></h3>
-									<p><?php echo $exhibitCredits; ?></p>
+									<?php if (($exhibitCredits = metadata('exhibit', 'credits'))): ?>
+										<div class="exhibit-credits">
+											<h3><?php echo __('Credits'); ?></h3>
+											<p><?php echo $exhibitCredits; ?></p>
+										</div>
+									<?php endif; ?>
 								</div>
-								<?php endif; ?>
+								<div class="col-sm-5">
+									<?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail', array('class' => 'img-responsive'))): ?>
+										<?php $firstPage = getFirstTopPage(); ?>
+										<?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage . '<div class="caption"><h5>' . metadata('exhibit', 'title') . '</h5></div>', array('class' => 'thumbnail'), $firstPage); ?>
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
