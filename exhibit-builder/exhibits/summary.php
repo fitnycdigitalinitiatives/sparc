@@ -80,7 +80,7 @@
 								<div class="col-sm-7">
 									<h1><?php echo metadata('exhibit', 'title'); ?></h1>
 									<?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
-										<div class="exhibit-description">
+										<div class="exhibit-description text-justify">
 											<?php echo $exhibitDescription; ?>
 										</div>
 									<?php endif; ?>
@@ -91,11 +91,12 @@
 											<p><?php echo $exhibitCredits; ?></p>
 										</div>
 									<?php endif; ?>
+									<?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage . 'Launch Exhibit', array('type' => 'button', 'class' => 'btn btn-default btn-lg center-block'), $firstPage); ?>
 								</div>
 								<div class="col-sm-5">
 									<?php if ($exhibitImage = record_image($exhibit, 'fullsize', array('class' => 'img-responsive'))): ?>
 										<?php $firstPage = $exhibit->getFirstTopPage();; ?>
-										<?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage . '<div class="caption"><h5>' . metadata('exhibit', 'title') . '</h5></div>', array('class' => 'thumbnail'), $firstPage); ?>
+										<?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage, array('class' => 'thumbnail'), $firstPage); ?>
 									<?php endif; ?>
 								</div>
 							</div>
