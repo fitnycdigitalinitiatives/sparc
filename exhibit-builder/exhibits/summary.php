@@ -92,7 +92,9 @@
 										</div>
 									<?php endif; ?>
 									<?php $firstPage = $exhibit->getFirstTopPage();; ?>
-									<?php echo exhibit_builder_link_to_exhibit($exhibit, 'Launch Exhibit', array('type' => 'button', 'class' => 'btn btn-default btn-lg center-block'), $firstPage); ?>
+									<div class="text-center">
+									<?php echo exhibit_builder_link_to_exhibit($exhibit, 'Launch Exhibit', array('type' => 'button', 'class' => 'btn btn-default btn-lg', 'role' => 'button'), $firstPage); ?>
+									</div>
 								</div>
 								<div class="col-sm-5">
 									<?php if ($exhibitImage = record_image($exhibit, 'fullsize', array('class' => 'img-responsive'))): ?>
