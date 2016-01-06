@@ -39,7 +39,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 	<?php echo pagination_links(); ?>
 	
 	<?php else : ?>
-	<p><?php echo 'No exhibiyd added, yet.'; ?></p>
+	<p><?php echo 'No exhibits added, yet.'; ?></p>
 	<?php endif; ?>
 </div>
 
