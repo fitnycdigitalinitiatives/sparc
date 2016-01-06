@@ -8,6 +8,30 @@ body {
 	font-family: "Archivo Narrow", sans-serif;
 }
 
+/*! Sticky footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 51px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 51px;
+}
+.footer .navbar-brand {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.footer .navbar-brand img {
+  height: 30px;
+} 
+
 /*! browse-gallery */
 .item-thumb {
 	margin-bottom: 30px;
