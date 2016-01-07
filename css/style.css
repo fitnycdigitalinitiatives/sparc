@@ -7,6 +7,10 @@ a:focus, a:hover {
 body {
 	font-family: "Archivo Narrow", sans-serif;
 }
+/*! Navbar */
+header .navbar-brand img {
+  height: 20px;
+} 
 
 /*! Sticky footer */
 html {
@@ -31,6 +35,28 @@ body {
 .footer .navbar-brand img {
   height: 30px;
 } 
+
+/*! homepage */
+body#home {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('../images/background4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 51px;
+}
+#home form.navbar-form {
+  display: none;
+}
+#home footer {
+  display: none;
+}
+#home .jumbotron {
+  background-color: transparent;
+  color: #fff;
+}
 
 /*! browse-gallery */
 .item-thumb {
