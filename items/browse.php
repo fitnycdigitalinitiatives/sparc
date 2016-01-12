@@ -28,7 +28,7 @@
 			</div>
 		</div>
 
-	<hr>
+		<hr>
 
 		<!-- Image Grid -->
 		<div class="row" id="grid">
