@@ -8,7 +8,24 @@ function public_nav_main_bootstrap() {
 }
 function public_nav_items_bootstrap() {
     $partial = array('common/menu-items-partial.phtml', 'default');
-    $nav = public_nav_items();  // this looks like $this->navigation()->menu() from Zend
+    if (!$navArray) {
+        $navArray = array(
+            array(
+                'label' =>__('Browse All'),
+                'uri' => url('items/browse'),
+            ));
+            if (total_records('Tag')) {
+                $navArray[] = array(
+                    'label' => __('Browse by Tag'),
+                    'uri' => url('items/tags')
+                );
+            }
+            $navArray[] = array(
+                'label' => __('Advanced Search'),
+                'uri' => url('items/search')
+            );
+    }
+    $nav = nav($navArray, 'public_navigation_items');
     $nav->setPartial($partial);
     return $nav->render();
 }
