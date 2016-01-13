@@ -58,9 +58,7 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<?php echo public_nav_main_bootstrap(); ?>
-				<form class="navbar-form navbar-right" role="search" action="<?php echo public_url(''); ?>search">
-					<?php echo search_form(array('show_advanced' => false)); ?>
-				</form>
+				<?php echo search_form(array('show_advanced' => false, 'form_attributes' => array('class' => 'navbar-form navbar-right', 'role' => 'search'))); ?>
 			</div><!--/.nav-collapse -->
 		</div>
 	</nav>
