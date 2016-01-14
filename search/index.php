@@ -3,7 +3,7 @@
     echo head(array('title' => $pageTitle, 'bodyclass' => 'search'));
     $searchRecordTypes = get_search_record_types();
 ?>
-    <h1><?php echo $pageTitle; ?> <?php echo search_filters(); ?> <span class="badge"><?php echo $total_results; ?> </span></h1>
+    <h1><?php echo $pageTitle; ?> <?php echo search_filters(); ?> <span class="badge"><?php echo $total_results; ?></span></h1>
     <div class="search-results">
 	<?php if ($total_results): ?>
         <table id="search-results">
