@@ -9,7 +9,12 @@
         </div>
 	</div>
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-xs-6">
+			<?php if (metadata('item', array('Item Type Metadata', 'Palette'))): ?>
+				<?php echo palette('item'); ?> 
+			<?php endif; ?>
+		</div>
+		<div class="col-xs-6">
 			<!-- Go to www.addthis.com/dashboard to customize your tools -->
 			<div class="addthis_sharing_toolbox pull-right"></div>
 		</div>
