@@ -57,7 +57,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/">
+				<a class="navbar-brand" href="<?php echo link_to_home_page(); ?>">
 					<?php echo '<img src="' . img('fit_sparc.png') . '" alt="Brand">'; ?>
 				</a>
 			</div>
