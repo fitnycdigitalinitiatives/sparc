@@ -10,7 +10,7 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-6">
-			<?php if (metadata('item', array('Item Type Metadata', 'Palette'))): ?>
+			<?php if (metadata('item', array('Item Type Metadata', 'Color Data'))): ?>
 				<?php echo palette('item'); ?> 
 			<?php endif; ?>
 		</div>
