@@ -230,7 +230,7 @@ function flickr_image_tag($item, $size, $class)
 		$flickr_urls = metadata($item, array('Item Type Metadata', 'Flickr URL\'s'));
 		foreach (json_decode(html_entity_decode($flickr_urls ), true) as $flickr_url) {
 			if ($flickr_url['label'] == $size) {
-				$html = '<img src="' . $flickr_url['source'] . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '" class="' . $class . '>';
+				$html = '<img src="' . $flickr_url['source'] . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '" class="' . $class . '">';
 				return $html;
 			}
 		}
