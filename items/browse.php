@@ -35,7 +35,7 @@
 			<?php foreach (loop('items') as $item): ?>
 			<div class="col-lg-3 col-md-4 col-xs-6 item-thumb">
 				<?php if (metadata('item', 'has thumbnail')): ?>
-				<?php echo link_to_item(item_image('square_thumbnail', array('class' => 'img-responsive')) . '<div class="caption"><h5>' . metadata('item', array('Dublin Core', 'Title')) . '</h5></div>', array('class' => 'thumbnail')); ?>
+				<?php echo link_to_item(flickr_image_tag($item, 'Large Square', 'img-responsive') . '<div class="caption"><h5>' . metadata('item', array('Dublin Core', 'Title')) . '</h5></div>', array('class' => 'thumbnail')); ?>
 				<?php endif; ?>
 			</div>
 			<?php endforeach; ?>

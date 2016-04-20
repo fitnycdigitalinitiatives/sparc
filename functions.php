@@ -8,7 +8,7 @@ function public_nav_main_bootstrap() {
 }
 function public_nav_items_bootstrap() {
     $partial = array('common/menu-items-partial.phtml', 'default');
-    if (!$navArray) {
+    if (!isset($navArray)) {
         $navArray = array(
             array(
                 'label' =>__('Browse All'),
@@ -207,11 +207,10 @@ function related_items($current_item)
 
 function palette($current_item)
 {
-	if (metadata('item', array('Item Type Metadata', 'Palette'))) {
-		$palette = metadata($current_item, array('Item Type Metadata', 'Palette'));
+	if (metadata('item', array('Item Type Metadata', 'Color Data'))) {
+		$palette = metadata($current_item, array('Item Type Metadata', 'Color Data'));
 		$html = '<ul class="list-inline">';
-		foreach (json_decode(html_entity_decode($palette)) as $section) {
-			$section = get_object_vars($section);
+		foreach (json_decode(html_entity_decode($palette), true) as $section) {
 			$color = $section["color"];
 			$closest = $section['closest'];
 			$name = $section['name'];
@@ -222,5 +221,18 @@ function palette($current_item)
 		}
 		$html .= '</ul>';
 		return $html;
+	}
+}
+
+function flickr_image_tag($item, $size, $class)
+{
+	if (metadata($item, array('Item Type Metadata', 'Flickr URL\'s'))) {
+		$flickr_urls = metadata($item, array('Item Type Metadata', 'Flickr URL\'s'));
+		foreach (json_decode(html_entity_decode($flickr_urls ), true) as $flickr_url) {
+			if ($flickr_url['label'] == $size) {
+				$html = 'img src="' . $$flickr_url['source'] . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '" class="' . $class . '>';
+				return $html;
+			}
+		}
 	}
 }
