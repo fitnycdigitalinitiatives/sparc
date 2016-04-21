@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-sm-12">
 			<!-- Fire OpenSeadragon Separately from other plugins for placement -->
-			<?php echo $this->openseadragon($item->Files); ?>
+			<?php echo $this->openseadragon($item); ?>
         </div>
 	</div>
 	<div class="row">
