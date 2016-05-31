@@ -224,15 +224,11 @@ function palette($current_item)
 	}
 }
 
-function flickr_image_tag($item, $size, $class)
+function mdid_thumbnail_tag($item, $shape, $class)
 {
-	if (metadata($item, array('Item Type Metadata', 'Flickr URL\'s'))) {
-		$flickr_urls = metadata($item, array('Item Type Metadata', 'Flickr URL\'s'));
-		foreach (json_decode(html_entity_decode($flickr_urls), true) as $flickr_url) {
-			if ($flickr_url['label'] == $size) {
-				$html = '<img src="' . $flickr_url['source'] . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '" class="' . $class . '">';
-				return $html;
-			}
-		}
+	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
+		$html = '<img src="https://fit.vrchost.com/media/thumb/' . $record_id . '/' . $record_name . '/?' $shape . '" class="' . $class . '">';
+		return $html;
+		
 	}
 }
