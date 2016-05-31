@@ -227,7 +227,7 @@ function palette($current_item)
 function mdid_thumbnail_tag($item, $shape, $class)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
-		$html = '<img src="https://fit.vrchost.com/media/thumb/' . $record_id . '/' . $record_name . '/?' $shape . '" class="' . $class . '">';
+		$html = '<img src="https://fit.vrchost.com/media/thumb/' . $record_id . '/' . $record_name . '/?' . $shape . '" class="' . $class . '">';
 		return $html;
 		
 	}
