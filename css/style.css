@@ -65,6 +65,9 @@ body#home {
 .item-thumb .thumbnail {
 	position: relative;
 }
+.item-thumb .thumbnail image {
+	width: 100%;
+}
 .item-thumb .thumbnail .result-type {
 	position: absolute;
 	top: 16px;
