@@ -70,7 +70,7 @@ body#home {
 	/* center align pt. 1 */
 	position: relative;
 	/* 4:3 aspect ratio */
-	padding-top: 75%;
+	padding-top: 125%;
 }
 .item-thumb .thumbnail img {
 	max-width: 100%;
