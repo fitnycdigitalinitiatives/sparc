@@ -65,8 +65,23 @@ body#home {
 .item-thumb .thumbnail {
 	position: relative;
 }
+.item-thumb .thumbnail-container {
+	display: block;
+	/* center align pt. 1 */
+	position: relative;
+	/* 4:3 aspect ratio */
+	padding-top: 75%;
+}
 .item-thumb .thumbnail img {
-	width: 100%;
+	max-width: 100%;
+    max-height: 100%;
+	/* center align pt. 2 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 .item-thumb .thumbnail .result-type {
 	position: absolute;

@@ -224,10 +224,10 @@ function palette($current_item)
 	}
 }
 
-function mdid_thumbnail_tag($item, $shape, $class)
+function mdid_thumbnail_tag($item, $class)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
-		$html = '<img src="https://fit.vrchost.com/media/thumb/' . $record_id . '/' . $record_name . '/?' . $shape . '" class="' . $class . '">';
+		$html = '<div class="thumbnail-container"><img src="https://fit.vrchost.com/media/get/' . $record_id . '/' . $record_name . '/400x400" class="' . $class . '"></div>';
 		return $html;
 		
 	}
