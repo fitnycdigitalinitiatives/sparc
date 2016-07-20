@@ -210,7 +210,6 @@ function palette($current_item)
 	if (metadata('item', array('Item Type Metadata', 'Color Data'))) {
 		$palette = metadata($current_item, array('Item Type Metadata', 'Color Data'));
 		$html = '<ul class="list-inline">';
-		return json_decode(html_entity_decode($palette), true);
 		foreach (json_decode(html_entity_decode($palette), true) as $section) {
 			$color = $section["color"];
 			$closest = $section['closest'];
