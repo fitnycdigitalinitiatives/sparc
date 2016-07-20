@@ -209,7 +209,8 @@ function palette($current_item)
 {
 	if (metadata('item', array('Item Type Metadata', 'Color Data'))) {
 		$color_data = metadata($current_item, array('Item Type Metadata', 'Color Data'));
-		$palette = json_decode(html_entity_decode($color_data), true);
+		$color_data = json_decode(html_entity_decode($color_data), true);
+		$palette = $color_data["palette"]
 		$html = '<ul class="list-inline">';
 		foreach ($palette as $section) {
 			$color = $section["color"];
