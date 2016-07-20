@@ -208,9 +208,10 @@ function related_items($current_item)
 function palette($current_item)
 {
 	if (metadata('item', array('Item Type Metadata', 'Color Data'))) {
-		$palette = metadata($current_item, array('Item Type Metadata', 'Color Data'));
+		$color_data = metadata($current_item, array('Item Type Metadata', 'Color Data'));
+		$palette = json_decode(html_entity_decode($color_data), true);
 		$html = '<ul class="list-inline">';
-		foreach (json_decode(html_entity_decode($palette), true) as $section) {
+		foreach ($palette as $section) {
 			$color = $section["color"];
 			$closest = $section['closest'];
 			$name = $section['name'];
