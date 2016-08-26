@@ -217,7 +217,8 @@ function palette($current_item)
 			$closest = $section['closest'];
 			$name = $section['name'];
       $element = get_db()->getTable('Element')->findByElementSetNameAndElementName('Dublin Core', 'Color Data');
-      $advanced[] = array('element_id' => $element->id, 'terms' => htmlspecialchars_decode($closest, ENT_QUOTES), 'type' => 'is exactly');
+      $id = $element->id;
+      $advanced[] = array('element_id' => $id, 'terms' => htmlspecialchars_decode($closest, ENT_QUOTES), 'type' => 'is exactly');
       $paramArray = array('search' => '', 'advanced' => $advanced);
       $url = url('/items/browse?') . $params;
 			$html .= '<li><a href="' . $url .'" data-toggle="tooltip" title="Closest color: '. $name . '">';
