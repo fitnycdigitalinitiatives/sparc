@@ -57,9 +57,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/sparc">
-					<?php echo '<img src="' . img('fit_sparc.png') . '" alt="Brand">'; ?>
-				</a>
+				<?php echo link_to_home_page('<img src="' . img('fit_sparc.png') . '" alt="SPARC Digital">', array('class' => 'navbar-brand')); ?>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<?php echo public_nav_main_bootstrap(); ?>

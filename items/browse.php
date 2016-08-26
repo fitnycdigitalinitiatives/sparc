@@ -34,7 +34,7 @@
 		<div class="row" id="grid">
 			<?php foreach (loop('items') as $item): ?>
 			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 item-thumb">
-				<?php echo link_to_item(flickr_image_tag($item, 'Large Square', 'img-responsive') . '<div class="caption"><h5>' . metadata('item', array('Dublin Core', 'Title')) . '</h5></div>', array('class' => 'thumbnail')); ?>
+				<?php echo link_to_item(mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata('item', array('Dublin Core', 'Title')) . '</h5></div>', array('class' => 'thumbnail')); ?>
 			</div>
 			<?php endforeach; ?>
 		</div>
