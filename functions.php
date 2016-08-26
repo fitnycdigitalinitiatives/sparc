@@ -217,7 +217,7 @@ function palette($current_item)
 			$closest = $section['closest'];
 			$name = $section['name'];
       $element = get_db()->getTable('Element')->findByElementSetNameAndElementName('Item Type Metadata', 'Color Data');
-      $advanced[] = array('element_id' => $element->id, 'terms' => htmlspecialchars_decode($closest, ENT_QUOTES), 'type' => 'is exactly');
+      $advanced = array('element_id' => $element->id, 'terms' => htmlspecialchars_decode($closest, ENT_QUOTES), 'type' => 'contains');
       $paramArray = array('search' => '', 'advanced' => $advanced);
       $params = http_build_query($paramArray);
       $url = url('/items/browse?') . $params;
