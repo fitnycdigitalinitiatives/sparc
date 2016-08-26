@@ -90,12 +90,12 @@ function browse_sort_links_bootstrap($links, $wrapperTags = array())
 function item_search_filters_bootstrap(array $params = null)
     {
         if ($params === null) {
-            $request = Zend_Controller_Front::getInstance()->getRequest();
+            $request = Zend_Controller_Front::getInstance()->getRequest(); 
             $requestArray = $request->getParams();
         } else {
             $requestArray = $params;
         }
-
+        
         $db = get_db();
         $displayArray = array();
         foreach ($requestArray as $key => $value) {
@@ -110,7 +110,7 @@ function item_search_filters_bootstrap(array $params = null)
                             $displayValue = $itemType->name;
                         }
                         break;
-
+                    
                     case 'collection':
                         $collection = $db->getTable('Collection')->find($value);
                         if ($collection) {
@@ -135,7 +135,7 @@ function item_search_filters_bootstrap(array $params = null)
                     case 'featured':
                         $displayValue = ($value == 1 ? __('Yes') : $displayValue = __('No'));
                         break;
-
+                        
                     case 'search':
                     case 'tags':
                     case 'range':
@@ -149,9 +149,9 @@ function item_search_filters_bootstrap(array $params = null)
         }
 
         $displayArray = apply_filters('item_search_filters', $displayArray, array('request_array' => $requestArray));
-
+        
         // Advanced needs a separate array from $displayValue because it's
-        // possible for "Specific Fields" to have multiple values due to
+        // possible for "Specific Fields" to have multiple values due to 
         // the ability to add fields.
         if(array_key_exists('advanced', $requestArray)) {
             $advancedArray = array();
@@ -216,10 +216,7 @@ function palette($current_item)
 			$color = $section["color"];
 			$closest = $section['closest'];
 			$name = $section['name'];
-      $element = get_db()->getTable('Element')->findByElementSetNameAndElementName('Dublin Core', 'Color Data');
-      $advanced[] = array('element_id' => $element->id, 'terms' => htmlspecialchars_decode($closest, ENT_QUOTES), 'type' => 'is exactly');
-      $paramArray = array('search' => '', 'advanced' => $advanced);
-      $url = url('/items/browse?') . $params;
+			$url = '/solr-search?q=' . urlencode($closest);
 			$html .= '<li><a href="' . $url .'" data-toggle="tooltip" title="Closest color: '. $name . '">';
 			$html .= '<div style="height: 2em; width: 2em; background-color:' . $color . ';">';
 			$html .= '</div></a></li>';
@@ -234,6 +231,6 @@ function mdid_thumbnail_tag($item, $class)
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
 		$html = '<div class="thumbnail-container"><img src="https://fit.vrchost.com/media/get/' . $record_id . '/' . $record_name . '/400x400" class="' . $class . '"></div>';
 		return $html;
-
+		
 	}
 }
