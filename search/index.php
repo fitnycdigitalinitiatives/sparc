@@ -9,7 +9,7 @@
         <table id="search-results">
             <div class="row">
 				<div class="col-sm-6">
-					<?php echo public_nav_items_bootstrap(); ?>  
+					<?php echo public_nav_items_bootstrap(); ?>
 				</div>
 			</div>
 
@@ -22,9 +22,9 @@
                 <?php $recordType = $searchText['record_type']; ?>
                 <?php set_current_record($recordType, $record); ?>
                 <div class="col-lg-3 col-md-4 col-xs-6 item-thumb <?php echo strtolower($filter->filter($recordType)); ?>">
-                        <?php if ($recordImage = record_image($recordType, 'square_thumbnail', array('class' => 'img-responsive'))): ?>
+                        
                             <?php echo link_to($record, 'show', $recordImage . '<div class="caption"><h5>' . $searchText['title'] . '</h5></div>', array('class' => 'thumbnail')); ?>
-                        <?php endif; ?>
+
                 </div>
                 <?php endforeach; ?>
             </div>
