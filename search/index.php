@@ -22,6 +22,7 @@
                 <?php $recordType = $searchText['record_type']; ?>
                 <?php set_current_record($recordType, $record); ?>
                 <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 item-thumb <?php echo strtolower($filter->filter($recordType)); ?>">
+                  <?php echo strtolower($filter->filter($recordType)); ?>
                   <?php if ($recordType == 'Item'): ?>
                     <?php echo link_to($record, 'show', mdid_thumbnail_tag($record, 'img-responsive') . '<div class="caption"><h5>' . metadata($record, array('Dublin Core', 'Title')) . '</h5></div>', array('class' => 'thumbnail')); ?>
                   <?php elseif ($recordType == 'Exhibit'): ?>
