@@ -165,7 +165,13 @@ function item_search_filters_bootstrap(array $params = null)
                 $type = __($row['type']);
                 $advancedValue = $element . ' ' . $type;
                 if (isset($row['terms'])) {
+                  $query = $row['terms'];
+                  if (preg_match('/^#[a-f0-9]{6}$/i', $query)) {
+                    <span class="glyphicon glyphicon-tint" style="color: <?php echo $query; ?>;"></span>
+                  }
+                  else {
                     $advancedValue .= ' "' . $row['terms'] . '"';
+                  }
                 }
                 $advancedArray[$i] = $advancedValue;
             }
