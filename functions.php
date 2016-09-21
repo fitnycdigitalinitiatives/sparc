@@ -163,17 +163,17 @@ function item_search_filters_bootstrap(array $params = null)
                 $elementDb = $db->getTable('Element')->find($elementID);
                 $element = __($elementDb->name);
                 $type = __($row['type']);
-                $advancedValue = $element . ' ' . $type;
-                if (isset($row['terms'])) {
-                  $query = $row['terms'];
-                  if (preg_match('/^#[a-f0-9]{6}$/i', $query)) {
-                    $advancedValue .= '<span class="glyphicon glyphicon-tint" style="color: ' . $query . ';"></span>';
-                  }
-                  else {
-                    $advancedValue .= ' "' . $row['terms'] . '"';
-                  }
+                $query = $row['terms'];
+                if (($element == 'Color Data') and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
+                  $advancedValue = '<span class="glyphicon glyphicon-tint" style="color: ' . $query . ';"></span>';
                 }
-                $advancedArray[$i] = $advancedValue;
+                else {
+                  $advancedValue = $element . ' ' . $type;
+                  if (isset($row['terms'])) {
+                      $advancedValue .= ' "' . $row['terms'] . '"';
+                  }
+                  $advancedArray[$i] = $advancedValue;
+                }
             }
         }
 
