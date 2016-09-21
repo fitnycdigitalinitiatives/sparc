@@ -166,6 +166,7 @@ function item_search_filters_bootstrap(array $params = null)
                 $query = $row['terms'];
                 if (($element == 'Color Data') and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
                   $advancedValue = '<span class="glyphicon glyphicon-tint" style="color: ' . $query . ';"></span>';
+                  $advancedArray[$i] = $advancedValue;
                 }
                 else {
                   $advancedValue = $element . ' ' . $type;
