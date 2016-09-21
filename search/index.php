@@ -27,7 +27,6 @@
                   <?php elseif ($recordType == 'Exhibit'): ?>
                     <?php $item = get_records('Item', array('exhibit' => metadata($record, 'id')), 1); ?>
                     <?php echo link_to($item, 'show', mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata($item, array('Dublin Core', 'Title')) . '</h5></div>', array('class' => 'thumbnail')); ?>
-                  <?php endif; ?>
                 <?php elseif ($recordType == 'Collection'): ?>
                   <?php $item = get_records('Item', array('collection' => metadata($record, 'id')), 1); ?>
                   <?php echo link_to($item, 'show', mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata($item, array('Dublin Core', 'Title')) . '</h5></div>', array('class' => 'thumbnail')); ?>
