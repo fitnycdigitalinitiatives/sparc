@@ -10,7 +10,7 @@ body {
 /*! Navbar */
 header .navbar-brand img {
   height: 20px;
-} 
+}
 
 /*! Sticky footer */
 html {
@@ -34,7 +34,7 @@ body {
 }
 .footer .navbar-brand img {
   height: 30px;
-} 
+}
 
 /*! homepage */
 body#home {
@@ -92,6 +92,11 @@ body#home {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+#swatch {
+	display: inline-block;
+	height: 2rem;
+	width: 2rem;
 }
 /*! item-show */
 .addthis_sharing_toolbox {
