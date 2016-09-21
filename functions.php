@@ -186,7 +186,7 @@ function item_search_filters_bootstrap(array $params = null)
             }
             if(!empty($advancedArray)) {
                 foreach($advancedArray as $j => $advanced) {
-                    $html .= '<span class="badge advanced">' . $advanced . '</span>';
+                    $html .= $advanced;
                 }
             }
         }
