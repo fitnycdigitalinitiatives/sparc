@@ -165,7 +165,7 @@ function item_search_filters_bootstrap(array $params = null)
                 $type = __($row['type']);
                 $query = $row['terms'];
                 if (($element == 'Color Data') and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
-                  $advancedValue = '<span class="glyphicon glyphicon-tint" style="color: ' . html_escape($query) . ';"></span>';
+                  $advancedValue = '<span class="badge advanced">Color</span> <span class="glyphicon glyphicon-tint" style="color: ' . html_escape($query) . ';"></span> ';
                   $advancedArray[$i] = $advancedValue;
                 }
                 else {
@@ -173,7 +173,7 @@ function item_search_filters_bootstrap(array $params = null)
                   if (isset($row['terms'])) {
                       $advancedValue .= ' "' . html_escape($row['terms']) . '"';
                   }
-                  $advancedArray[$i] = '<span class="badge advanced">' . $advancedValue . '</span>';
+                  $advancedArray[$i] = '<span class="badge advanced">' . $advancedValue . '</span> ';
                 }
             }
         }
