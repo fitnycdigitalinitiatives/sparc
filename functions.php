@@ -173,7 +173,7 @@ function item_search_filters_bootstrap(array $params = null)
                   if (isset($row['terms'])) {
                       $advancedValue .= ' "' . html_escape($row['terms']) . '"';
                   }
-                  $advancedArray[$i] = $advancedValue;
+                  $advancedArray[$i] = '<span class="badge advanced">' . $advancedValue . '</span>';
                 }
             }
         }

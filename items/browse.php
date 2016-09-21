@@ -4,13 +4,13 @@
 ?>
 
 	<h1><?php echo $pageTitle;; ?> <?php echo item_search_filters_bootstrap(); ?> <span class="badge"><?php echo $total_results; ?></span></h1>
-	
+
 	<div class="browse-items">
 	<?php if ($total_results > 0): ?>
-		
+
 		<div class="row">
 			<div class="col-sm-6">
-				<?php echo public_nav_items_bootstrap(); ?>  
+				<?php echo public_nav_items_bootstrap(); ?>
 			</div>
 			<div class="col-sm-6">
 				<div class="dropdown pull-right">
@@ -46,4 +46,3 @@
 
 	<?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
 <?php echo foot(); ?>
-	
