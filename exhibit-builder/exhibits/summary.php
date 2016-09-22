@@ -69,7 +69,7 @@
 									<?php echo search_form(array('show_advanced' => false, 'form_attributes' => array('class' => 'navbar-form navbar-right', 'role' => 'search'))); ?>
 								</div><!--/.nav-collapse -->
 							</div>
-						</nav>					
+						</nav>
 					</header>
 				</div>
 
@@ -97,8 +97,8 @@
 									</div>
 								</div>
 								<div class="col-sm-5">
-									<?php if ($exhibitImage = record_image($exhibit, 'fullsize', array('class' => 'img-responsive'))): ?>
-										<?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage, array('class' => 'thumbnail'), $firstPage); ?>
+									<?php if ($item = get_exhibit_item ($exhibit)): ?>
+										<?php echo exhibit_builder_link_to_exhibit($exhibit, mdid_thumbnail_tag($item, 'img-responsive'), array('class' => 'thumbnail'), $firstPage); ?>
 									<?php endif; ?>
 								</div>
 							</div>
@@ -120,10 +120,10 @@
 									<?php echo exhibit_builder_link_to_exhibit($exhibit, null, array('class' => 'navbar-brand')); ?>
 								</div>
 								<div id="sub-navbar" class="navbar-collapse collapse">
-									<?php echo exhibit_builder_page_tree($exhibit); ?>									
+									<?php echo exhibit_builder_page_tree($exhibit); ?>
 								</div><!--/.nav-collapse -->
 							</div>
-						</nav>	
+						</nav>
 						<?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
 					</footer>
 				</div>
