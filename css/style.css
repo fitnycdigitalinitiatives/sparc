@@ -103,6 +103,10 @@ body#home {
 .addthis_sharing_toolbox {
 	margin-bottom: 20px;
 }
+/*! exhibition-summary */
+.item-thumb .thumbnail img {
+	width: 100%;
+}
 /*! exhibition-show */
 .navbar-static-bottom {
 	z-index: 1000;

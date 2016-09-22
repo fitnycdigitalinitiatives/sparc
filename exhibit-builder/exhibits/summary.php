@@ -96,7 +96,7 @@
 									<?php echo exhibit_builder_link_to_exhibit($exhibit, 'Launch Exhibit', array('type' => 'button', 'class' => 'btn btn-default btn-lg', 'role' => 'button'), $firstPage); ?>
 									</div>
 								</div>
-								<div class="col-sm-5">
+								<div class="col-sm-5 exhibit-thumbnail">
 									<?php if ($item = get_exhibit_item ($exhibit)): ?>
 										<?php echo exhibit_builder_link_to_exhibit($exhibit, mdid_thumbnail_tag($item, 'img-responsive'), array('class' => 'thumbnail'), $firstPage); ?>
 									<?php endif; ?>
