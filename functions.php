@@ -254,3 +254,10 @@ function mdid_square_thumbnail_tag($item, $class)
 
 	}
 }
+function get_exhibit_item ($exhibit)
+{
+  $page = $exhibit->getFirstTopPage();
+  $attachments = $page->getAllAttachments();
+  $item = $attachments[0]->getItem();
+  return $item;
+}
