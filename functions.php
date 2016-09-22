@@ -165,7 +165,7 @@ function item_search_filters_bootstrap(array $params = null)
                 $type = __($row['type']);
                 $query = $row['terms'];
                 if (($element == 'Color Data') and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
-                  $advancedValue = '<div id="swatch" style="background-color:' . html_escape($query) . ';"></div>';                  
+                  $advancedValue = '<div id="swatch" style="background-color:' . html_escape($query) . ';"></div>';
                   $advancedArray[$i] = $advancedValue;
                 }
                 else {
@@ -242,6 +242,14 @@ function mdid_thumbnail_tag($item, $class)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
 		$html = '<div class="thumbnail-container"><img src="https://fit.vrchost.com/media/get/' . $record_id . '/' . $record_name . '/400x400" class="' . $class . '"></div>';
+		return $html;
+
+	}
+}
+function mdid_square_thumbnail_tag($item, $class)
+{
+	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
+		$html = '<div class="thumbnail-container"><img src="https://fit.vrchost.com/media/thumb/' . $record_id . '/' . $record_name . '/?square" class="' . $class . '"></div>';
 		return $html;
 
 	}
