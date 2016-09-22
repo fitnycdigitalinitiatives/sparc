@@ -26,7 +26,7 @@
                     <?php echo link_to($record, 'show', mdid_thumbnail_tag($record, 'img-responsive') . '<div class="caption"><h5>' . metadata($record, array('Dublin Core', 'Title')) . '</h5></div>', array('class' => 'thumbnail')); ?>
                   <?php elseif ($recordType == 'Exhibit'): ?>
                     <?php $item = get_exhibit_item ($record); ?>
-                    <?php echo link_to($record, 'show', mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata($record, array('Dublin Core', 'Title')) . '</h5></div>', array('class' => 'thumbnail')); ?>
+                    <?php echo link_to($record, 'show', mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata($record, 'title') . '</h5></div>', array('class' => 'thumbnail')); ?>
                 <?php elseif ($recordType == 'Collection'): ?>
                   <?php $item = get_records('Item', array('collection' => metadata($record, 'id')), 1); ?>
                   <?php echo link_to($record, 'show', mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata($record, array('Dublin Core', 'Title')) . '</h5></div>', array('class' => 'thumbnail')); ?>
