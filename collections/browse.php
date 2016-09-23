@@ -32,7 +32,7 @@
 		<?php foreach (loop('collections') as $collection): ?>
 		<div class="col-md-4 col-sm-6 item-thumb">
       <?php if ($item = get_record('Item', array('collection' => metadata($collection, 'id')))): ?>
-        <?php echo link_to_items_browse(mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata($collection, array('Dublin Core', 'Title')) . '</h5><span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></span></div>', array('collection' => metadata($collection, 'id')), array('class' => 'thumbnail')); ?>
+        <?php echo link_to_items_browse(mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata($collection, array('Dublin Core', 'Title')) . '</h5><span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" title="Popover title" data-content="And heres very engaging. Right?"></span></div>', array('collection' => metadata($collection, 'id')), array('class' => 'thumbnail')); ?>
         <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
       <?php else: ?>
         <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
