@@ -31,8 +31,7 @@
 	<div class="row" id="grid">
 		<?php foreach (loop('collections') as $collection): ?>
 		<div class="col-md-4 col-sm-6 item-thumb">
-      <?php $item = get_records('Item', array('collection' => metadata($collection, 'id')), 1); ?>
-      <?php echo link_to_items_browse(mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5></h5></div>', array('collection' => '21'), array('class' => 'thumbnail')); ?>
+      <?php echo link_to_items_browse(__('View the items in %s', metadata('collection', array('Dublin Core', 'Title'))), array('collection' => metadata('collection', 'id'))); ?>
 			<?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
 		</div>
 		<?php endforeach; ?>
