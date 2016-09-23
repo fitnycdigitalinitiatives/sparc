@@ -31,8 +31,14 @@
 	<div class="row" id="grid">
 		<?php foreach (loop('collections') as $collection): ?>
 		<div class="col-md-4 col-sm-6 item-thumb">
-      <?php echo link_to_items_browse(__('View the items in %s', metadata($collection, array('Dublin Core', 'Title'))), array('collection' => metadata($collection, 'id'))); ?>
-			<?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
+      <?php if ($item = get_record('Item', array('collection' => metadata($collection, 'id')))): ?>
+        <?php echo link_to_items_browse(__('View the items in %s', metadata($collection, array('Dublin Core', 'Title'))), array('collection' => metadata($collection, 'id'))); ?>
+        <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
+      <?php else: ?>
+        <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
+      <?php endif; ?>
+
+
 		</div>
 		<?php endforeach; ?>
 	</div>
