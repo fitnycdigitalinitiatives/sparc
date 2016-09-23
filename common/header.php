@@ -43,6 +43,11 @@
 	  $('[data-toggle="tooltip"]').tooltip()
 	})
 	</script>
+  <script type='text/javascript'>
+    jQuery(function ($) {
+	  $('[data-toggle="popover"]').popover()
+	})
+	</script>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
@@ -65,7 +70,7 @@
 			</div><!--/.nav-collapse -->
 		</div>
 	</nav>
-	
+
     </header>
     <main id="content" role="main">
       <div class="container">
