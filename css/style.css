@@ -94,7 +94,7 @@ body#home {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.item-thumb .caption .glyphicon-info-sign {
+.item-thumb .glyphicon-info-sign {
 	position: absolute;
 	top: initial;
 	bottom: 5px;
