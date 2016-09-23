@@ -94,6 +94,12 @@ body#home {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+.item-thumb .caption .glyphicon-info-sign {
+	position: absolute;
+	top: initial;
+	bottom: 5px;
+	right: 5px;
+}
 #swatch {
 	display: inline-block;
 	height: 2rem;
