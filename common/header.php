@@ -45,7 +45,9 @@
 	</script>
   <script type='text/javascript'>
     jQuery(function ($) {
-	  $('[data-toggle="popover"]').popover()
+	  $('[data-toggle="popover"]').popover({
+    container: 'body'
+    })
 	})
 	</script>
 </head>
