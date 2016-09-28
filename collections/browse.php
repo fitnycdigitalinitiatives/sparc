@@ -33,7 +33,7 @@
 		<div class="col-md-4 col-sm-6 item-thumb">
       <?php if ($item = get_record('Item', array('collection' => metadata($collection, 'id')))): ?>
         <?php echo link_to_items_browse(mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata($collection, array('Dublin Core', 'Title')) . '</h5></div>', array('collection' => metadata($collection, 'id')), array('class' => 'thumbnail')); ?>
-        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="<?php metadata($collection, array('Dublin Core', 'Description')); ?>"></span>
+        <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-content="<?php metadata($collection, array('Dublin Core', 'Description')); ?>"><?php metadata($collection, array('Dublin Core', 'Description')); ?></span>
         <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
       <?php else: ?>
         <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
