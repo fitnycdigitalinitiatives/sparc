@@ -32,6 +32,10 @@ body {
   padding-bottom: 10px;
   padding-top: 10px;
 }
+.exhibits.show .footer .navbar-brand, .exhibits.summary .footer .navbar-brand {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
 .footer .navbar-brand img {
   height: 30px;
 }
