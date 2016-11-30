@@ -154,5 +154,9 @@ body#home {
 }
 @media (max-width: 767px) {
 	#viewer .openseadragon-frame {
+		padding-bottom: 75%;
+	}
+	#viewer .openseadragon-frame {
 		overflow: visible;
 	}
+}
