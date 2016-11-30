@@ -2,6 +2,15 @@
 a:focus, a:hover {
 	text-decoration: none;
 }
+.btn-circle {
+  width: 79px;
+  height: 79px;
+  text-align: center;
+  padding: 13px 0;
+  font-size: 30px;
+  line-height: 2.00;
+  border-radius: 70px;
+}
 /*! Font */
 @import url(http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700,400italic,700italic);
 body {
@@ -126,40 +135,11 @@ body#home {
 	border-radius: 0;
 	margin-bottom: 0;
 }
-#viewer {
-	background-color: #f8f8f8;
-}
-#viewer .caption {
-	padding: 0 20px 10px;
-}
-#viewer .nav-tabs {
-	border: none;
-	padding: 0 20px 20px;
-}
-#viewer .nav-tabs>li {
-	width: 10%;
-}
-#viewer .nav-tabs>li>a {
-	border-radius: 4px;
-	padding: 5px;
-}
-#viewer .nav-tabs>li>a:hover {
-	border-color: #ddd;
-}
-#viewer .nav-tabs>li.active>a, #viewer .nav-tabs>li.active>a:focus, #viewer .nav-tabs>li.active>a:hover {
-	border-bottom-color: #ddd;
-}
-#viewer .nav-tabs>li img {
-	width: 100%;
-}
 @media (max-width: 767px) {
 	.openseadragon-frame {
 		padding-bottom: 75%;
 	}
 	.exhibits.show main .container, .exhibits.summary main .container {
 	  margin-top: 20px;
-	}
-	#viewer .openseadragon-frame {
-		overflow: visible;
 	}
 }
