@@ -122,7 +122,7 @@ body#home {
 }
 .navbar-static-bottom {
 	z-index: 1000;
-    border-width: 1px 0 0;
+  border-width: 1px 0 0;
 	border-radius: 0;
 	margin-bottom: 0;
 }
@@ -153,8 +153,11 @@ body#home {
 	width: 100%;
 }
 @media (max-width: 767px) {
-	#viewer .openseadragon-frame {
+	.openseadragon-frame {
 		padding-bottom: 75%;
+	}
+	.exhibits.show main .container, .exhibits.summary main .container {
+	  margin-top: 20px;
 	}
 	#viewer .openseadragon-frame {
 		overflow: visible;
