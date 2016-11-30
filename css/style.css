@@ -32,10 +32,6 @@ body {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-.exhibits.show .footer .navbar-brand, .exhibits.summary .footer .navbar-brand {
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
 .footer .navbar-brand img {
   height: 30px;
 }
@@ -113,11 +109,17 @@ body#home {
 .addthis_sharing_toolbox {
 	margin-bottom: 20px;
 }
-/*! exhibition-summary */
+/*! exhibits */
+.exhibits.show .container, .exhibits.summary .container {
+  margin-top: 100px;
+}
+.exhibits.show .footer .navbar-brand, .exhibits.summary .footer .navbar-brand {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
 .exhibition-thumb .thumbnail img {
 	width: 100%;
 }
-/*! exhibition-show */
 .navbar-static-bottom {
 	z-index: 1000;
     border-width: 1px 0 0;
