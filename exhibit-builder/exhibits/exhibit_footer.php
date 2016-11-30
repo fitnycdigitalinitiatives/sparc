@@ -1,6 +1,6 @@
       </div>
     </main>
-    <footer role="contentinfo">
+    <footer class="footer" role="contentinfo">
       <nav class="navbar navbar-inverse navbar-static-bottom">
         <div class="container">
           <div class="navbar-header">

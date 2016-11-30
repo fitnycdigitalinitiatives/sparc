@@ -5,5 +5,5 @@ echo head(array(
 ?>
 
   <?php exhibit_builder_render_exhibit_page(); ?>
-  
-<?php echo common('exhibit_footer', array(), 'exhibit-builder/exhibits'); ?>
+
+<?php echo common('exhibit_footer', array('exhibit' => $exhibit, 'exhibit_page' => $exhibit_page), 'exhibit-builder/exhibits'); ?>
