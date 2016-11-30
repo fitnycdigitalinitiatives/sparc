@@ -27,4 +27,4 @@
 		</div>
 	</div>
 
-<?php echo common('exhibit_footer', array('exhibit' => $exhibit), 'exhibit-builder/exhibits'); ?>
+<?php echo common('exhibit_footer', array('exhibit' => $exhibit, 'exhibit_page' => null), 'exhibit-builder/exhibits'); ?>
