@@ -17,7 +17,7 @@
 			<?php endif; ?>
 			<?php $firstPage = $exhibit->getFirstTopPage();; ?>
 			<div class="text-center">
-			<?php echo exhibit_builder_link_to_exhibit($exhibit, 'Launch Exhibit', array('type' => 'button', 'class' => 'btn btn-default btn-lg', 'role' => 'button'), $firstPage); ?>
+			<?php echo exhibit_builder_link_to_exhibit($exhibit, '<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>', array('type' => 'button', 'class' => 'btn btn-default btn-lg btn-round', 'role' => 'button'), $firstPage); ?>
 			</div>
 		</div>
 		<div class="col-sm-5 exhibition-thumb">

@@ -2,14 +2,25 @@
 a:focus, a:hover {
 	text-decoration: none;
 }
-.btn-circle {
-  width: 79px;
-  height: 79px;
-  text-align: center;
-  padding: 13px 0;
-  font-size: 30px;
-  line-height: 2.00;
-  border-radius: 70px;
+.btn-round {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn-round.btn-lg {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-round.btn-sm {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-round.btn-xs {
+    width: 24px;
+    height: 24px;
 }
 /*! Font */
 @import url(http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700,400italic,700italic);
