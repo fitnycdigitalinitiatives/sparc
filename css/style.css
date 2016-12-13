@@ -11,6 +11,7 @@ a:focus, a:hover {
 .btn-round.btn-lg {
     width: 48px;
     height: 48px;
+		padding: 14px;
 }
 
 .btn-round.btn-sm {
@@ -132,6 +133,7 @@ body#home {
 /*! exhibits */
 .exhibits.show main .container, .exhibits.summary main .container {
   margin-top: 100px;
+	padding-bottom: 40px;
 }
 .exhibits.show .footer .navbar-brand, .exhibits.summary .footer .navbar-brand {
   padding-bottom: 15px;
