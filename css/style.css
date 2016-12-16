@@ -142,6 +142,9 @@ body#home {
   padding-bottom: 15px;
   padding-top: 15px;
 }
+.exhibition-thumb .thumbnail {
+	margin-bottom: 0;
+}
 .exhibition-thumb .thumbnail img {
 	width: 100%;
 }
