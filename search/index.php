@@ -4,7 +4,7 @@
     $searchRecordTypes = get_search_record_types();
 ?>
     <h1><?php echo $pageTitle; ?></h1>
-    <h5 class="results"> Showing <?php echo $total_results; ?> results for <em><?php echo search_filters(); ?></em></span></h5>
+    <h4 class="results"> Showing <?php echo $total_results; ?> results for <em><?php echo search_filters(); ?></em></span></h4>
     <div class="search-results">
 	<?php if ($total_results): ?>
         <table id="search-results">
