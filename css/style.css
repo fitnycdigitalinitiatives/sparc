@@ -119,6 +119,10 @@ body#home {
 	bottom: 25px;
 	right: 20px;
 }
+/* Search results */
+.results {
+	color: #777;
+}
 #swatch {
 	display: inline-block;
 	height: 2rem;
