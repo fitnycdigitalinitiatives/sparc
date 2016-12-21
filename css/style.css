@@ -99,6 +99,10 @@ body#home {
   max-height: 155px;
   object-fit: cover;
 }
+.exhibits .item-thumb .thumbnail img, .collections .item-thumb .thumbnail img {
+	height: 355px;
+  max-height: 355px;
+}
 .item-thumb .thumbnail .result-type {
 	position: absolute;
 	top: 16px;
