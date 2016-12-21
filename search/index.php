@@ -1,9 +1,10 @@
 <?php
-    $pageTitle = __('Search Results');
+    $pageTitle = __('Search');
     echo head(array('title' => $pageTitle, 'bodyclass' => 'search'));
     $searchRecordTypes = get_search_record_types();
 ?>
-    <h1><?php echo $pageTitle; ?> <?php echo search_filters(); ?> <span class="badge"><?php echo $total_results; ?></span></h1>
+    <h1><?php echo $pageTitle; ?></h1>
+    <h5 class="results"> Showing <?php echo $total_results; ?> results for <em><?php echo search_filters(); ?></em></span></h5>
     <div class="search-results">
 	<?php if ($total_results): ?>
         <table id="search-results">

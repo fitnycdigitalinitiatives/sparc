@@ -1,13 +1,13 @@
 <?php
-    $pageTitle = __('Browse Items');
+    $pageTitle = __('Browse');
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 
 	<h1><?php echo $pageTitle;; ?></h1>
   <?php if (item_search_filters_bootstrap()): ?>
-    <h4 class="results">Showing <?php echo $total_results; ?> results for <em><?php echo item_search_filters_bootstrap(); ?></em></h4>
+    <h5 class="results">Showing <?php echo $total_results; ?> results for <em><?php echo item_search_filters_bootstrap(); ?></em></h5>
   <?php else: ?>
-    <h4 class="results">Showing <?php echo $total_results; ?> items total</h4>
+    <h5 class="results">Showing <?php echo $total_results; ?> items total</h5>
   <?php endif; ?>
 
 	<div class="browse-items">
