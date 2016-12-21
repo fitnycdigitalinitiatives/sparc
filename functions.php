@@ -173,7 +173,7 @@ function item_search_filters_bootstrap(array $params = null)
                   if (isset($row['terms'])) {
                       $advancedValue .= ' "' . html_escape($row['terms']) . '"';
                   }
-                  $advancedArray[$i] = '<span class="badge advanced">' . $advancedValue . '</span> ';
+                  $advancedArray[$i] = '<span class="advanced">' . $advancedValue . '</span> ';
                 }
             }
         }
@@ -182,7 +182,7 @@ function item_search_filters_bootstrap(array $params = null)
         if (!empty($displayArray) || !empty($advancedArray)) {
             foreach($displayArray as $name => $query) {
                 $class = html_escape(strtolower(str_replace(' ', '-', $name)));
-                $html .= '<span class="badge ' . $class . '">' . html_escape(__($name)) . ': ' . html_escape($query) . '</span>';
+                $html .= '<span class="' . $class . '">' . html_escape(__($name)) . ': ' . html_escape($query) . '</span>';
             }
             if(!empty($advancedArray)) {
                 foreach($advancedArray as $j => $advanced) {
