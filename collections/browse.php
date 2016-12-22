@@ -3,7 +3,6 @@
     echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
 
-<h1><?php echo $pageTitle; ?></h1>
 <div class="row">
   <div class="col-sm-6">
     <h4 class="results">Showing <?php echo $total_results; ?> collections total</h4>

@@ -121,7 +121,8 @@ body#home {
 }
 /* Search results */
 .results {
-	color: #777;
+	color: #cccccc;
+	margin-bottom: 20px;
 }
 #swatch {
 	display: inline-block;

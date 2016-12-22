@@ -3,7 +3,6 @@
     echo head(array('title' => $pageTitle, 'bodyclass' => 'search'));
     $searchRecordTypes = get_search_record_types();
 ?>
-    <h1><?php echo $pageTitle; ?></h1>
     <h4 class="results"> Showing <?php echo $total_results; ?> results for <em><?php echo search_filters(); ?></em></span></h4>
     <div class="search-results">
     	<?php if ($total_results): ?>
@@ -34,5 +33,5 @@
           <p><?php echo __('Your query returned no results.');?></p>
       <?php endif; ?>
 	   </div>
-     
+
 <?php echo foot(); ?>

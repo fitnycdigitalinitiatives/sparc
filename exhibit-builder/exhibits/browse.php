@@ -2,7 +2,7 @@
 $title = __('Browse Exhibits');
 echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 ?>
-<h1><?php echo $title; ?></h1>
+
 <div class="row">
   <div class="col-sm-6">
     <h4 class="results">Showing <?php echo $total_results; ?> exhibits total</h4>
@@ -31,7 +31,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 
 <div class="browse-exhibits">
 	<?php if ($total_results > 0): ?>
-	
+
 	<!-- Image Grid -->
 	<div class="row" id="grid">
 		<?php foreach (loop('exhibit') as $exhibit): ?>

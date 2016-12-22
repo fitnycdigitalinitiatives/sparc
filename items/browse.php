@@ -3,7 +3,6 @@
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 
-	<h1><?php echo $pageTitle;; ?></h1>
   <div class="row">
     <div class="col-sm-6">
       <?php if (item_search_filters_bootstrap()): ?>
