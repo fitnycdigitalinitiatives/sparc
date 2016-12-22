@@ -3,11 +3,11 @@
     echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
 
-<div class="row">
-  <div class="col-sm-6">
-    <h4 class="results">Showing <?php echo $total_results; ?> collections total</h4>
+<div class="row results">
+  <div class="col-sm-9">
+    <h4>Showing <?php echo $total_results; ?> collections total</h4>
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-3">
     <?php /* Drop-down sort isn't needed at the moment
   	<div class="row">
   		<div class="col-sm-12">
