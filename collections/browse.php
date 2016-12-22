@@ -1,31 +1,37 @@
 <?php
-    $pageTitle = __('Browse collections');
+    $pageTitle = __('Collections');
     echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
 
-<h1><?php echo $pageTitle; ?> <span class="badge"><?php echo $total_results; ?></span></h1>
-<hr>
+<h1><?php echo $pageTitle; ?></h1>
+<div class="row">
+  <div class="col-sm-6">
+    <h4 class="results">Showing <?php echo $total_results; ?> collections total</h4>
+  </div>
+  <div class="col-sm-6">
+    <?php /* Drop-down sort isn't needed at the moment
+  	<div class="row">
+  		<div class="col-sm-12">
+  			<div class="dropdown pull-right">
+  				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  							Sort by:
+  					<span class="caret"></span>
+  				</button>
+  				<?php
+  							$sortLinks[__('Title')] = 'Dublin Core,Title';
+  							$sortLinks[__('Creator')] = 'Dublin Core,Creator';
+  							$sortLinks[__('Date Added')] = 'added';
+  							?>
+  				<?php echo browse_sort_links_bootstrap($sortLinks); ?>
+  			</div>
+  		</div>
+  	</div>
+  	*/ ?>
+  </div>
+</div>
 
 <div class="browse-collections">
 	<?php if ($total_results > 0): ?>
-	<?php /* Drop-down sort isn't needed at the moment
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="dropdown pull-right">
-				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							Sort by:
-					<span class="caret"></span>
-				</button>
-				<?php
-							$sortLinks[__('Title')] = 'Dublin Core,Title';
-							$sortLinks[__('Creator')] = 'Dublin Core,Creator';
-							$sortLinks[__('Date Added')] = 'added';
-							?>
-				<?php echo browse_sort_links_bootstrap($sortLinks); ?>
-			</div>
-		</div>
-	</div>
-	*/ ?>
 
 	<!-- Image Grid -->
 	<div class="row" id="grid">
