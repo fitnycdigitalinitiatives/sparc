@@ -4,14 +4,14 @@
 ?>
 
   <div class="row results">
-    <div class="col-sm-6">
+    <div class="col-sm-9">
       <?php if (item_search_filters_bootstrap()): ?>
         <h4>Showing <?php echo $total_results; ?> results for <em><?php echo item_search_filters_bootstrap(); ?></em></h4>
       <?php else: ?>
         <h4>Showing <?php echo $total_results; ?> items total</h4>
       <?php endif; ?>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-3">
       <div class="dropdown pull-right">
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           Sort by:
