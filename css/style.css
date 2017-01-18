@@ -147,6 +147,23 @@ body#home {
 	width: 2rem;
 }
 /*! item-show */
+.palette .list-inline li {
+	width: 3em;
+	height: 3em;
+	padding: .5em;
+	transition: padding .5s;
+	margin-left: -0.5em;
+}
+.palette .list-inline li:first-child {
+	margin-left: 0;
+}
+.palette .list-inline li:hover {
+	padding: 0;
+}
+.palette .list-inline li div {
+	width: 100%;
+	height: 100%;
+}
 .addthis_sharing_toolbox {
 	margin-bottom: 20px;
 }

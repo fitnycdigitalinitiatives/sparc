@@ -229,8 +229,8 @@ function palette($current_item)
       $paramArray = array('search' => '', 'advanced' => $advanced);
       $params = http_build_query($paramArray);
       $url = url('/items/browse?') . $params;
-			$html .= '<li><a href="' . $url .'" data-toggle="tooltip" title="Closest color: '. $name . '">';
-			$html .= '<div style="height: 2em; width: 2em; background-color:' . $color . ';">';
+			$html .= '<li data-toggle="tooltip" title="Closest color: '. $name . '"><a href="' . $url .'">';
+			$html .= '<div style="background-color:' . $color . ';">';
 			$html .= '</div></a></li>';
 		}
 		$html .= '</ul>';
