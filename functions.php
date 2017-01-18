@@ -238,6 +238,25 @@ function palette($current_item)
 	}
 }
 
+function primary_palette()
+{
+	$colors = array("#000000" => "Black", "#8b8680" => "Gray", "#af593e" => "Brown", "#ed0a3f" => "Red", "#ff681f" => "Red Orange", "#ff8833" => "Orange", "#ffae42" => "Yellow Orange", "#ed0a3f" => "Yellow", "#c5e17a" => "Yellow Green", "#3aa655" => "Green", "#0095b7" => "Blue Green", "#0066ff" => "Blue", "#6456b7" => "Blue Violet", "#8359a3" => "Violet (Purple)", "#bb3385" => "Red Violet", "#ffa6c9" => "Carnation Pink");
+  $html = '<ul class="list-inline">';
+  foreach ($colors as $color => $name) {
+    $element = get_db()->getTable('Element')->findByElementSetNameAndElementName('Item Type Metadata', 'Primary Color');
+    $advanced = array();
+    $advanced[] = array('element_id' => $element->id, 'terms' => htmlspecialchars_decode($color, ENT_QUOTES), 'type' => 'contains');
+    $paramArray = array('search' => '', 'advanced' => $advanced);
+    $params = http_build_query($paramArray);
+    $url = url('/items/browse?') . $params;
+    $html .= '<li><a href="' . $url .'" data-toggle="tooltip" title="'. $name . '">';
+    $html .= '<div style="height: 4em; width: 4em; background-color:' . $color . ';">';
+    $html .= '</div></a></li>';
+  }
+  $html .= '</ul>';
+  return $html;
+}
+
 function mdid_thumbnail_tag($item, $class)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
