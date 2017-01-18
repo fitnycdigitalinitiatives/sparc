@@ -87,6 +87,11 @@ body#home {
 	width: 5em;
 	height: 5em;
 	padding: .5em;
+	transition: padding .5s;
+	margin-left: -0.5em;
+}
+.color-browse .list-inline li:first-child {
+	margin-left: 0;
 }
 .color-browse .list-inline li:hover {
 	padding: 0;
