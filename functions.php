@@ -168,6 +168,10 @@ function item_search_filters_bootstrap(array $params = null)
                   $advancedValue = '<div id="swatch" style="background-color:' . html_escape($query) . ';"></div>';
                   $advancedArray[$i] = $advancedValue;
                 }
+                elseif (($element == 'Primary Color') and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
+                  $advancedValue = '<div id="swatch" style="background-color:' . html_escape($query) . ';"></div>';
+                  $advancedArray[$i] = $advancedValue;
+                }
                 else {
                   $advancedValue = $element . ' ' . $type;
                   if (isset($row['terms'])) {
