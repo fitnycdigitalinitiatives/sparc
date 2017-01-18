@@ -8,8 +8,8 @@
 			<?php echo $this->openseadragon($item); ?>
         </div>
 	</div>
-	<div class="row palette">
-		<div class="col-xs-6">
+	<div class="row">
+		<div class="col-xs-6 palette">
 			<?php if (metadata('item', array('Item Type Metadata', 'Color Data'))): ?>
 				<?php echo palette('item'); ?>
 			<?php endif; ?>

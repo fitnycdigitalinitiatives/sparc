@@ -89,6 +89,8 @@ body#home {
 	padding: .5em;
 	transition: padding .5s;
 	margin-left: -0.5em;
+	margin-top: -0.5em;
+	margin-bottom: -0.5em;
 }
 .color-browse .list-inline li:first-child {
 	margin-left: 0;
@@ -153,6 +155,8 @@ body#home {
 	padding: .5em;
 	transition: padding .5s;
 	margin-left: -0.5em;
+	margin-top: -0.5em;
+	margin-bottom: -0.5em;
 }
 .palette .list-inline li:first-child {
 	margin-left: 0;
