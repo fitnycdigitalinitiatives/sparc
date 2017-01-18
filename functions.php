@@ -250,7 +250,7 @@ function primary_palette()
     $params = http_build_query($paramArray);
     $url = url('/items/browse?') . $params;
     $html .= '<li><a href="' . $url .'" data-toggle="tooltip" title="'. $name . '">';
-    $html .= '<div style="height: 4em; width: 4em; background-color:' . $color . ';">';
+    $html .= '<div style="background-color:' . $color . ';">';
     $html .= '</div></a></li>';
   }
   $html .= '</ul>';
