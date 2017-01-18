@@ -249,7 +249,7 @@ function primary_palette()
     $paramArray = array('search' => '', 'advanced' => $advanced);
     $params = http_build_query($paramArray);
     $url = url('/items/browse?') . $params;
-    $html .= '<li><a href="' . $url .'" data-toggle="tooltip" title="'. $name . '">';
+    $html .= '<li data-toggle="tooltip" title="'. $name . '"><a href="' . $url .'">';
     $html .= '<div style="background-color:' . $color . ';">';
     $html .= '</div></a></li>';
   }

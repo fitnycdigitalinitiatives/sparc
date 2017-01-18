@@ -86,14 +86,14 @@ body#home {
 .color-browse .list-inline li {
 	width: 5em;
 	height: 5em;
+	padding: .5em;
+}
+.color-browse .list-inline li: hover {
+	padding: 0;
 }
 .color-browse .list-inline li div {
-	margin: 1em;
 	width: 100%;
 	height: 100%;
-}
-.color-browse .list-inline li div:hover {
-	margin: 0;
 }
 .item-thumb {
 	margin-bottom: 30px;
