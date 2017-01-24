@@ -26,11 +26,7 @@
       </div>
     </div>
   </div>
-  <div class="row color-browse">
-    <div class="col-xs-12">
-      <?php echo primary_palette(); ?>
-    </div>
-  </div>
+
 
 	<div class="browse-items">
 	<?php if ($total_results > 0): ?>
