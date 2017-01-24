@@ -145,13 +145,12 @@ body#home {
 }
 .results #swatch {
 	display: inline-block;
-	width: 3em;
-	height: 3em;
-	padding: .5em;
+	width: 3rem;
+	height: 3rem;
+	padding: .5rem;
 	transition: padding .5s;
-	margin-left: -0.5em;
-	margin-top: -0.5em;
-	margin-bottom: -4px;
+	margin-top: -0.5rem;
+	margin-bottom: -9px;
 }
 .results #swatch:hover {
 	padding: 0;
