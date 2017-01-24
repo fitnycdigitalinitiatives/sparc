@@ -165,12 +165,12 @@ function item_search_filters_bootstrap(array $params = null)
                 $type = __($row['type']);
                 $query = $row['terms'];
                 if (($element == 'Color Data') and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
-                  $advancedValue = '<div id="swatch" style="background-color:' . html_escape($query) . ';"></div>';
+                  $color_name = color_name($query);
+                  $advancedValue = '<div id="swatch" style="background-color:' . html_escape($query) . ';" data-toggle="tooltip" title="Closest color: '. $color_name . '"></div>';
                   $advancedArray[$i] = $advancedValue;
                 }
                 elseif (($element == 'Primary Color') and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
-                  $color_name = color_name($query);
-                  $advancedValue = '<div id="swatch" style="background-color:' . html_escape($query) . ';" data-toggle="tooltip" title="Closest color: '. $color_name . '"></div>';
+                  $advancedValue = '<div id="swatch" style="background-color:' . html_escape($query) . ';"></div>';
                   $advancedArray[$i] = $advancedValue;
                 }
                 else {
