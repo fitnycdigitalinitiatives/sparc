@@ -294,7 +294,7 @@ function get_exhibit_item ($exhibit)
   return $item;
 }
 function tag_search ($tag) {
-  $paramArray = array('tags' => $tag);
+  $paramArray = array('tags' => htmlspecialchars_decode($tag, ENT_QUOTES));
   $params = http_build_query($paramArray);
   $url = url('/items/browse?') . $params;
   $html = '<a href="';
