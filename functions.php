@@ -166,7 +166,7 @@ function item_search_filters_bootstrap(array $params = null)
                 $query = $row['terms'];
                 if (($element == 'Color Data') and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
                   $color_name = color_name($query);
-                  $advancedValue = '<div id="swatch" style="background-color:' . html_escape($query) . ';" data-toggle="tooltip" title="Closest color: '. $color_name . '"></div>';
+                  $advancedValue = '<div id="swatch" data-toggle="tooltip" title="Color name: '. $color_name . '"><div style="background-color:' . html_escape($query) . ';"></div></div>';
                   $advancedArray[$i] = $advancedValue;
                 }
                 elseif (($element == 'Primary Color') and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
@@ -234,7 +234,7 @@ function palette($current_item)
       $paramArray = array('search' => '', 'advanced' => $advanced);
       $params = http_build_query($paramArray);
       $url = url('/items/browse?') . $params;
-			$html .= '<li data-toggle="tooltip" title="Closest color: '. $name . '"><a href="' . $url .'">';
+			$html .= '<li id="swatch" data-toggle="tooltip" title="Closest color: '. $name . '"><a href="' . $url .'">';
 			$html .= '<div style="background-color:' . $color . ';">';
 			$html .= '</div></a></li>';
 		}
