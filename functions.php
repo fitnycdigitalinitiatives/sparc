@@ -293,3 +293,14 @@ function get_exhibit_item ($exhibit)
   $item = $attachments[0]->getItem();
   return $item;
 }
+function tag_search ($tag) {
+  $paramArray = array('tags' => $tag);
+  $params = http_build_query($paramArray);
+  $url = url('/items/browse?') . $params;
+  $html = '<a href="';
+	$html .= $url;
+	$html .= '">';
+	$html .= $tag;
+	$html .= '</a>';
+	return $html;
+}
