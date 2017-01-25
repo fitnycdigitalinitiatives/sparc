@@ -4,12 +4,21 @@
     <h2><?php echo html_escape(__($setName)); ?></h2>
     <?php endif; ?>
     <?php foreach ($setElements as $elementName => $elementInfo): ?>
-    <div id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element">
-        <h3><?php echo html_escape(__($elementName)); ?></h3>
-        <?php foreach ($elementInfo['texts'] as $text): ?>
-            <div class="element-text"><?php echo tag_search ($text); ?></div>
-        <?php endforeach; ?>
-    </div><!-- end element -->
+      <?php if (($setName == "Dublin Core") and (($elementName == "Subject") or ($elementName == "Creator") or ($elementName == "Contributor") or ($elementName == "Medium") or ($elementName == "Spatial Coverage") or ($elementName == "Temporal Coverage"))): ?>
+        <div id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element">
+            <h3><?php echo html_escape(__($elementName)); ?></h3>
+            <?php foreach ($elementInfo['texts'] as $text): ?>
+                <div class="element-text"><?php echo tag_search ($text); ?></div>
+            <?php endforeach; ?>
+        </div><!-- end element -->
+      <?php else: ?>
+        <div id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element">
+            <h3><?php echo html_escape(__($elementName)); ?></h3>
+            <?php foreach ($elementInfo['texts'] as $text): ?>
+                <div class="element-text"><?php echo $text; ?></div>
+            <?php endforeach; ?>
+        </div><!-- end element -->
+      <?php endif; ?>
     <?php endforeach; ?>
 </div><!-- end element-set -->
 <?php endforeach;
