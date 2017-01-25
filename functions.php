@@ -187,7 +187,7 @@ function item_search_filters_bootstrap(array $params = null)
         if (!empty($displayArray) || !empty($advancedArray)) {
             foreach($displayArray as $name => $query) {
                 $class = html_escape(strtolower(str_replace(' ', '-', $name)));
-                $html .= '<span class="' . $class . '">' . html_escape(__($name)) . ': ' . html_escape($query) . '</span>';
+                $html .= '<span class="' . $class . '">' . html_escape($query) . '</span>';
             }
             if(!empty($advancedArray)) {
                 foreach($advancedArray as $j => $advanced) {
