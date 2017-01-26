@@ -245,7 +245,7 @@ function palette($current_item)
 
 function primary_palette()
 {
-	$colors = array("#000000" => "Black", "#8b8680" => "Gray", "#af593e" => "Brown", "#ed0a3f" => "Red", "#ff681f" => "Red Orange", "#ff8833" => "Orange", "#ffae42" => "Yellow Orange", "#fbe870" => "Yellow", "#c5e17a" => "Yellow Green", "#3aa655" => "Green", "#0095b7" => "Blue Green", "#0066ff" => "Blue", "#6456b7" => "Blue Violet", "#8359a3" => "Violet (Purple)", "#bb3385" => "Red Violet", "#ffa6c9" => "Carnation Pink");
+	$colors = array("#ffffff" => "white", "#808080" => "grey", "#ffc0cb" => "pink", "#800080" => "purple", "#0000ff" => "blue", "#1e90ff" => "dodgerblue", "#008000" => "green", "#ffff00" => "yellow", "#ffa500" => "orange", "#ff0000" => "red", "#a52a2a" => "brown", "#000000" => "black");
   $html = '<ul class="list-inline">';
   foreach ($colors as $color => $name) {
     $element = get_db()->getTable('Element')->findByElementSetNameAndElementName('Item Type Metadata', 'Primary Color');

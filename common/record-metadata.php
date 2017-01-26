@@ -4,7 +4,7 @@
     <h2><?php echo html_escape(__($setName)); ?></h2>
     <?php endif; ?>
     <?php foreach ($setElements as $elementName => $elementInfo): ?>
-      <?php if (($setName == "Dublin Core") and (($elementName == "Subject") or ($elementName == "Creator") or ($elementName == "Contributor") or ($elementName == "Medium") or ($elementName == "Spatial Coverage") or ($elementName == "Temporal Coverage"))): ?>
+      <?php if (($setName == "Dublin Core") and (($elementName == "Subject") or ($elementName == "Creator") or ($elementName == "Is Part Of") or ($elementName == "Contributor") or ($elementName == "Medium") or ($elementName == "Spatial Coverage") or ($elementName == "Temporal Coverage"))): ?>
         <div id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element">
             <h3><?php echo html_escape(__($elementName)); ?></h3>
             <?php foreach ($elementInfo['texts'] as $text): ?>
