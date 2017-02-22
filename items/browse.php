@@ -24,6 +24,13 @@
           ?>
         <?php echo browse_sort_links_bootstrap($sortLinks); ?>
       </div>
+      <div class="dropdown pull-right">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colors <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><?php echo color_board(); ?></li>
+        </ul>
+      </div>
     </div>
   </div>
 
