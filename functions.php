@@ -273,7 +273,7 @@ function color_name($color)
   $name = $value["name"];
   return $name;
 }
-function color_board($palette) {
+function color_board($palette = null) {
   if (empty($palette)) {
     $palette = css4_palette();
   }
@@ -287,7 +287,7 @@ function color_board($palette) {
     $paramArray = array('search' => '', 'advanced' => $advanced);
     $params = http_build_query($paramArray);
     $url = url('/items/browse?') . $params;
-    $html .= '<li id="swatch" data-toggle="'. $color_name . '"><a href="' . $url .'">';
+    $html .= '<li id="swatch" data-toggle="tooltip" title="'. $color_name . '"><a href="' . $url .'">';
     $html .= '<div style="background-color:' . $hexcode . ';">';
     $html .= '</div></a></li>';
   }
