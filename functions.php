@@ -278,7 +278,7 @@ function color_board($palette) {
     $palette = css4_palette();
   }
   $palette = json_decode(html_entity_decode($palette), true);
-  $html = '<ul>'
+  $html = '<ul>';
   foreach ($palette as $hexcode => $color) {
     $color_name = $color['name'];
     $element = get_db()->getTable('Element')->findByElementSetNameAndElementName('Item Type Metadata', 'Color Data');
