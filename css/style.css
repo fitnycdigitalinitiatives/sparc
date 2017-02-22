@@ -102,6 +102,12 @@ body#home {
 	width: 100%;
 	height: 100%;
 }
+#color_board {
+	min-width: 302px;
+}
+#color_board ul {
+	padding-left: 0;
+}
 .item-thumb {
 	margin-bottom: 30px;
 }
