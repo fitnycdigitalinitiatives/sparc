@@ -27,7 +27,7 @@ a:focus, a:hover {
     height: 24px;
 }
 /*! Font */
-@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700,400italic,700italic);
 body {
 	font-family: "Archivo Narrow", sans-serif;
 }
@@ -149,7 +149,7 @@ body#home {
 	color: #cccccc;
 	margin-bottom: 10px;
 }
-.results #swatch, .facet-value #swatch {
+.results #swatch {
 	display: inline-block;
 	width: 3rem;
 	height: 3rem;
@@ -158,10 +158,10 @@ body#home {
 	margin-top: -0.5rem;
 	margin-bottom: -9px;
 }
-.results #swatch:hover, .facet-value #swatch:hover {
+.results #swatch:hover {
 	padding: 0;
 }
-.results #swatch div, .facet-value #swatch div {
+.results #swatch div {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
