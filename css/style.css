@@ -152,7 +152,7 @@ body#home {
 	color: #cccccc;
 	margin-bottom: 10px;
 }
-.results #swatch {
+.results #swatch, .facet-value #swatch {
 	display: inline-block;
 	width: 3rem;
 	height: 3rem;
@@ -161,10 +161,10 @@ body#home {
 	margin-top: -0.5rem;
 	margin-bottom: -9px;
 }
-.results #swatch:hover {
+.results #swatch:hover, .facet-value #swatch:hover {
 	padding: 0;
 }
-.results #swatch div {
+.results #swatch div, .facet-value #swatch div {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
