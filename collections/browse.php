@@ -35,7 +35,7 @@
 	<!-- Image Grid -->
 	<div class="row" id="grid">
 		<?php foreach (loop('collections') as $collection): ?>
-		<div class="col-md-4 col-sm-6 item-thumb">
+		<div class="col-md-3 col-sm-4 col-xs-6 item-thumb">
       <?php if ($item = get_record('Item', array('collection' => metadata($collection, 'id')))): ?>
         <?php echo link_to_items_browse(mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata($collection, array('Dublin Core', 'Title')) . '</h5></div>', array('collection' => metadata($collection, 'id')), array('class' => 'thumbnail')); ?>
         <span class="glyphicon glyphicon-info-sign" aria-hidden="true" data-toggle="popover" data-placement="top" data-content="<?php echo metadata($collection, array('Dublin Core', 'Description')); ?>"></span>
