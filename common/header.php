@@ -19,13 +19,16 @@
     <!-- Will fire plugins that need to include their own files in <head> -->
     <?php fire_plugin_hook('public_head', array('view'=>$this)); ?>
 
-
+    <!-- Icon -->
+    <link rel="icon" href="https://www.fitnyc.edu/images/display/buttons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.fitnyc.edu/images/display/buttons/favicon.ico" type="image/x-icon">
     <!-- Need to add custom and third-party CSS files? Include them here -->
     <?php
         queue_css_file('lib/bootstrap.min');
         queue_css_file('style');
         echo head_css();
     ?>
+
 
     <!-- Need more JavaScript files? Include them here -->
     <?php
