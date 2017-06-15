@@ -9,15 +9,22 @@
         </div>
 	</div>
 	<div class="row">
-		<div class="col-xs-6 palette">
+		<div class="col-xs-8 palette">
 			<?php if (metadata('item', array('Item Type Metadata', 'Color Data'))): ?>
 				<?php echo palette('item'); ?>
 			<?php endif; ?>
 		</div>
-		<div class="col-xs-6">
-			<!-- Go to www.addthis.com/dashboard to customize your tools -->
-			<div class="addthis_sharing_toolbox pull-right"></div>
+		<div class="col-xs-4">
+			<span class="glyphicon glyphicon-share-alt pull-right" aria-hidden="true" data-toggle="modal" data-target="#social-modal"></span>
 		</div>
+    <div class="modal fade" class="social-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    			<div class="addthis_sharing_toolbox"></div>
+        </div>
+      </div>
+    </div>
 	</div>
 	<div class="row">
 		<div class="col-md-8">
