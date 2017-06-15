@@ -111,11 +111,26 @@ body#home {
 #color_button {
 	margin-right: 15px;
 }
-#color_board {
-	min-width: 302px;
-}
 #color_board ul {
 	padding-left: 0;
+	list-style: none;
+}
+#color_board #bar {
+	display: inline-block;
+	width: 100%;
+	height: 3rem;
+	padding: .5rem;
+	transition: padding .5s;
+	margin-top: -0.5rem;
+	margin-bottom: -9px;
+}
+#color_board #bar:hover {
+	padding-left: 0;
+	padding-right: 0;
+}
+#color_board #bar div {
+	width: 100%;
+	height: 100%;
 }
 .item-thumb {
 	margin-bottom: 30px;
@@ -175,6 +190,7 @@ body#home {
 	height: 100%;
 	border-radius: 50%;
 }
+
 /*! item-show */
 .palette #swatch {
 	width: 3em;
