@@ -28,7 +28,14 @@
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colors <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" id="color_board">
-          <li><?php echo color_board(); ?></li>
+          <li><?php echo css4_color_board(); ?></li>
+        </ul>
+      </div>
+      <div id="color_button" class="dropdown pull-right">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Color Family <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" id="color_board">
+          <li><?php echo basic_color_board(); ?></li>
         </ul>
       </div>
     </div>
