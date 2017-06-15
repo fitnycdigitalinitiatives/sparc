@@ -5,7 +5,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 
 <div class="row results">
   <div class="col-xs-9">
-    <h4>Showing <?php echo $total_results; ?> exhibits total</h4>
+    <h4>Showing <?php echo $total_results; ?> exhibit total</h4>
   </div>
   <div class="col-xs-12">
     <?php /* Drop-down sort isn't needed at the moment
@@ -35,7 +35,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 	<!-- Image Grid -->
 	<div class="row" id="grid">
 		<?php foreach (loop('exhibit') as $exhibit): ?>
-		<div class="col-md-4 col-sm-6 item-thumb">
+		<div class="col-md-3 col-sm-4 col-xs-6 item-thumb">
 			<?php if ($item = get_exhibit_item ($exhibit)): ?>
 				<?php echo exhibit_builder_link_to_exhibit($exhibit, mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata('exhibit', 'title') . '</h5></div>', array('class' => 'thumbnail')); ?>
 			<?php else: ?>
