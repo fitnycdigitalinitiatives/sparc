@@ -4,15 +4,15 @@
 ?>
 
   <div class="row results">
-    <div class="col-xs-9">
+    <div class="col-xs-8">
       <?php if (item_search_filters_bootstrap()): ?>
         <h4>Showing <?php echo $total_results; ?> results for <em><?php echo item_search_filters_bootstrap(); ?></em></h4>
       <?php else: ?>
         <h4>Showing <?php echo $total_results; ?> items total</h4>
       <?php endif; ?>
     </div>
-    <div class="col-xs-3">
-      <div class="dropdown pull-right">
+    <div class="col-xs-4">
+      <div id="sort_button" class="dropdown pull-right">
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           Sort by:
           <span class="caret"></span>
