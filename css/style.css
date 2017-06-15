@@ -81,7 +81,13 @@ body#home {
   background-color: transparent;
   color: #fff;
 }
-
+#home .jumbotron h1 {
+	margin-left: -2.3%
+}
+#home .jumbotron #logo {
+	max-width: 100%;
+	max-height: 100px;
+}
 /*! browse-gallery */
 .color-browse .list-inline li {
 	width: 5em;
