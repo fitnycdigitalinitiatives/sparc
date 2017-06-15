@@ -17,7 +17,7 @@
 		<div class="col-xs-4">
 			<span class="glyphicon glyphicon-share-alt pull-right" aria-hidden="true" data-toggle="modal" data-target="#social-modal"></span>
 		</div>
-    <div class="modal fade" class="social-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal fade" id="social-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
           <!-- Go to www.addthis.com/dashboard to customize your tools -->
