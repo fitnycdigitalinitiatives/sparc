@@ -4,6 +4,11 @@
 ?>
 
   <div class="row results">
+    <?php
+    $request = Zend_Controller_Front::getInstance()->getRequest();
+    $requestArray = $request->getParams();
+    echo $requestArray;
+    ?>
     <div class="col-xs-8">
       <?php if (item_search_filters_bootstrap()): ?>
         <h4>Showing <?php echo $total_results; ?> results for <em><?php echo item_search_filters_bootstrap(); ?></em></h4>
