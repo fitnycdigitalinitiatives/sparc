@@ -120,7 +120,6 @@ body#home {
 	list-style: none;
 }
 #color_board #bar {
-	display: inline-block;
 	width: 100%;
 	height: 3rem;
 }
