@@ -256,11 +256,7 @@ function basic_palette() {
             "#0000ff": {"name": "blue"},
             "#8a2be2": {"name": "blue violet"},
             "#ff00ff": {"name": "magenta"},
-            "#ff1493": {"name": "deep pink"},
-            "#ffffff": {"name": "white"},
-            "#808080": {"name": "grey"},
-            "#a52a2a": {"name": "brown"},
-            "#000000": {"name": "black"}
+            "#ff1493": {"name": "deep pink"}
           }';
   return $palette;
 }
