@@ -164,13 +164,9 @@ function item_search_filters_bootstrap(array $params = null)
                 $element = __($elementDb->name);
                 $type = __($row['type']);
                 $query = $row['terms'];
-                if (($element == 'Color Data') and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
+                if ((($element == 'Color Data') or ($element == 'Primary Color') or ($element == 'Facet Color')) and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
                   $color_name = color_name($query);
                   $advancedValue = '<div id="swatch" data-toggle="tooltip" title="Color name: '. $color_name . '"><div style="background-color:' . html_escape($query) . ';"></div></div>';
-                  $advancedArray[$i] = $advancedValue;
-                }
-                elseif (($element == 'Primary Color') and (preg_match('/^#[a-f0-9]{6}$/i', $query))) {
-                  $advancedValue = '<div id="swatch" style="background-color:' . html_escape($query) . ';"></div>';
                   $advancedArray[$i] = $advancedValue;
                 }
                 else {
