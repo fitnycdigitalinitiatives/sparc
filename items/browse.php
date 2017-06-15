@@ -7,7 +7,7 @@
     <?php
     $request = Zend_Controller_Front::getInstance()->getRequest();
     $requestArray = $request->getParams();
-    echo $requestArray;
+    echo '<pre>'; print_r($requestArray); echo '</pre>';
     ?>
     <div class="col-xs-8">
       <?php if (item_search_filters_bootstrap()): ?>
