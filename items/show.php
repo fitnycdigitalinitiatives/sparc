@@ -20,8 +20,14 @@
     <div class="modal fade" id="social-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
-          <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    			<div class="addthis_sharing_toolbox"></div>
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Share</h4>
+          </div>
+          <div class="modal-body">
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      			<div class="addthis_sharing_toolbox"></div>
+          </div>
         </div>
       </div>
     </div>
