@@ -9,22 +9,14 @@
         </div>
 	</div>
 	<div class="row">
-		<div class="col-xs-8 palette">
+		<div class="col-sm-6 palette">
 			<?php if (metadata('item', array('Item Type Metadata', 'Color Data'))): ?>
 				<?php echo palette('item'); ?>
 			<?php endif; ?>
 		</div>
-		<div class="col-xs-4">
-      <div id="share_button" class="dropdown pull-right">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-share-alt pull-right"></span></span>
-        </button>
-        <ul class="dropdown-menu">
-          <li>
-            <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <div class="addthis_sharing_toolbox"></div>
-          </li>
-        </ul>
-      </div>
+		<div class="col-sm-6">
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<div class="addthis_sharing_toolbox pull-right"></div>
     </div>
 	</div>
 	<div class="row">
