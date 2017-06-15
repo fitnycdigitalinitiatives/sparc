@@ -15,20 +15,15 @@
 			<?php endif; ?>
 		</div>
 		<div class="col-xs-4">
-			<span class="glyphicon glyphicon-share-alt pull-right" aria-hidden="true" data-toggle="modal" data-target="#social-modal"></span>
-		</div>
-    <div class="modal fade" id="social-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-      <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Share</h4>
-          </div>
-          <div class="modal-body">
+      <div id="share_button" class="dropdown pull-right">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-share-alt pull-right"></span></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
-      			<div class="addthis_sharing_toolbox"></div>
-          </div>
-        </div>
+            <div class="addthis_sharing_toolbox"></div>
+          </li>
+        </ul>
       </div>
     </div>
 	</div>
