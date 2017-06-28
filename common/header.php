@@ -24,6 +24,7 @@
     <link rel="shortcut icon" href="https://www.fitnyc.edu/images/display/buttons/favicon.ico" type="image/x-icon">
     <!-- Need to add custom and third-party CSS files? Include them here -->
     <?php
+        queue_css_url('//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic');
         queue_css_file('lib/bootstrap.min');
         queue_css_file('style');
         echo head_css();

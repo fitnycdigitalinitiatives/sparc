@@ -27,7 +27,6 @@ a:focus, a:hover {
     height: 24px;
 }
 /*! Font */
-@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700,400italic,700italic);
 body {
 	font-family: "Archivo Narrow", sans-serif;
 }
