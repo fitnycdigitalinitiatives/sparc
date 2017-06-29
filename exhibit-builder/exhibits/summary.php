@@ -26,11 +26,9 @@
 
   <?php
     $slug = $exhibit->slug;
-    $bg_image = $slug . '-exhibition.jpg';
-    echo $slug;
-    echo $bg_image;
+    $bg_image = $slug . '_exhibition.jpg';
   ?>
-  <div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");"></div>
+  <div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("<?php echo img($bg_image); ?>");"></div>
 
 
 <?php echo common('exhibit_footer', array('exhibit' => $exhibit, 'exhibit_page' => null), 'exhibit-builder/exhibits'); ?>
