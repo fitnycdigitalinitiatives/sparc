@@ -26,7 +26,7 @@
 
   <?php
     $slug = $exhibit->slug;
-    $bg_image = $slug + '-exhibition.jpg';
+    $bg_image = $slug . '-exhibition.jpg';
     echo $slug;
     echo $bg_image;
   ?>
