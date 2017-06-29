@@ -15,11 +15,11 @@
 					<p><?php echo $exhibitCredits; ?></p>
 				</div>
 			<?php endif; ?>
-			<?php $firstPage = $exhibit->getFirstTopPage(); ?>
 		</div>
 	</div>
   <div class="row summary-nav">
 		<div class="col-xs-12">
+      <?php $firstPage = $exhibit->getFirstTopPage(); ?>
       <?php echo exhibit_builder_link_to_exhibit($exhibit, '<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>', array('type' => 'button', 'class' => 'btn btn-default btn-lg btn-round next', 'role' => 'button'), $firstPage); ?>
     </div>
   </div>

@@ -263,9 +263,12 @@ body#home {
 .exhibits.summary .summary-text {
 	color: #fff;
 }
-.exhibits.summary .summary-text h1, .exhibits.summary .summary-text h2 {
+.exhibits.summary .summary-text h1, .exhibits.summary .summary-text h3 {
 	font-weight: bold;
 	text-align: initial;
+}
+.exhibits.summary .summary-text h3 {
+	margin-top: 0;
 }
 @media (max-width: 1300px) {
   .summary-nav .previous {
@@ -349,4 +352,5 @@ body#home {
 	.addthis_sharing_toolbox {
 		float: none;
 	}
+
 }
