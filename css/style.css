@@ -261,8 +261,11 @@ body#home {
   background-size: cover;
 }
 .exhibits.summary .summary-text {
-	font-weight: bold;
 	color: #fff;
+}
+.exhibits.summary .summary-text h1, .exhibits.summary .summary-text h2 {
+	font-weight: bold;
+	text-align: initial;
 }
 @media (max-width: 1300px) {
   .summary-nav .previous {
