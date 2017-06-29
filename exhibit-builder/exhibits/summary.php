@@ -26,7 +26,8 @@
 
   <?php
     $slug = $exhibit->slug;
-    $bg_image = $slug + '_exhibition.jpg';
+    $bg_image = $slug + '-exhibition.jpg';
+    echo $slug;
     echo $bg_image;
   ?>
   <div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");"></div>
