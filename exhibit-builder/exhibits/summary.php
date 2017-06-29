@@ -1,7 +1,7 @@
 <?php echo head(array('title' => metadata('exhibit', 'title'), 'bodyclass'=>'exhibits summary')); ?>
 
   <div class="row summary-text">
-		<div class="col-sm-12">
+		<div class="col-sm-6">
 			<h1><?php echo metadata('exhibit', 'title'); ?></h1>
 			<?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
 				<div class="exhibit-description text-justify">

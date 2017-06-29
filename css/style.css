@@ -250,10 +250,10 @@ body#home {
   z-index: 1;
 }
 .exhibits.summary #exhibition_background {
-	position: fixed;
+	position: absolute;
   width: 100%;
   height: 100% !important;
-  top: 51px;
+  top: 0;
   left: 0;
   z-index: -1000;
 	background-repeat: no-repeat;
@@ -270,6 +270,10 @@ body#home {
 .exhibits.summary .summary-text h3 {
 	margin-top: 0;
 }
+.exhibits.summary footer {
+	display: none;
+}
+
 @media (max-width: 1300px) {
   .summary-nav .previous {
     position: initial;
