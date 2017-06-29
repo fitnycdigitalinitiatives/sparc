@@ -15,7 +15,7 @@
 					<p><?php echo $exhibitCredits; ?></p>
 				</div>
 			<?php endif; ?>
-			<?php $firstPage = $exhibit->getFirstTopPage();; ?>
+			<?php $firstPage = $exhibit->getFirstTopPage(); ?>
 		</div>
 	</div>
   <div class="row summary-nav">
@@ -23,7 +23,7 @@
       <?php echo exhibit_builder_link_to_exhibit($exhibit, '<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>', array('type' => 'button', 'class' => 'btn btn-default btn-lg btn-round next', 'role' => 'button'), $firstPage); ?>
     </div>
   </div>
-  <?php $bg_image = metadata('exhibit', 'slug') + '_exhibition.jpg'; ?>
+  <?php $bg_image = $exhibit->slug + '_exhibition.jpg'; ?>
   <div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("<?php echo img($bg_image); ?>");"></div>
 
 
