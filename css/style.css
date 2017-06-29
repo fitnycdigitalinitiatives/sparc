@@ -257,11 +257,12 @@ body#home {
   left: 0;
   z-index: -1000;
 	background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   background-size: cover;
 }
 .exhibits.summary .summary-text {
-	color: white;
+	font-weight: bold;
+	color: #fff;
 }
 @media (max-width: 1300px) {
   .summary-nav .previous {
