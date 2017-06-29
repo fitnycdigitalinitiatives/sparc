@@ -23,8 +23,12 @@
       <?php echo exhibit_builder_link_to_exhibit($exhibit, '<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>', array('type' => 'button', 'class' => 'btn btn-default btn-lg btn-round next', 'role' => 'button'), $firstPage); ?>
     </div>
   </div>
-  <?php $bg_image = $exhibit->slug + '_exhibition.jpg'; ?>
-  <div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("<?php echo img($bg_image); ?>");"></div>
+
+  <?php
+    echo $exhibit->slug;
+    $bg_image = $exhibit->slug + '_exhibition.jpg';
+  ?>
+  <div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();"></div>
 
 
 <?php echo common('exhibit_footer', array('exhibit' => $exhibit, 'exhibit_page' => null), 'exhibit-builder/exhibits'); ?>
