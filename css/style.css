@@ -270,9 +270,6 @@ body#home {
 .exhibits.summary .summary-text h3 {
 	margin-top: 0;
 }
-.exhibits.summary footer {
-	display: none;
-}
 
 @media (max-width: 1300px) {
   .summary-nav .previous {
