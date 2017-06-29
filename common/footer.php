@@ -26,5 +26,9 @@
 						</nav>
         <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
     </footer>
+    <?php if (@$bodyclass == 'items show'):  ?>
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55c8b7772f2446eb"></script>
+    <?php endif; ?>
 </body>
 </html>

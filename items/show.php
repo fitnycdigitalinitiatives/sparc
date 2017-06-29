@@ -57,4 +57,4 @@
         <li class="next"><?php echo link_to_next_item_show(); ?></li>
     </ul>
 
-<?php echo foot(); ?>
+<?php echo foot(array('bodyclass' => 'items show')); ?>
