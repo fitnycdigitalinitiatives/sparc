@@ -8,8 +8,8 @@ a:focus, a:hover {
     border-radius: 50%;
 		border-width: 0;
 }
-.btn-round:hover, .btn-round:active, .btn-round.active, .btn-round:focus, .btn-round.focus {
-	background: none;
+.btn-round:hover, .btn-round:active, .btn-round.active, .btn-round:focus, .btn-round.focus, .btn-round:visited {
+	background-color: #fff !important;
 }
 .btn-round.previous {
 	box-shadow: 1px 0px 3px 0px #888888;
