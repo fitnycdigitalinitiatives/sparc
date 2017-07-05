@@ -12,7 +12,7 @@
             </button>
             <?php echo exhibit_builder_link_to_exhibit($exhibit, null, array('class' => 'navbar-brand')); ?>
           </div>
-          <div id="sub-navbar" class="navbar-collapse collapse in">
+          <div id="sub-navbar" class="navbar-collapse collapse in .visible-lg-block .visible-xs-block">
             <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
           </div><!--/.nav-collapse -->
         </div>
