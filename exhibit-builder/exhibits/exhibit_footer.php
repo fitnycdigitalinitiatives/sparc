@@ -16,7 +16,7 @@
             <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
           </div><!--/.nav-collapse -->
           <!-- Just Prev, next, current pages -->
-          <div id="sub-navbar" class="navbar-collapse collapse in .hidden-lg-block .hidden-xs-block">
+          <div id="sub-navbar" class="navbar-collapse collapse in .hidden-lg .hidden-xs">
             <?php if (!$exhibit_page): ?>
               <?php $firstPage = $exhibit->getFirstTopPage(); ?>
               <li role="presentation">
