@@ -21,7 +21,7 @@
                 <li role="presentation">
                   <?php echo exhibit_builder_link_to_exhibit($exhibit, metadata($firstPage, 'title'), array(), $firstPage); ?>
                 </li>
-                <?php $nextLink = exhibit_builder_link_to_next_page(); ?>
+                <?php $nextLink = exhibit_builder_link_to_next_page(null, array(), $firstPage); ?>
                 <li role="presentation">
                   <?php echo @$prevLink; ?>
                 </li>
