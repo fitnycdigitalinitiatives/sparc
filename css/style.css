@@ -6,6 +6,22 @@ a:focus, a:hover {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+		border-width: 0;
+}
+.btn-round:hover, .btn-round:hover {
+	background-color: none;
+}
+.btn-round .previous {
+	box-shadow: 1px 0px 3px 0px #888888;
+}
+.btn-round .next {
+	box-shadow: -1px 0px 3px 0px #888888;
+}
+.btn-round .previous:hover {
+	box-shadow: 1px 0px 3px 1px #888888;
+}
+.btn-round .next:hover {
+	box-shadow: -1px 0px 3px 1px #888888;
 }
 .btn-round .glyphicon {
 	position: initial;
