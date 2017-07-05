@@ -11,16 +11,16 @@ a:focus, a:hover {
 .btn-round:hover, .btn-round:hover {
 	background-color: none;
 }
-.btn-round .previous {
+.btn-round.previous {
 	box-shadow: 1px 0px 3px 0px #888888;
 }
-.btn-round .next {
+.btn-round.next {
 	box-shadow: -1px 0px 3px 0px #888888;
 }
-.btn-round .previous:hover {
+.btn-round.previous:hover {
 	box-shadow: 1px 0px 3px 1px #888888;
 }
-.btn-round .next:hover {
+.btn-round.next:hover {
 	box-shadow: -1px 0px 3px 1px #888888;
 }
 .btn-round .glyphicon {
