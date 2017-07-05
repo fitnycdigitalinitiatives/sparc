@@ -15,7 +15,7 @@
           <div id="sub-navbar" class="navbar-collapse collapse in">
             <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
             <!-- Just Prev, next, current pages -->
-            <ul class="nav navbar-nav .hidden-lg .hidden-xs">
+            <ul class="nav navbar-nav hidden-lg hidden-xs">
               <?php if (!$exhibit_page): ?>
                 <?php $firstPage = $exhibit->getFirstTopPage(); ?>
                 <li role="presentation">
@@ -25,10 +25,10 @@
                 <li role="presentation">
                   <?php echo @$prevLink; ?>
                 </li>
-                <p class="navbar-text"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></p>
+                <p class="navbar-text">...</p>
               <?php else: ?>
                 <?php if ($prevLink = exhibit_builder_link_to_previous_page()): ?>
-                  <p class="navbar-text"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></p>
+                  <p class="navbar-text">...</p>
                   <li role="presentation">
                     <?php echo $prevLink; ?>
                   </li>
@@ -40,7 +40,7 @@
                   <li role="presentation">
                     <?php echo $nextLink; ?>
                   </li>
-                  <p class="navbar-text"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></p>
+                  <p class="navbar-text">...</p>
                 <?php endif; ?>
               <?php endif; ?>
             </ul>
