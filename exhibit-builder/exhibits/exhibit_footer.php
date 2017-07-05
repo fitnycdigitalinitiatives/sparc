@@ -12,12 +12,10 @@
             </button>
             <?php echo exhibit_builder_link_to_exhibit($exhibit, null, array('class' => 'navbar-brand')); ?>
           </div>
-          <div id="sub-navbar" class="navbar-collapse collapse in visible-lg-block visible-xs-block">
+          <div id="sub-navbar" class="navbar-collapse collapse in">
             <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
-          </div><!--/.nav-collapse -->
-          <!-- Just Prev, next, current pages -->
-          <div id="sub-navbar" class="navbar-collapse collapse in .hidden-lg .hidden-xs">
-            <ul class="nav navbar-nav">
+            <!-- Just Prev, next, current pages -->
+            <ul class="nav navbar-nav .hidden-lg .hidden-xs">
               <?php if (!$exhibit_page): ?>
                 <?php $firstPage = $exhibit->getFirstTopPage(); ?>
                 <li role="presentation">
