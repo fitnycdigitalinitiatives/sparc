@@ -241,11 +241,20 @@ body#home {
 .exhibition-thumb .thumbnail img {
 	width: 100%;
 }
-.navbar-static-bottom {
+.exhibits footer .navbar-static-bottom {
 	z-index: 1000;
   border-width: 1px 0 0;
 	border-radius: 0;
 	margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+	.exhibits footer .navbar-header {
+		float: left;
+	}
+}
+.exhibits footer .dropdown-menu {
+	right: 0;
+	left: initial;
 }
 .summary-nav {
   margin-top: 15px;
