@@ -252,6 +252,11 @@ body#home {
 		float: left;
 	}
 }
+@media (min-width: 768px) {
+	.exhibits footer .navbar-header {
+		float: none;
+	}
+}
 .exhibits footer .dropdown-menu {
 	right: 0;
 	left: initial;
