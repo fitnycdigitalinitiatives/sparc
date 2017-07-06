@@ -4,7 +4,7 @@
       <nav class="navbar navbar-inverse navbar-static-bottom">
         <div class="container">
           <div class="navbar-header">
-            <div class="dropup" id="exhibit_toc">
+            <div class="dropup hidden-lg" id="exhibit_toc">
               <button class="navbar-toggle" type="button" id="ExhibitTOC" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
