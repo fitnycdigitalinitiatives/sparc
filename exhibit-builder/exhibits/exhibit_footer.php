@@ -5,7 +5,7 @@
         <div class="container">
           <div class="navbar-header">
             <div class="dropup hidden-lg" id="exhibit_toc">
-              <button class="navbar-toggle" type="button" id="ExhibitTOC" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="navbar-toggle visible-md-block visible-sm-block visible-xs-block" type="button" id="ExhibitTOC" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -15,7 +15,7 @@
             </div>
             <?php echo exhibit_builder_link_to_exhibit($exhibit, null, array('class' => 'navbar-brand')); ?>
           </div>
-          <div id="sub-navbar" class="navbar-collapse collapse in visible-lg-block">
+          <div id="sub-navbar" class="visible-lg-block">
             <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page, 'nav navbar-nav'); ?>
           </div><!--/.nav-collapse -->
         </div>
