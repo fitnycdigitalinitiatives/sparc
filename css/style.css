@@ -252,14 +252,30 @@ body#home {
 		float: left;
 	}
 }
-@media (min-width: 768px) {
+@media (max-width: 1199px) {
 	.exhibits footer .navbar-header {
 		float: none;
 	}
 }
+@media (min-width: 768px) {
+	.exhibits footer .navbar-toggle {
+		margin-right: 0;
+	}
+	.exhibits footer .dropdown-menu {
+		right: 0;
+	}
+}
 .exhibits footer .dropdown-menu {
-	right: 0;
+	right: 10px;
 	left: initial;
+	background-color: #222;
+}
+.exhibits footer .dropdown-menu>li>a {
+	color: #9d9d9d;
+}
+.exhibits footer .dropdown-menu>.active>a {
+	color: #fff;
+	background-color: #080808;
 }
 .summary-nav {
   margin-top: 15px;
