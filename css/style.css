@@ -247,6 +247,18 @@ body#home {
 	border-radius: 0;
 	margin-bottom: 0;
 }
+.exhibits footer .dropdown-menu {
+	right: 10px;
+	left: initial;
+	background-color: #222;
+}
+.exhibits footer .dropdown-menu>li>a {
+	color: #9d9d9d;
+}
+.exhibits footer .dropdown-menu>.active>a {
+	color: #fff;
+	background-color: #080808;
+}
 @media (min-width: 1200px) {
 	.exhibits footer .navbar-header {
 		float: left;
@@ -264,18 +276,6 @@ body#home {
 	.exhibits footer .dropdown-menu {
 		right: 0;
 	}
-}
-.exhibits footer .dropdown-menu {
-	right: 10px;
-	left: initial;
-	background-color: #222;
-}
-.exhibits footer .dropdown-menu>li>a {
-	color: #9d9d9d;
-}
-.exhibits footer .dropdown-menu>.active>a {
-	color: #fff;
-	background-color: #080808;
 }
 .summary-nav {
   margin-top: 15px;
