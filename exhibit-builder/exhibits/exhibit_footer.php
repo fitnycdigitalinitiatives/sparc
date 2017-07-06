@@ -12,38 +12,8 @@
             </button>
             <?php echo exhibit_builder_link_to_exhibit($exhibit, null, array('class' => 'navbar-brand')); ?>
           </div>
-          <div id="sub-navbar" class="navbar-collapse collapse in">
-            <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
-            <!-- Just Prev, next, current pages -->
-            <ul class="nav navbar-nav hidden-lg hidden-xs">
-              <?php if (!$exhibit_page): ?>
-                <?php $firstPage = $exhibit->getFirstTopPage(); ?>
-                <li role="presentation">
-                  <?php echo exhibit_builder_link_to_exhibit($exhibit, metadata($firstPage, 'title'), array(), $firstPage); ?>
-                </li>
-                <?php $nextLink = exhibit_builder_link_to_next_page(null, array(), $firstPage); ?>
-                <li role="presentation">
-                  <?php echo @$prevLink; ?>
-                </li>
-                <p class="navbar-text">...</p>
-              <?php else: ?>
-                <?php if ($prevLink = exhibit_builder_link_to_previous_page()): ?>
-                  <p class="navbar-text">...</p>
-                  <li role="presentation">
-                    <?php echo $prevLink; ?>
-                  </li>
-                <?php endif; ?>
-                <li role="presentation" class="active">
-                  <?php echo exhibit_builder_link_to_exhibit($exhibit, metadata($exhibit_page, 'title'), array(), $exhibit_page); ?>
-                </li>
-                <?php if ($nextLink = exhibit_builder_link_to_next_page()): ?>
-                  <li role="presentation">
-                    <?php echo $nextLink; ?>
-                  </li>
-                  <p class="navbar-text">...</p>
-                <?php endif; ?>
-              <?php endif; ?>
-            </ul>
+          <div id="sub-navbar" class="navbar-collapse collapse in visible-lg-block">
+            <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page, $class = 'nav navbar-nav'); ?>
           </div><!--/.nav-collapse -->
         </div>
       </nav>
