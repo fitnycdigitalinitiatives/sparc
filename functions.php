@@ -320,6 +320,13 @@ function mdid_thumbnail_tag($item, $class)
 
 	}
 }
+function mdid_thumbnail_url($item)
+{
+	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
+		$url = 'https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/400x400';
+		return $url;
+	}
+}
 function mdid_square_thumbnail_tag($item, $class)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
@@ -344,5 +351,35 @@ function tag_search ($tag) {
 	$html .= '">';
 	$html .= $tag;
 	$html .= '</a>';
+	return $html;
+}
+// Creates social media tags for an image, following Twitter and Facebook standards.
+function social_tags($bodyclass) {
+	$html = '';
+	if ($bodyclass == "items show" ) {
+		$item = get_current_record('item');
+		$title = metadata($item, array('Dublin Core', 'Title'));
+		$url = record_url($item, null, true);
+		$image = mdid_thumbnail_url($item);
+		$description = metadata($item, array('Dublin Core', 'Description'));
+		$html .= '<meta name="description" content="' . $description . '" />';
+		$html .= '<!-- Open Graph data -->';
+		$html .= '<meta property="og:title" content="' . $title . '" />';
+		$html .= '<meta property="og:type" content="article" />';
+		$html .= '<meta property="og:url" content="' . $url . '" />';
+		$html .= '<meta property="og:image" content="' . $image . '" />';
+		$html .= '<meta property="og:description" content="' . $description . '" />';
+		$html .= '<!-- Twitter Card data -->';
+		$html .= '<meta name="twitter:card" content="summary_large_image">';
+		$html .= '<meta name="twitter:title" content="' . $title . '" />';
+		$html .= '<meta name="twitter:site" content="@FITLibrary">';
+		$html .= '<meta name="twitter:description" content="' . $description . '" />';
+		$html .= '<meta name="twitter:image" content="' . $image . '" />';
+	}
+	else {
+		if ($site_description = option('description')) {
+			$html .= '<meta name="description" content="' . $site_description . '" />';
+		}
+	}
 	return $html;
 }
