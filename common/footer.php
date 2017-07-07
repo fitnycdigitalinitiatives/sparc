@@ -1,29 +1,34 @@
       </div>
     </main>
     <footer class="footer" role="contentinfo">
-        <nav class="navbar navbar-inverse navbar-static-bottom">
-							<div class="container">
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sub-navbar" aria-expanded="false" aria-controls="navbar">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-									<a class="navbar-brand" href="http://www.fitnyc.edu/">
-										<?php echo '<img src="' . img('fit_logo.png') . '" alt="Brand">'; ?>
-									</a>
-									<p class="navbar-text">©2016 Fashion Institute of Technology</p>
-								</div>
-								<div id="sub-navbar" class="navbar-collapse collapse">
-									<ul class="nav navbar-nav navbar-right">
-										<li><a href="http://www.fitnyc.edu/library/sparc/index.php">Special Collections</a></li>
-										<li><a href="http://blog.fitnyc.edu/materialmode/">Material Mode</a></li>
-										<li><a href="http://www.fitnyc.edu/library/">FIT Library</a></li>
-									</ul>
-								</div><!--/.nav-collapse -->
-							</div>
-						</nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="row">
+                <a href="https://www.fitnyc.edu">
+                  <img src="<?php echo img('FITSUNY1_blklarge.png'); ?>" alt="Fashion Institute of Technology - State University of New York">
+                </a>
+              </div>
+              <div class="row">
+                <p>©2017 Fashion Institute of Technology</br>All rights reserved.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <p>This site is an initiative of the FIT Library.</p>
+              </div>
+              <div class="row">
+                <ul>
+          				<li><a href="https://www.fitnyc.edu/library/"><i class="fa fa-home fa-2x"></i></a></li>
+          				<li><a href="https://www.facebook.com/FITLibrary"><i class="fa fa-facebook fa-2x"></i></a></li>
+          				<li><a href="https://twitter.com/FITLibrary"><i class="fa fa-twitter fa-2x"></i></a></li>
+          				<li><a href="http://pinterest.com/fitlibrary/"><i class="fa fa-pinterest-p fa-2x"></i></a></li>
+          				<li><a href="https://www.instagram.com/fitnyclibrary/"><i class="fa fa-instagram fa-2x"></i></a></li>
+          			</ul>
+              </div>
+            </div>
+          </div>
+        </div>
         <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
     </footer>
     <?php if (@$bodyclass == 'items show'):  ?>

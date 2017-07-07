@@ -27,6 +27,7 @@
         queue_css_url('//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic');
         queue_css_file('lib/bootstrap.min');
         queue_css_file('style');
+        queue_css_file('fonts/font-awesome/css/font-awesome.min');
         echo head_css();
     ?>
 
