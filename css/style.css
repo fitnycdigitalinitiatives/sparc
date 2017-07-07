@@ -65,10 +65,13 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 160.5px;
+	margin-top: 20px;
+	background-color: #222;
+	border-top: 1px solid #080808;
 }
-.footer .navbar-brand {
-  padding-bottom: 10px;
-  padding-top: 10px;
+.footer #copyright img {
+  height: 45px;
+	max-width: 100%;
 }
 .footer .navbar-brand img {
   height: 30px;

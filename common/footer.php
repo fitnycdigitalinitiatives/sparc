@@ -3,22 +3,22 @@
     <footer class="footer" role="contentinfo">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="copyright">
               <div class="row">
                 <a href="https://www.fitnyc.edu">
-                  <img src="<?php echo img('FITSUNY1_blklarge.png'); ?>" alt="Fashion Institute of Technology - State University of New York">
+                  <img src="<?php echo img('FITSUNY1_white.png'); ?>" alt="Fashion Institute of Technology - State University of New York">
                 </a>
               </div>
               <div class="row">
                 <p>©2017 Fashion Institute of Technology</br>All rights reserved.</p>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" id="social">
               <div class="row">
-                <p>This site is an initiative of the FIT Library.</p>
+                <p class="pull-right">This site is an initiative of the FIT Library.</p>
               </div>
               <div class="row">
-                <ul>
+                <ul class="list-inline pull-right">
           				<li><a href="https://www.fitnyc.edu/library/"><i class="fa fa-home fa-2x"></i></a></li>
           				<li><a href="https://www.facebook.com/FITLibrary"><i class="fa fa-facebook fa-2x"></i></a></li>
           				<li><a href="https://twitter.com/FITLibrary"><i class="fa fa-twitter fa-2x"></i></a></li>
