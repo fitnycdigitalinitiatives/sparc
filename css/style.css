@@ -68,13 +68,25 @@ body {
 	margin-top: 20px;
 	background-color: #222;
 	border-top: 1px solid #080808;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #fff;
+}
+.footer p {
+	margin-top: 14px;
 }
 .footer #copyright img {
   height: 45px;
 	max-width: 100%;
 }
-.footer .navbar-brand img {
-  height: 30px;
+.footer #copyright p {
+	margin-left: 36px;
+}
+.footer #social ul {
+	margin-top: 15px;
+}
+.footer #social ul a {
+	color: #fff;
 }
 
 /*! homepage */
