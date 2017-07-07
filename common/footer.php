@@ -20,12 +20,12 @@
             <div class="col-sm-6" id="social">
               <div class="row">
                 <div class="col-xs-12">
-                  <p class="pull-right">This site is an initiative of the FIT Library.</p>
+                  <p>This site is an initiative of the FIT Library.</p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-xs-12">
-                  <ul class="list-inline pull-right">
+                  <ul class="list-inline">
             				<li><a href="https://www.fitnyc.edu/library/"><i class="fa fa-home fa-2x"></i></a></li>
             				<li><a href="https://www.facebook.com/FITLibrary"><i class="fa fa-facebook fa-2x"></i></a></li>
             				<li><a href="https://twitter.com/FITLibrary"><i class="fa fa-twitter fa-2x"></i></a></li>

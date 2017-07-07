@@ -82,8 +82,12 @@ body {
 .footer #copyright p {
 	margin-left: 36px;
 }
+.footer #social p {
+	float: right;
+}
 .footer #social ul {
 	margin-top: 15px;
+	float: right;
 }
 .footer #social ul a {
 	color: #fff;
