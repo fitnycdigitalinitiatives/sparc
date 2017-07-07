@@ -57,19 +57,19 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 160.5px;
+  margin-bottom: 150px;
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 160.5px;
+  height: 150px;
 	margin-top: 20px;
 	background-color: #222;
 	border-top: 1px solid #080808;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	color: #fff;
 }
 .footer p {
@@ -87,6 +87,19 @@ body {
 }
 .footer #social ul a {
 	color: #fff;
+}
+@media (max-width: 767px) {
+		body {
+			/* Margin bottom by footer height */
+			margin-bottom: 247px;
+		}
+		.footer {
+			height: 247px;
+		}
+		.footer #social p, .footer #social ul {
+			float: none;
+			margin-left: 36px;
+		}
 }
 
 /*! homepage */
