@@ -94,13 +94,19 @@ body#home {
 #home .jumbotron {
   background-color: transparent;
   color: #fff;
+	margin-top: 100px;
+}
+@media (max-width: 736px) and (orientation: landscape) {
+	#home .jumbotron {
+		margin-top: 0;
+	}
 }
 #home .jumbotron h1 {
-	margin-left: -2.3%
+	margin-left: -1.7%
 }
 #home .jumbotron #logo {
 	max-width: 100%;
-	max-height: 100px;
+	max-height: 75px;
 }
 /*! browse-gallery */
 .color-browse .list-inline li {
