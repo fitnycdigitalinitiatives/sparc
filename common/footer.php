@@ -1,6 +1,6 @@
       </div>
     </main>
-    <footer class="footer" role="contentinfo">
+    <footer class="footer common" role="contentinfo">
         <div class="container">
           <div class="row">
             <div class="col-sm-6" id="copyright">

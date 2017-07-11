@@ -59,7 +59,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 150px;
 }
-.footer {
+.footer.common {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -72,24 +72,24 @@ body {
 	padding-bottom: 20px;
 	color: #fff;
 }
-.footer p {
+.footer.common p {
 	margin-top: 14px;
 }
-.footer #copyright img {
+.footer.common #copyright img {
   height: 45px;
 	max-width: 100%;
 }
-.footer #copyright p {
+.footer.common #copyright p {
 	margin-left: 36px;
 }
-.footer #social p {
+.footer.common #social p {
 	float: right;
 }
-.footer #social ul {
+.footer.common #social ul {
 	margin-top: 15px;
 	float: right;
 }
-.footer #social ul a {
+.footer.common #social ul a {
 	color: #fff;
 }
 @media (max-width: 767px) {
@@ -97,10 +97,10 @@ body {
 			/* Margin bottom by footer height */
 			margin-bottom: 247px;
 		}
-		.footer {
+		.footer.common {
 			height: 247px;
 		}
-		.footer #social p, .footer #social ul {
+		.footer.common #social p, .footer.common #social ul {
 			float: none;
 			margin-left: 36px;
 		}
@@ -269,7 +269,7 @@ body#home {
   margin-top: 100px;
 	padding-bottom: 15px;
 }
-.exhibits.show .footer .navbar-brand, .exhibits.summary .footer .navbar-brand {
+.exhibits.show .footer.common .navbar-brand, .exhibits.summary .footer.common .navbar-brand {
   padding-bottom: 15px;
   padding-top: 15px;
 }
