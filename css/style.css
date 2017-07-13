@@ -450,3 +450,7 @@ body.exhibits.summary, body.exhibits.show {
 	}
 
 }
+/* Simple Page /*/
+.simple-page #primary {
+	margin-bottom: 20px;
+}
