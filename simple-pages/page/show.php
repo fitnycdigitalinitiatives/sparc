@@ -11,7 +11,8 @@ echo head(array(
 ));
 ?>
 <div class="row">
-  <div class="col-sm-6">
+  <div class="col-sm-8">
+    <h1><?php echo metadata('simple_pages_page', 'title'); ?></h1>
     <?php
     $text = metadata('simple_pages_page', 'text', array('no_escape' => true));
     echo $this->shortcodes($text);
