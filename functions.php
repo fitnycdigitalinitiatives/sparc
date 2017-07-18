@@ -359,6 +359,16 @@ function social_tags($bodyclass) {
 	if ($bodyclass == "items show" ) {
 		$item = get_current_record('item');
 		$title = metadata($item, array('Dublin Core', 'Title'));
+    $o_width = metadata($item, array('Item Type Metadata', 'Width'));
+    $o_height = metadata($item, array('Item Type Metadata', 'Height'));
+    if ($o_width >= $o_height) {
+      $height = floor((400 * $o_height) / $o_width);
+      $width = 400;
+    }
+    else {
+      $width = floor((400 * $o_width) / $o_height);
+      $height = 400;
+    }
 		$url = record_url($item, null, true);
 		$image = mdid_thumbnail_url($item);
 		$description = metadata($item, array('Dublin Core', 'Description'));
@@ -368,7 +378,10 @@ function social_tags($bodyclass) {
 		$html .= '<meta property="og:type" content="article" />';
 		$html .= '<meta property="og:url" content="' . $url . '" />';
 		$html .= '<meta property="og:image" content="' . $image . '" />';
+    $html .= '<meta property="og:image:width" content="' . $width . '" />';
+    $html .= '<meta property="og:image:height" content="' . $height . '" />';
 		$html .= '<meta property="og:description" content="' . $description . '" />';
+
 		$html .= '<!-- Twitter Card data -->';
 		$html .= '<meta name="twitter:card" content="summary_large_image">';
 		$html .= '<meta name="twitter:title" content="' . $title . '" />';
