@@ -383,7 +383,7 @@ function social_tags($bodyclass) {
 		$html .= '<meta property="og:description" content="' . $description . '" />';
 
 		$html .= '<!-- Twitter Card data -->';
-		$html .= '<meta name="twitter:card" content="summary">';
+		$html .= '<meta name="twitter:card" content="summary_large_image">';
 		$html .= '<meta name="twitter:title" content="' . $title . '" />';
 		$html .= '<meta name="twitter:site" content="@FITLibrary">';
 		$html .= '<meta name="twitter:description" content="' . $description . '" />';
