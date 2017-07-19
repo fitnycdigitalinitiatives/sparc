@@ -264,7 +264,21 @@ body#home {
 	margin-bottom: 20px;
 	float: right;
 }
+.element-set .dl-horizontal dt {
+	font-size: 24px;
+}
+.dl-horizontal .element {
+	margin-bottom: 20px;
+}
+@@media (min-width: 768px) {
+	.element-set .dl-horizontal dt {
+		text-align: initial;
+		width: 120px;
+	}
+	.element-set .dl-horizontal dd {
 
+	}
+}
 /*! exhibits */
 .exhibits.show main .container, .exhibits.summary main .container {
   margin-top: 100px;
