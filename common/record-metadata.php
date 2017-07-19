@@ -11,9 +11,13 @@
       <?php else: ?>
         <div id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element">
             <dt><?php echo html_escape(__($elementName)); ?></dt>
-            <?php foreach ($elementInfo['texts'] as $text): ?>
-                <dd class="element-text"><?php echo $text; ?></dd>
-            <?php endforeach; ?>
+            <dd class="element-text">
+              <ul class="list-unstyled">
+                <?php foreach ($elementInfo['texts'] as $text): ?>
+                    <li><?php echo $text; ?></li>
+                <?php endforeach; ?>
+              </ul>
+            </dd>
         </div><!-- end element -->
       <?php endif; ?>
     <?php endforeach; ?>
