@@ -26,25 +26,22 @@
 					<h4>Item Information</h4>
 				</div>
 				<div class="panel-body">
-					<div class="row">
-						<div class="col-md-12">
-							<?php echo all_element_texts('item'); ?>
-							<!-- If the item belongs to a collection, the following creates a link to that collection. -->
-							<?php if (metadata('item', 'Collection Name')): ?>
-								<div id="collection" class="element">
-									<h3><?php echo __('Collection'); ?></h3>
-									<div class="element-text"><p><?php echo link_to_items_browse(metadata('item', 'Collection Name'), array('collection' => metadata(get_collection_for_item(), 'id'))); ?></p></div>
-								</div>
-							<?php endif; ?>
+          <dl class="dl-horizontal">
+  					<?php echo all_element_texts('item'); ?>
+  					<!-- If the item belongs to a collection, the following creates a link to that collection. -->
+  					<?php if (metadata('item', 'Collection Name')): ?>
+  						<div id="collection" class="element">
+  							<dt><?php echo __('Collection'); ?></dt>
+  							<dd class="element-text"><?php echo link_to_items_browse(metadata('item', 'Collection Name'), array('collection' => metadata(get_collection_for_item(), 'id'))); ?></dd>
+  						</div>
+  					<?php endif; ?>
 
-							<!-- The following prints a citation for this item. -->
-							<div id="item-citation" class="element">
-								<h3><?php echo __('Citation'); ?></h3>
-								<div class="element-text"><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></div>
-							</div>
-
-						</div>
-					</div>
+  					<!-- The following prints a citation for this item. -->
+  					<div id="item-citation" class="element">
+  						<dt><?php echo __('Citation'); ?></dt>
+  						<dd class="element-text"><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></dd>
+  					</div>
+          </dl>
 				</div>
 			</div>
 		</div>
