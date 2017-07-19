@@ -278,6 +278,7 @@ body#home {
 	}
 	.dl-horizontal .element dd {
 		margin-left: 140px;
+		padding-top: 7px;
 	}
 }
 /*! exhibits */
