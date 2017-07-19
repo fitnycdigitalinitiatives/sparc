@@ -271,12 +271,22 @@ body#home {
 .dl-horizontal .element {
 	margin-bottom: 20px;
 }
+.dl-horizontal .element a {
+	color: #333;
+}
+.dl-horizontal .element a .glyphicon-link {
+	color: #cccccc;
+}
+.dl-horizontal .element a .glyphicon-link:hover {
+	color: #333;
+}
 @media (min-width: 768px) {
 	.dl-horizontal .element dt {
 		text-align: initial;
 	}
 	.dl-horizontal .element dd {
-		padding-top: 7px;
+		padding-top: 5px;
+		font-size: 16px;
 	}
 }
 /*! exhibits */

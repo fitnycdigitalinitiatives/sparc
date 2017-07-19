@@ -350,7 +350,7 @@ function tag_search ($tag) {
 	$html .= $url;
 	$html .= '">';
 	$html .= $tag;
-	$html .= '</a>';
+	$html .= ' <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a>';
 	return $html;
 }
 // Creates social media tags for an image, following Twitter and Facebook standards.
