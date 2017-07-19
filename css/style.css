@@ -274,10 +274,8 @@ body#home {
 @media (min-width: 768px) {
 	.dl-horizontal .element dt {
 		text-align: initial;
-		width: 120px;
 	}
 	.dl-horizontal .element dd {
-		margin-left: 140px;
 		padding-top: 7px;
 	}
 }
