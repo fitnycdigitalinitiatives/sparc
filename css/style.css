@@ -264,18 +264,18 @@ body#home {
 	margin-bottom: 20px;
 	float: right;
 }
-.element-set .dl-horizontal dt {
+.dl-horizontal .element dt {
 	font-size: 24px;
 }
 .dl-horizontal .element {
 	margin-bottom: 20px;
 }
-@@media (min-width: 768px) {
-	.element-set .dl-horizontal dt {
+@media (min-width: 768px) {
+	.dl-horizontal .element dt {
 		text-align: initial;
 		width: 120px;
 	}
-	.element-set .dl-horizontal dd {
+	.dl-horizontal .element dd {
 
 	}
 }
