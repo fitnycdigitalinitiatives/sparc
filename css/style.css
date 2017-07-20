@@ -284,12 +284,10 @@ body#home {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-	content: " \e144"
-}
-.metalist .element a .glyphicon-link {
+	content: "\e144";
 	color: #cccccc;
 }
-.metalist .element a .glyphicon-link:hover {
+.metalist .element a:hover::after {
 	color: #333;
 }
 @media (min-width: 768px) {
