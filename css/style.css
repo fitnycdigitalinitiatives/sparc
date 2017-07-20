@@ -264,27 +264,27 @@ body#home {
 	margin-bottom: 20px;
 	float: right;
 }
-.dl-horizontal .element dt {
+.metalist .element dt {
 	font-size: 24px;
 	font-weight: 500;
 }
-.dl-horizontal .element {
+.metalist .element {
 	margin-bottom: 20px;
 }
-.dl-horizontal .element a {
+.metalist .element a {
 	color: #333;
 }
-.dl-horizontal .element a .glyphicon-link {
+.metalist .element a .glyphicon-link {
 	color: #cccccc;
 }
-.dl-horizontal .element a .glyphicon-link:hover {
+.metalist .element a .glyphicon-link:hover {
 	color: #333;
 }
 @media (min-width: 768px) {
-	.dl-horizontal .element dt {
+	.metalist .element dt {
 		text-align: initial;
 	}
-	.dl-horizontal .element dd {
+	.metalist .element dd {
 		padding-top: 5px;
 		font-size: 16px;
 	}

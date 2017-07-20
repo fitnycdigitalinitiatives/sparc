@@ -26,7 +26,7 @@
 					<h4>Item Information</h4>
 				</div>
 				<div class="panel-body">
-          <dl class="dl-horizontal">
+          <dl class="metalist">
   					<?php echo all_element_texts('item'); ?>
   					<!-- If the item belongs to a collection, the following creates a link to that collection. -->
   					<?php if (metadata('item', 'Collection Name')): ?>
