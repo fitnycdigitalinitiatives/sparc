@@ -271,6 +271,9 @@ body#home {
 .metalist .element {
 	margin-bottom: 20px;
 }
+.metalist .element .element-text li {
+	margin-bottom: 5px;
+}
 .metalist .element a {
 	color: #333;
 }
