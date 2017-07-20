@@ -275,7 +275,16 @@ body#home {
 	color: #333;
 }
 .metalist .element a::after {
-content: "<span class='glyphicon glyphicon-link' aria-hidden='true'></span>"
+	position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	content: " \e144"
 }
 .metalist .element a .glyphicon-link {
 	color: #cccccc;
