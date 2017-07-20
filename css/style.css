@@ -491,3 +491,6 @@ body.exhibits.summary, body.exhibits.show {
 .simple-page #primary {
 	margin-bottom: 20px;
 }
+.simple-page #primary .row {
+	margin-bottom: 100px;
+}
