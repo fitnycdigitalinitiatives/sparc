@@ -311,7 +311,14 @@ function basic_color_board($palette = null) {
   $html .= '</ul>';
   return $html;
 }
+function mdid_image_tag($item, $class)
+{
+	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
+		$html = '<img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/" class="' . $class . '">';
+		return $html;
 
+	}
+}
 function mdid_thumbnail_tag($item, $class)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
