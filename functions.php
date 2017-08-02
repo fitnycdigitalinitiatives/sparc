@@ -324,8 +324,11 @@ function mdid_thumbnail_tag($item, $class)
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
 		$html = '<div class="thumbnail-container"><img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/400x400" class="' . $class . '"></div>';
 		return $html;
-
 	}
+  else {
+    $html = '<div class="thumbnail-container"><img src="' . img("fallback-image.png") . '" class="' . $class . '"></div>';
+		return $html;
+  }
 }
 function mdid_thumbnail_url($item)
 {
