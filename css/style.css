@@ -239,6 +239,10 @@ body#home {
 	border-radius: 50%;
 	box-shadow: -1px 0px 3px 0px #888888;
 }
+/* Solr Search results */
+#solr-facets .panel-collapse .list-group-item:first-child {
+	border-top-width: 1px;
+}
 
 /*! item-show */
 .palette #swatch {
