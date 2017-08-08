@@ -34,7 +34,7 @@
       $html .= '\');"></div>';
       echo $html;
     } catch (Exception $e) {
-
+      echo '<div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));"></div>';
     }
   ?>
 
