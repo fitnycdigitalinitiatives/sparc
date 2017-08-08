@@ -24,7 +24,7 @@
           ?>
         <?php echo browse_sort_links_bootstrap($sortLinks); ?>
       </div>
-      <?php if ($isfb): ?>
+      <?php if (!$isfb): ?>
         <div id="color_button" class="dropdown pull-right">
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Color Family <span class="caret"></span>
           </button>
