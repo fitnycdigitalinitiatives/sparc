@@ -27,11 +27,14 @@
   <?php
     $slug = $exhibit->slug;
     $bg_image = $slug . '_exhibition.jpg';
-    echo physical_path_to('images/' . $bg_image);
-    if (img($bg_image)):
+    try {
+      $bg_image_url = img($bg_image);
+      $html = '<div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("' . $bg_image_url . '");"></div>';
+      echo $html;
+    } catch (Exception $e) {
+      
+    }
   ?>
-    <div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo img($bg_image); ?>');"></div>
-  <?php endif; ?>
 
 
 <?php echo common('exhibit_footer', array('exhibit' => $exhibit, 'exhibit_page' => null), 'exhibit-builder/exhibits'); ?>
