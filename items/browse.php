@@ -5,8 +5,8 @@
 
   <div class="row results">
     <div class="col-xs-8">
-      <?php if (item_search_filters_bootstrap()): ?>
-        <h4>Showing <?php echo $total_results; ?> results for <em><?php echo item_search_filters_bootstrap(); ?></em></h4>
+      <?php if ($isfb = item_search_filters_bootstrap()): ?>
+        <h4>Showing <?php echo $total_results; ?> results for <em><?php echo $isfb; ?></em></h4>
       <?php else: ?>
         <h4>Showing <?php echo $total_results; ?> items total</h4>
       <?php endif; ?>
@@ -24,13 +24,15 @@
           ?>
         <?php echo browse_sort_links_bootstrap($sortLinks); ?>
       </div>
-      <div id="color_button" class="dropdown pull-right">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Color Family <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" id="color_board">
-          <li><?php echo basic_color_board(); ?></li>
-        </ul>
-      </div>
+      <?php if ($isfb): ?>
+        <div id="color_button" class="dropdown pull-right">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Color Family <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" id="color_board">
+            <li><?php echo basic_color_board(); ?></li>
+          </ul>
+        </div>
+      <?php endif; ?>
     </div>
   </div>
 
