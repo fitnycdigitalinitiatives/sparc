@@ -29,10 +29,12 @@
     $bg_image = $slug . '_exhibition.jpg';
     try {
       $bg_image_url = img($bg_image);
-      $html = '<div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("' . $bg_image_url . '");"></div>';
+      $html = '<div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\'';
+      $html .= $bg_image_url;
+      $html .= '\');"></div>';
       echo $html;
     } catch (Exception $e) {
-      
+
     }
   ?>
 
