@@ -27,7 +27,7 @@
   <?php
     $slug = $exhibit->slug;
     $bg_image = $slug . '_exhibition.jpg';
-    echo web_path_to('images/' . $bg_image);
+    echo physical_path_to('images/' . $bg_image);
     if (img($bg_image)):
   ?>
     <div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php echo img($bg_image); ?>');"></div>
