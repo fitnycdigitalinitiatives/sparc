@@ -200,6 +200,12 @@ body#home {
 	height: 252.5px;
   max-height: 252.5px;
 }
+@media (max-width: 767px) {
+	.exhibits .item-thumb .thumbnail img, .collections .item-thumb .thumbnail img {
+		height: 155px;
+	  max-height: 155px;
+	}
+}
 .item-thumb .thumbnail .result-type {
 	position: absolute;
 	top: 16px;
