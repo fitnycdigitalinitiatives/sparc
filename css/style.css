@@ -216,6 +216,9 @@ body#home {
 	bottom: 25px;
 	right: 20px;
 }
+.item-thumb .glyphicon-info-sign, #viewer .caption .glyphicon-info-sign {
+	cursor: pointer;
+}
 /* Search results */
 .results {
 	color: #cccccc;
