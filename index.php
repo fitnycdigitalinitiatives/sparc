@@ -1,7 +1,7 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 
 <div class="jumbotron">
-	<h1><?php echo '<img src="' . img('sparc_digital.svg') . '" alt="SPARC Digital" id="logo">'; ?></h1>
+	<h1><?php echo '<img src="' . img('sparc_digital.png') . '" alt="SPARC Digital" id="logo">'; ?></h1>
 	<h2>The digital collections of the FIT Library's Special Collections and College Archives</h2>
 	<!-- Search -->
 	<!-- Get filter for plugin use -->
