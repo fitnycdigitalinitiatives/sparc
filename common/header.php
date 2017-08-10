@@ -66,7 +66,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<?php echo link_to_home_page('<img src="' . img('sparc_digital_header.png') . '" alt="SPARC Digital">', array('class' => 'navbar-brand')); ?>
+				<?php echo link_to_home_page('<img src="' . img('sparc_digital_header.png') . '" srcset="' . img('sparc_digital_header.png') . ' 1x, ' . img('sparc_digital_header_retina.png') . ' 2x" alt="SPARC Digital">', array('class' => 'navbar-brand')); ?>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<?php echo public_nav_main_bootstrap(); ?>
