@@ -506,13 +506,6 @@ body.exhibits.summary, body.exhibits.show {
 .simple-page #primary {
 	margin-bottom: 20px;
 }
-/* About Page /*/
-#about #about-main .row {
-	margin-bottom: 25px;
-}
-#about #about-main p {
+.simple-page p {
 	font-size: 16px;
-}
-#about #about-splash p {
-	margin-top: 10px;
 }
