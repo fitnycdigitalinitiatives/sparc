@@ -1,8 +1,7 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 
 <div class="jumbotron">
-	<?php echo link_to_home_page('<img src="' . img('sparc_digital.png') . '" srcset="' . img('sparc_digital.png') . ' 1x, ' . img('sparc_digital_retina.png') . ' 2x" alt="SPARC Digital">', array('class' => 'navbar-brand')); ?>
-	<h1><?php echo '<img src="' . img('sparc_digital.png') . '"  alt="SPARC Digital" id="logo">'; ?></h1>
+	<h1><?php echo '<img src="' . img('sparc_digital.png') . '" srcset="' . img('sparc_digital.png') . ' 1x, ' . img('sparc_digital_retina.png') . ' 2x" alt="SPARC Digital" id="logo">'; ?></h1>
 	<h2>The digital collections of the FIT Library's Special Collections and College Archives</h2>
 	<!-- Search -->
 	<!-- Get filter for plugin use -->
