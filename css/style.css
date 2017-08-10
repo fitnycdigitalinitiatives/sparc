@@ -510,7 +510,6 @@ body.exhibits.summary, body.exhibits.show {
 	font-size: 16px;
 	margin-top: 20px;
 }
-.simple-page h1, .simple-page h2, .simple-page h3 {
-	margin-top: 30px;
+.simple-page h2 {
 	margin-bottom: 20px;
 }
