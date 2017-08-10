@@ -505,9 +505,9 @@ body.exhibits.summary, body.exhibits.show {
 /* Simple Page /*/
 .simple-page #primary {
 	margin-bottom: 20px;
+	font-size: 16px;
 }
 .simple-page p {
-	font-size: 16px;
 	margin-top: 20px;
 }
 .simple-page h2 {
