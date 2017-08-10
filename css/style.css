@@ -46,8 +46,12 @@ body {
 	font-family: "Archivo Narrow", sans-serif;
 }
 /*! Navbar */
+header .navbar-brand {
+	padding-top: 12.5px;
+	padding-bottom: 12.5px;
+}
 header .navbar-brand img {
-  height: 20px;
+  height: 25px;
 }
 
 /*! Sticky footer */
