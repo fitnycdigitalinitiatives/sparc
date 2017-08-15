@@ -108,9 +108,6 @@ body {
 			float: none;
 			margin-left: 36px;
 		}
-		#home .footer.common {
-		  bottom: -247px;
-		}
 }
 
 /*! homepage */
@@ -129,6 +126,11 @@ body#home {
 }
 #home .footer.common {
   bottom: -150px;
+}
+@media (max-width: 767px) {
+	#home .footer.common {
+		bottom: -247px;
+	}
 }
 #home .jumbotron {
   background-color: transparent;
