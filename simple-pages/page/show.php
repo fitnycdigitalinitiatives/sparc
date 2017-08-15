@@ -11,7 +11,7 @@ echo head(array(
 ));
 ?>
 <div class="row" id="primary">
-  <div class="col-md-6 col-md-offset-3">
+  <div class="col-md-8 col-md-offset-2">
     <h1><?php echo metadata('simple_pages_page', 'title'); ?></h1>
     <?php
     $text = metadata('simple_pages_page', 'text', array('no_escape' => true));
