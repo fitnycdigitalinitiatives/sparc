@@ -517,6 +517,9 @@ body.exhibits.summary, body.exhibits.show {
 	margin-bottom: 20px;
 	font-size: 18px;
 }
+.simple-page #primary .lead {
+	font-size: 21px;
+}
 .simple-page p {
 	margin-top: 20px;
 }
