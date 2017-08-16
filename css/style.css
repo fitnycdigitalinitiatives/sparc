@@ -44,6 +44,7 @@ a:focus, a:hover {
 /*! Font */
 body {
 	font-family: "Archivo Narrow", sans-serif;
+	line-height: 1.5;
 }
 /*! Navbar */
 header .navbar-brand {
