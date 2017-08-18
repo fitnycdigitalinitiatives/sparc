@@ -527,3 +527,12 @@ body.exhibits.summary, body.exhibits.show {
 	margin-bottom: 20px;
 	margin-top: 40px;
 }
+.simple-page #about #the-collection {
+	margin-bottom: 0;
+}
+.simple-page #about #jump {
+	margin-top: 5px;
+}
+.simple-page #about #jump a {
+	color: #777;
+}
