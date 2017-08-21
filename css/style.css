@@ -130,8 +130,12 @@ body#home {
 }
 @media (max-width: 767px) {
 	#home .footer.common {
-		bottom: -247px;
+		bottom: 0;
 	}
+	#home body {
+		margin-bottom: 0;
+	}
+
 }
 #home .jumbotron {
   background-color: transparent;
