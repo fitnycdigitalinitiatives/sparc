@@ -20,6 +20,7 @@
         <?php
           $sortLinks[__('Title')] = 'Dublin Core,Title';
           $sortLinks[__('Creator')] = 'Dublin Core,Creator';
+          $sortLinks[__('Date')] = 'Dublin Core,Date';
           $sortLinks[__('Date Added')] = 'added';
           ?>
         <?php echo browse_sort_links_bootstrap($sortLinks); ?>
