@@ -280,9 +280,14 @@ body#home {
 	border-radius: 0;
 	border: none;
 }
-#filterModal .modal-header, #filterModal .modal-footer {
-	background-color: #f5f5f5;
-  border-color: #ddd;
+#filterModal .modal-body {
+	padding: 0;
+}
+#filterModal .panel {
+	border-right: none;
+	border-left: none;
+	border-radius: 0;
+	margin-bottom: 0;
 }
 
 /*! item-show */
