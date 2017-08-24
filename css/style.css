@@ -280,12 +280,21 @@ body#home {
 	border-radius: 0;
 	border: none;
 }
+#filterModal .modal-header {
+	background-color: #222;
+	color: #fff;
+}
+#filterModal .modal-header .close {
+	color: #fff;
+	opacity: 1;
+}
 #filterModal .modal-body {
 	padding: 0;
 }
 #filterModal .panel {
 	border-right: none;
 	border-left: none;
+	border-bottom: none;
 	border-radius: 0;
 	margin-bottom: 0;
 }
