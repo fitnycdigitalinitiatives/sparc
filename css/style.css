@@ -298,6 +298,9 @@ body#home {
 	border-radius: 0;
 	margin-bottom: 0;
 }
+#filterModal .panel:first-of-type {
+	border-top: none;
+}
 
 /*! item-show */
 .palette #swatch {
