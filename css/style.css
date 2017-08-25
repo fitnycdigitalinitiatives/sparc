@@ -273,6 +273,7 @@ body#home {
 	right: 0;
 	height: 100%;
 	margin: 0;
+	width: 300px;
 }
 #filterModal .modal-content {
 	height: 100%;
