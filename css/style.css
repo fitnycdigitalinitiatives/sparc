@@ -267,6 +267,14 @@ body#home {
 #solr-facets .panel-collapse .list-group-item:first-child {
 	border-top-width: 1px;
 }
+.results .facet-kill, .results .facet-kill:hover {
+	color: #cccccc;
+}
+.results .facet-kill #swatch {
+	width: 2rem;
+	height: 2rem;
+	margin-bottom: -5px;
+}
 /* Solr Modal */
 #filterModal .modal-dialog {
 	position: fixed;
