@@ -592,3 +592,8 @@ body.error {
 	background-position: right;
 	background-position-y: 51px;
 }
+@media (max-width: 374px) {
+		body.error {
+			background-position-x: 105px;
+		}
+}
