@@ -200,6 +200,7 @@ function related_items($current_item)
 		$collection = get_collection_for_item($current_item);
 		if ($collection) {
 			$related_items = get_records('Item', array('collection' => metadata($collection, 'id'), 'sort_field' => 'random'), 7);
+      var_dump(get_class($related_items));
 		}
 	}
   if ($related_items) {
