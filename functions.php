@@ -196,7 +196,6 @@ function item_search_filters_bootstrap(array $params = null)
 
 function related_items($current_item)
 {
-  $related_items = array();
   if (metadata($current_item, 'Collection Name')) {
 		$collection = get_collection_for_item($current_item);
 		if ($collection) {
