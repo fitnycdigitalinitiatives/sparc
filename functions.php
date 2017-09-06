@@ -201,7 +201,7 @@ function related_items($current_item)
     echo $subject_1;
     echo var_dump($related_items_1);
 	}
-  if ($related_items_1 || $related_items_2) {
+  if (($related_items_1) || ($related_items_2)) {
     $related_items = array_merge(@$related_items_1, @$related_items_2);
     if ($related_items) {
       $html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
