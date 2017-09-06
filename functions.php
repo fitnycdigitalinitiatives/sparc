@@ -222,7 +222,8 @@ function related_items($current_item)
   }
   if (($related_items_1) || ($related_items_2) || ($related_items_3) || ($related_items_4)) {
     $related_items = array_merge(@$related_items_1, @$related_items_2, @$related_items_3, @$related_items_4);
-    $sliced_related_items = array_slice($related_items, 0, 7);
+    $unique_related_items = array_map("unserialize", array_unique(array_map("serialize", $related_items)));
+    $sliced_related_items = array_slice($unique_related_items, 0, 7);
     if ($sliced_related_items) {
       $html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
       foreach ($sliced_related_items as $related_item) {
