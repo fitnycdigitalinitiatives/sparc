@@ -197,9 +197,12 @@ function item_search_filters_bootstrap(array $params = null)
 function related_items($current_item)
 {
   if (($collection = get_collection_for_item($current_item)) && ($subject_1 = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 0, 'no_escape' => true)))) {
-		$related_items_1 = get_records('Item', array('collection' => metadata($collection, 'id'), 'tags' => $subject_1, 'sort_field' => 'random'), 7);
+		$related_items_1 = get_records('Item', array('collection' => metadata($collection, 'id'), 'tags' => 'asdfasdf', 'sort_field' => 'random'), 7);
+    echo var_dump($related_items_1);
 	}
-  $related_items_2 = array();
+  else {
+    $related_items_1 = array();
+  }
   if (($related_items_1) || ($related_items_2)) {
     $related_items = array_merge(@$related_items_1, @$related_items_2);
     if ($related_items) {
