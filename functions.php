@@ -221,6 +221,7 @@ function related_items($current_item)
     $related_items_4 = array();
   }
   if (($related_items_1) || ($related_items_2) || ($related_items_3) || ($related_items_4)) {
+    echo "Hello";
     $related_items = array_merge(@$related_items_1, @$related_items_2, @$related_items_3, @$related_items_4);
     $unique_related_items = array_unique($related_items);
     $sliced_related_items = array_slice($unique_related_items, 0, 7);
