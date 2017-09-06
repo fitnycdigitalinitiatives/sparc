@@ -26,11 +26,11 @@
               <div class="row">
                 <div class="col-xs-12">
                   <ul class="list-inline">
-            				<li><a href="https://www.fitnyc.edu/library/"><i class="fa fa-home fa-2x"></i></a></li>
-            				<li><a href="https://www.facebook.com/FITLibrary"><i class="fa fa-facebook fa-2x"></i></a></li>
-            				<li><a href="https://twitter.com/FITLibrary"><i class="fa fa-twitter fa-2x"></i></a></li>
-            				<li><a href="http://pinterest.com/fitlibrary/"><i class="fa fa-pinterest-p fa-2x"></i></a></li>
-            				<li><a href="https://www.instagram.com/fitnyclibrary/"><i class="fa fa-instagram fa-2x"></i></a></li>
+            				<li><a href="https://www.fitnyc.edu/library/"><i class="fa fa-home fa-2x"></i><span class="sr-only">FIT Library Homepage</span></a></li>
+            				<li><a href="https://www.facebook.com/FITLibrary"><i class="fa fa-facebook fa-2x"></i><span class="sr-only">FIT Library Facebook</span></a></li>
+            				<li><a href="https://twitter.com/FITLibrary"><i class="fa fa-twitter fa-2x"></i><span class="sr-only">FIT Library Twitter</span></a></li>
+            				<li><a href="http://pinterest.com/fitlibrary/"><i class="fa fa-pinterest-p fa-2x"></i><span class="sr-only">FIT Library Pinterest</span></a></li>
+            				<li><a href="https://www.instagram.com/fitnyclibrary/"><i class="fa fa-instagram fa-2x"></i><span class="sr-only">FIT Library Instagram</span></a></li>
           			  </ul>
                 </div>
               </div>
