@@ -198,10 +198,9 @@ function related_items($current_item)
 {
   if (($collection = get_collection_for_item($current_item)) && ($subject_1 = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 0, 'no_escape' => true)))) {
 		$related_items_1 = get_records('Item', array('collection' => metadata($collection, 'id'), 'tags' => $subject_1, 'sort_field' => 'random'), 7);
-    echo $subject_1;
-    echo var_dump($related_items_1);
 	}
   if (($related_items_1) || ($related_items_2)) {
+    echo "Yes";
     $related_items = array_merge(@$related_items_1, @$related_items_2);
     if ($related_items) {
       $html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
