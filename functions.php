@@ -202,7 +202,7 @@ function related_items($current_item)
   if ($subject = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 1))) {
 		$related_items_2 = get_records('Item', array('tags' => $subject, 'sort_field' => 'random'), 7);
 	}
-  $related_items = array_merge(@$related_items_1, @$related_items_1);
+  $related_items = array_merge(@$related_items_1, @$related_items_2);
   if ($related_items) {
     $html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
     foreach ($related_items as $related_item) {
