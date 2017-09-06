@@ -197,7 +197,7 @@ function item_search_filters_bootstrap(array $params = null)
 function related_items($current_item)
 {
   if (($collection = get_collection_for_item($current_item)) && ($subject_1 = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 0)))) {
-		$related_items_1 = get_records('Item', array('collection' => metadata($collection, 'id'), 'tags' => 'Dresses', 'sort_field' => 'random'), 7);
+		$related_items_1 = get_records('Item', array('collection' => metadata($collection, 'id'), 'tags' => $subject_1, 'sort_field' => 'random'), 7);
     echo var_dump($related_items_1);
 	}
   if ($related_items_1 || $related_items_2) {
