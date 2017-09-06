@@ -214,14 +214,20 @@ function related_items($current_item)
   else {
     $related_items_3 = array();
   }
-  if ($medium = metadata($current_item, array('Dublin Core', 'Medium'), array('index' => 0, 'no_escape' => true))) {
-		$related_items_4 = get_records('Item', array('tags' => $medium, 'sort_field' => 'random'), 5);
+  if ($collection = get_collection_for_item($current_item)) {
+		$related_items_4 = get_records('Item', array('collection' => metadata($collection, 'id'), 'sort_field' => 'random'), 5);
 	}
   else {
     $related_items_4 = array();
   }
-  if (($related_items_1) || ($related_items_2) || ($related_items_3) || ($related_items_4)) {
-    $related_items = array_merge(@$related_items_1, @$related_items_2, @$related_items_3, @$related_items_4);
+  if ($medium = metadata($current_item, array('Dublin Core', 'Medium'), array('index' => 0, 'no_escape' => true))) {
+		$related_items_5 = get_records('Item', array('tags' => $medium, 'sort_field' => 'random'), 5);
+	}
+  else {
+    $related_items_5 = array();
+  }
+  if (($related_items_1) || ($related_items_2) || ($related_items_3) || ($related_items_4) || ($related_items_5)) {
+    $related_items = array_merge(@$related_items_1, @$related_items_2, @$related_items_3, @$related_items_4, @$related_items_5);
     $unique_related_items = array_map("unserialize", array_unique(array_map("serialize", $related_items)));
     $sliced_related_items = array_slice($unique_related_items, 0, 7);
     if ($sliced_related_items) {
