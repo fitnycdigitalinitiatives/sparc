@@ -196,21 +196,23 @@ function item_search_filters_bootstrap(array $params = null)
 
 function related_items($current_item)
 {
-  if ($collection = get_collection_for_item($current_item)) {
-		$related_items_1 = get_records('Item', array('collection' => metadata($collection, 'id'), 'sort_field' => 'random'), 7);
+  if (($collection = get_collection_for_item($current_item)) && ($subject = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 0)))) {
+		$related_items_1 = get_records('Item', array('collection' => metadata($collection, 'id'), 'tags' => $subject, 'sort_field' => 'random'), 7);
 	}
-  if ($subject = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 1))) {
-		$related_items_2 = get_records('Item', array('tags' => $subject, 'sort_field' => 'random'), 7);
+  if (($collection = get_collection_for_item($current_item)) && ($subject = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 1)))) {
+		$related_items_2 = get_records('Item', array('collection' => metadata($collection, 'id'), 'tags' => $subject, 'sort_field' => 'random'), 7);
 	}
-  $related_items = array_merge(@$related_items_1, @$related_items_2);
-  if ($related_items) {
-    $html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
-    foreach ($related_items as $related_item) {
-      $html .= link_to_item('<div class="row"><div class="col-xs-4">' . mdid_square_thumbnail_tag($related_item, 'img-responsive') . '</div><div class="col-xs-8"><h3 class="list-group-item-heading">' . metadata($related_item, array('Dublin Core', 'Title')) . '</h3></div></div>', array('class'=>'list-group-item'), 'show', $related_item);
-      release_object($related_item);
+  if ($related_items_1 || $related_items_2) {
+    $related_items = array_merge(@$related_items_1, @$related_items_2);
+    if ($related_items) {
+      $html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
+      foreach ($related_items as $related_item) {
+        $html .= link_to_item('<div class="row"><div class="col-xs-4">' . mdid_square_thumbnail_tag($related_item, 'img-responsive') . '</div><div class="col-xs-8"><h3 class="list-group-item-heading">' . metadata($related_item, array('Dublin Core', 'Title')) . '</h3></div></div>', array('class'=>'list-group-item'), 'show', $related_item);
+        release_object($related_item);
+      }
+      $html .= '</div></div></div>';
+      return $html;
     }
-    $html .= '</div></div></div>';
-    return $html;
   }
 }
 
