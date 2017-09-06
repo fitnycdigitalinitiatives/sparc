@@ -222,11 +222,11 @@ function related_items($current_item)
   }
   if (($related_items_1) || ($related_items_2) || ($related_items_3) || ($related_items_4)) {
     $related_items = array_merge(@$related_items_1, @$related_items_2, @$related_items_3, @$related_items_4);
-    $related_items = array_unique($related_items);
-    $related_items = array_slice($related_items, 0, 7);
-    if ($related_items) {
+    $unique_related_items = array_unique($related_items);
+    $sliced_related_items = array_slice($unique_related_items, 0, 7);
+    if ($sliced_related_items) {
       $html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
-      foreach ($related_items as $related_item) {
+      foreach ($sliced_related_items as $related_item) {
         $html .= link_to_item('<div class="row"><div class="col-xs-4">' . mdid_square_thumbnail_tag($related_item, 'img-responsive') . '</div><div class="col-xs-8"><h3 class="list-group-item-heading">' . metadata($related_item, array('Dublin Core', 'Title')) . '</h3></div></div>', array('class'=>'list-group-item'), 'show', $related_item);
         release_object($related_item);
       }
