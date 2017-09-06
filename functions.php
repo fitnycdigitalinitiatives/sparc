@@ -345,7 +345,7 @@ function basic_color_board($palette = null) {
 function mdid_image_tag($item, $class)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
-		$html = '<img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/" class="' . $class . '">';
+		$html = '<img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/" class="' . $class . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '">';
 		return $html;
 
 	}
@@ -353,11 +353,11 @@ function mdid_image_tag($item, $class)
 function mdid_thumbnail_tag($item, $class)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
-		$html = '<div class="thumbnail-container"><img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/400x400" class="' . $class . '"></div>';
+		$html = '<div class="thumbnail-container"><img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/400x400" class="' . $class . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '"></div>';
 		return $html;
 	}
   else {
-    $html = '<div class="thumbnail-container"><img src="' . img("fallback-image.png") . '" class="' . $class . '"></div>';
+    $html = '<div class="thumbnail-container"><img src="' . img("fallback-image.png") . '" class="' . $class . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '"></div>';
 		return $html;
   }
 }
@@ -371,7 +371,7 @@ function mdid_thumbnail_url($item)
 function mdid_square_thumbnail_tag($item, $class)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
-		$html = '<div class="thumbnail-container"><img src="https://fitdil.fitnyc.edu/media/thumb/' . $record_id . '/' . $record_name . '/?square" class="' . $class . '"></div>';
+		$html = '<div class="thumbnail-container"><img src="https://fitdil.fitnyc.edu/media/thumb/' . $record_id . '/' . $record_name . '/?square" class="' . $class . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '"></div>';
 		return $html;
 
 	}
