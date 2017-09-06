@@ -196,7 +196,7 @@ function item_search_filters_bootstrap(array $params = null)
 
 function related_items($current_item)
 {
-  if (($collection = get_collection_for_item($current_item)) && ($subject_1 = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 0)))) {
+  if (($collection = get_collection_for_item($current_item)) && ($subject_1 = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 0, 'no_escape' => true)))) {
 		$related_items_1 = get_records('Item', array('collection' => metadata($collection, 'id'), 'tags' => $subject_1, 'sort_field' => 'random'), 7);
     echo $subject_1;
     echo var_dump($related_items_1);
