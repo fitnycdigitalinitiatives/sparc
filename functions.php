@@ -262,7 +262,7 @@ function palette($current_item)
       $params = http_build_query($paramArray);
       $url = url('/items/browse?') . $params;
 			$html .= '<li id="swatch" data-toggle="tooltip" title="Closest color: '. $name . '"><a href="' . $url .'">';
-			$html .= '<div style="background-color:' . $color . ';">';
+			$html .= '<span class="sr-only">' . $name . '</span><div style="background-color:' . $color . ';">';
 			$html .= '</div></a></li>';
 		}
 		$html .= '</ul>';
@@ -314,7 +314,7 @@ function css4_color_board($palette = null) {
     $params = http_build_query($paramArray);
     $url = url('/items/browse?') . $params;
     $html .= '<li id="swatch" data-toggle="tooltip" title="'. $color_name . '"><a href="' . $url .'">';
-    $html .= '<div style="background-color:' . $hexcode . ';">';
+    $html .= '<span class="sr-only">' . $color_name . '</span><div style="background-color:' . $hexcode . ';">';
     $html .= '</div></a></li>';
   }
   $html .= '</ul>';
@@ -336,7 +336,7 @@ function basic_color_board($palette = null) {
     $params = http_build_query($paramArray);
     $url = url('/items/browse?') . $params;
     $html .= '<li id="bar" data-toggle="tooltip" title="'. $color_name . '"><a href="' . $url .'">';
-    $html .= '<div style="background-color:' . $hexcode . ';">';
+    $html .= '<span class="sr-only">' . $color_name . '</span><div style="background-color:' . $hexcode . ';">';
     $html .= '</div></a></li>';
   }
   $html .= '</ul>';
