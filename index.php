@@ -10,7 +10,7 @@
 		<div class="input-group input-group-md">
 			<input type="text" name="query" id="query" value="" class="form-control" placeholder="Search the collection" aria-label="Search">
 			<span class="input-group-btn">
-				<button class="btn btn-default" name="submit_search" id="submit_search" type="submit" value="Search"><span class="glyphicon glyphicon-search" aria-label="search"></span></button>
+				<button class="btn btn-default" name="submit_search" id="submit_search" type="submit" value="Search"><span class="glyphicon glyphicon-search" aria-label="search"></span><span class="sr-only">Search</span></button>
 			</span>
 		</div>
 	</form>
