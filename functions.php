@@ -228,6 +228,8 @@ function related_items($current_item)
       $html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
       foreach ($sliced_related_items as $related_item) {
         $html .= link_to_item('<div class="row"><div class="col-xs-4">' . mdid_square_thumbnail_tag($related_item, 'img-responsive') . '</div><div class="col-xs-8"><h3 class="list-group-item-heading">' . metadata($related_item, array('Dublin Core', 'Title')) . '</h3></div></div>', array('class'=>'list-group-item'), 'show', $related_item);
+        echo metadata($current_item, 'id');
+        echo metadata($related_item, 'id');
         release_object($related_item);
       }
       $html .= '</div></div></div>';
