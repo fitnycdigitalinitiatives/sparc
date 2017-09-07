@@ -1,10 +1,17 @@
-<?php
-    $pageTitle = __('Items');
-    echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
-?>
+<?php if ($total_results > 0): ?>
+  <?php
+      $pageTitle = __('Items');
+      echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
+  ?>
+<?php else: ?>
+  <?php
+      $pageTitle = __('Items');
+      echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse error'));
+  ?>
+<?php endif; ?>
 
   <div class="row results">
-    <?php if ($isfb = item_search_filters_bootstrap()): ?>
+    <?php if (($isfb = item_search_filters_bootstrap()) && ($total_results > 0)): ?>
       <!-- Has Search Results -->
       <div class="col-xs-8">
         <h4>Showing <?php echo $total_results; ?> results for <em><?php echo $isfb; ?></em></h4>
@@ -71,7 +78,8 @@
 		</div>
 		<?php echo pagination_links(); ?>
 	<?php else : ?>
-		<p>Your search returned no results. Please try another keyword. Or try our <a href="/items/search">Advanced Search</a>.</p>
+    <h1>Oh Dear...</h1>
+    <p class="lead">We regret to inform you that there are no items at this time that match your search. Please try browsing by another color or searching by a term.</p>
 	<?php endif; ?>
 	</div>
 
