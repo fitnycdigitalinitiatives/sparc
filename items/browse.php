@@ -26,13 +26,13 @@
       </div>
     <?php else: ?>
       <!-- No Results -->
-      <div class="col-sm-4 col-xs-8">
+      <div class="col-md-3 col-sm-4 col-xs-8">
         <h4>Showing <?php echo $total_results; ?> items total</h4>
       </div>
-      <div class="col-sm-4 hidden-xs" id="color-bar">
+      <div class="col-md-6 col-sm-4 hidden-xs" id="color-bar">
         <?php echo basic_color_board(); ?>
       </div>
-      <div class="col-xs-4">
+      <div class="col-md-3 col-xs-4">
         <div id="sort_button" class="dropdown pull-right">
           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
             Sort by:
