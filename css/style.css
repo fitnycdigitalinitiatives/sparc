@@ -198,7 +198,7 @@ body#home {
 #color-bar ul {
 	padding-left: 0;
 	list-style: none;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 0;
 }
 #color-bar #bar {
@@ -208,9 +208,19 @@ body#home {
 #color-bar #bar div {
 	width: 2rem;
 	height: 2rem;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
 	border-radius: 50%;
 	box-shadow: -1px 0px 3px 0px #888888;
+	transition: width .5s, height .5s, margin .5s;
+}
+#color-bar #bar div:hover {
+	width: 3rem;
+	height: 3rem;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .item-thumb {
 	margin-bottom: 30px;
