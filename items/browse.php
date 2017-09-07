@@ -5,6 +5,7 @@
 
   <div class="row results">
     <?php if ($isfb = item_search_filters_bootstrap()): ?>
+      <!-- Has Search Results -->
       <div class="col-xs-8">
         <h4>Showing <?php echo $total_results; ?> results for <em><?php echo $isfb; ?></em></h4>
       </div>
@@ -24,10 +25,12 @@
         </div>
       </div>
     <?php else: ?>
+      <!-- No Results -->
       <div class="col-sm-4 col-xs-8">
         <h4>Showing <?php echo $total_results; ?> items total</h4>
       </div>
-      <div class="col-sm-4 hidden-xs">
+      <div class="col-sm-4 hidden-xs" id="color-bar">
+        <?php echo basic_color_board(); ?>
       </div>
       <div class="col-xs-4">
         <div id="sort_button" class="dropdown pull-right">
