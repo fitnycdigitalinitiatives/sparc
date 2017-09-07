@@ -98,7 +98,7 @@
     <div class="row">
       <div class="col-sm-4 col-xs-6">
         <h1>Oh Dear...</h1>
-        <p class="lead">We regret to inform you that there are no items at this time that match your search. Please try browsing by another color or searching by a term.</p>
+        <p class="lead">We regret to inform you that there are no items at this time that match that color family. As we continue to add materials to our collection, browsing by color will yield more fruitful results. Please try selecting another color or searching by a term.</p>
       </div>
     </div>
 	<?php endif; ?>
