@@ -98,7 +98,7 @@
     <div class="row">
       <div class="col-sm-4 col-xs-6">
         <h1>Oh Dear...</h1>
-        <p class="lead">We regret to inform you that there are no items at this time that match that color family. As we continue to add materials to our collection, browsing by color will yield more fruitful results.</p>
+        <p class="lead">It doesn't look like there are any items that match that color family at this time. As we continue to add materials to our collection, browsing by color will yield more fruitful results.</p>
         <p class="lead">At this time, please try selecting another color or searching by a term.</p>
       </div>
     </div>
