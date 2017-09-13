@@ -602,6 +602,9 @@ body.exhibits.summary, body.exhibits.show {
 	margin-bottom: 20px;
 	margin-top: 40px;
 }
+.simple-page dt {
+	margin-top: 10px;
+}
 #about #the-collection {
 	margin-bottom: 0;
 }
