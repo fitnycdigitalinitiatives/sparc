@@ -70,7 +70,6 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 150px;
-	margin-top: 20px;
 	background-color: #222;
 	border-top: 1px solid #080808;
 	padding-top: 20px;
@@ -363,6 +362,9 @@ body#home {
 .addthis_sharing_toolbox {
 	margin-bottom: 20px;
 	float: right;
+}
+#meta-related {
+	margin-bottom: 20px;
 }
 .metalist .element dt {
 	font-size: 24px;

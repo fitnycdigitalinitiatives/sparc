@@ -19,7 +19,7 @@
 			<div class="addthis_sharing_toolbox"></div>
     </div>
 	</div>
-	<div class="row">
+	<div class="row" id="meta-related">
 		<div class="col-md-8">
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -49,9 +49,5 @@
 		<?php echo related_items($item); ?>
 	</div>
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
-    <ul class="pager">
-        <li class="previous"><?php echo link_to_previous_item_show(); ?></li>
-        <li class="next"><?php echo link_to_next_item_show(); ?></li>
-    </ul>
 
 <?php echo foot(array('bodyclass' => 'items show')); ?>
