@@ -2,7 +2,7 @@
 if ($this->pageCount > 1):
     $getParams = $_GET;
 ?>
-<div class="row exhibit-nav">
+<div class="row browse-nav">
     <div class="col-xs-12">
       <!-- Previous page link -->
       <?php if (isset($this->previous)): ?>

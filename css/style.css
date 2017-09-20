@@ -469,14 +469,14 @@ body.exhibits.summary, body.exhibits.show {
 .summary-nav {
   margin-top: 15px;
 }
-.summary-nav .previous {
+.summary-nav .previous, .browse-nav .previous {
   position: fixed;
   top: 50%;
   left: 15px;
   margin-top: -24px;
   z-index: 1;
 }
-.summary-nav .next {
+.summary-nav .next, .browse-nav .next {
   position: fixed;
   top: 50%;
   right: 15px;
