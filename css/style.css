@@ -516,9 +516,15 @@ body.exhibits.summary, body.exhibits.show {
     float: right;
     margin-top: 0;
   }
+	.browse-nav .previous {
+		left: -15px;
+	}
+	.browse-nav .next {
+		right: -15px;
+	}
 }
 @media (max-width: 1199px) {
-  .summary-nav .previous {
+  .summary-nav .previous, .browse-nav .previous {
     position: fixed;
     top: 50%;
     left: 15px;
@@ -526,7 +532,7 @@ body.exhibits.summary, body.exhibits.show {
     z-index: 1;
     float: none;
   }
-  .summary-nav .next {
+  .summary-nav .next, .browse-nav .next {
     position: fixed;
     top: 50%;
     right: 15px;
@@ -546,6 +552,12 @@ body.exhibits.summary, body.exhibits.show {
     float: right;
     margin-top: 0;
   }
+	.browse-nav .previous {
+		left: -15px;
+	}
+	.browse-nav .next {
+		right: -15px;
+	}
 }
 @media (max-width: 991px) {
   .summary-nav .previous {
@@ -576,6 +588,12 @@ body.exhibits.summary, body.exhibits.show {
     float: right;
     margin-top: 0;
   }
+	.browse-nav .previous {
+		left: -15px;
+	}
+	.browse-nav .next {
+		right: -15px;
+	}
 }
 @media (max-width: 767px) {
 	.openseadragon-frame {
@@ -586,6 +604,9 @@ body.exhibits.summary, body.exhibits.show {
 	}
 	.addthis_sharing_toolbox {
 		float: none;
+	}
+	.browse-nav {
+		display: none;
 	}
 
 }
