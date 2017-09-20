@@ -94,6 +94,7 @@
 			<?php endforeach; ?>
 		</div>
 		<?php echo pagination_links(); ?>
+    <?php echo pagination_links(array('partial' => 'common/pagination_prev_next.php')); ?>
 	<?php else : ?>
     <div class="row">
       <div class="col-sm-4 col-xs-6">
