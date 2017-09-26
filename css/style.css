@@ -121,6 +121,11 @@ body#home {
   background-position: center;
   background-position-y: 51px;
 }
+@media (max-width: 767px) {
+	body#home {
+		background-image: url('../images/background4_mobile.jpg');
+	}
+}
 #home form.navbar-form {
   display: none;
 }
