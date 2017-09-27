@@ -352,7 +352,7 @@ function mdid_image_tag($item, $class)
 function mdid_thumbnail_tag($item, $class)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
-		$html = '<div class="thumbnail-container"><img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/400x400" class="' . $class . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '"></div>';
+		$html = '<div class="thumbnail-container"><img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/400x400/" class="' . $class . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '"></div>';
 		return $html;
 	}
   else {
@@ -363,7 +363,7 @@ function mdid_thumbnail_tag($item, $class)
 function mdid_thumbnail_url($item)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
-		$url = 'https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/400x400';
+		$url = 'https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/400x400/';
 		return $url;
 	}
 }
