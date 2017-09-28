@@ -54,7 +54,28 @@ header .navbar-brand {
 header .navbar-brand img {
   height: 30px;
 }
-
+/* Autocomplete fix */
+.navbar .twitter-typeahead {
+	vertical-align: middle;
+	width: 100%;
+}
+.navbar .input-group .twitter-typeahead .form-control {
+	border-radius: 4px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.navbar .twitter-typeahead .tt-menu {
+	padding: 6px 12px;
+	margin: 12px 0;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
 /*! Sticky footer */
 html {
   position: relative;
