@@ -79,8 +79,8 @@
     minLength: 1
     },
     {
-    name: 'states',
-    source: states
+    name: 'tags',
+    source: tags
     });
   });
   </script>
