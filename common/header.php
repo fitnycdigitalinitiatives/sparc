@@ -80,7 +80,9 @@
     name: 'tags',
     source: tags,
     templates: {
-      suggestion: Handlebars.compile('<div> X</div>')
+      suggestion: function(data) {
+        return '<div>' + data + '</div>';
+      }
     }
     });
   });
