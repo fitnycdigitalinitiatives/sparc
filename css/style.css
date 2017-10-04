@@ -66,7 +66,7 @@ header .navbar-brand img {
 }
 .navbar .twitter-typeahead .tt-menu, #home .jumbotron .twitter-typeahead .tt-menu {
 	padding: 6px 0;
-	margin: 12px 0;
+	margin: 10px 0;
 	background-color: #fff;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	-webkit-border-radius: 4px;
@@ -75,7 +75,7 @@ header .navbar-brand img {
 	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
 	-moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
 	box-shadow: 0 5px 10px rgba(0,0,0,.2);
-	width: 195px;
+	width: 100%;
 }
 .navbar .twitter-typeahead .tt-suggestion, #home .jumbotron .twitter-typeahead .tt-suggestion {
 	padding: 2px 12px;
@@ -88,6 +88,29 @@ header .navbar-brand img {
 	cursor: pointer;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
+}
+/*! Caret */
+.tt-menu::before {
+  position: absolute;
+  top: -8px;
+  left: 11px;
+  display: inline-block;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #CCC;
+  border-left: 11px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+
+.tt-menu::after {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  display: inline-block;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  border-left: 10px solid transparent;
+  content: '';
 }
 /*! Sticky footer */
 html {
