@@ -68,7 +68,7 @@
     var tags = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.whitespace,
     queryTokenizer: Bloodhound.tokenizers.whitespace,
-    prefetch: '<?php echo src('tags', 'javascripts/lib/typeahead', 'json'); ?>'
+    prefetch: '<?php echo src('autocomplete_tags', 'javascripts/lib/typeahead', 'json'); ?>'
     });
 
     $('.input-group #query').typeahead({
