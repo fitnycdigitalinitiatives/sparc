@@ -92,8 +92,8 @@ header .navbar-brand img {
 /*! Caret */
 .tt-menu::before {
   position: absolute;
-  top: -8px;
-  left: 11px;
+  top: -11px;
+  left: 9px;
   display: inline-block;
   border-right: 11px solid transparent;
   border-bottom: 11px solid #CCC;
