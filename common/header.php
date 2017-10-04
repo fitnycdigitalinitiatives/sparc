@@ -78,7 +78,10 @@
     },
     {
     name: 'tags',
-    source: tags
+    source: tags,
+    templates: {
+      suggestion: Handlebars.compile('<div>{{value}} X</div>')
+    }
     });
   });
   </script>
