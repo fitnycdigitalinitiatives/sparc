@@ -80,7 +80,7 @@
     name: 'tags',
     source: tags,
     templates: {
-      suggestion: Handlebars.compile('<div>{{value}} X</div>')
+      suggestion: Handlebars.compile('<div> X</div>')
     }
     });
   });
