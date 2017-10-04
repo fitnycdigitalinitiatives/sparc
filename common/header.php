@@ -74,12 +74,12 @@
     $('.input-group #query').typeahead({
     hint: true,
     highlight: true,
-    limit: 7,
     minLength: 1
     },
     {
     name: 'tags',
     source: tags,
+    limit: 7,
     templates: {
       suggestion: function(data){
             return '<a href="/solr-search?q=%28' + encodeURIComponent(data) + '%29"><div>' + data + '</div></a>';
