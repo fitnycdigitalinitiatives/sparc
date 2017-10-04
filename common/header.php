@@ -74,6 +74,7 @@
     $('.input-group #query').typeahead({
     hint: true,
     highlight: true,
+    limit: 7,
     minLength: 1
     },
     {
