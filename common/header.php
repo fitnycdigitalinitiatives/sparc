@@ -81,7 +81,7 @@
     source: tags,
     templates: {
       suggestion: function(data){
-            return '<div>' + data + ' is eating you</div>';
+            return '<div><a href="/solr-search?q=%28' + data + '%29">' + data + '</a></div>';
       }
     }
     });
