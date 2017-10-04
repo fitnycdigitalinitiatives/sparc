@@ -79,7 +79,7 @@
     {
     name: 'tags',
     source: tags,
-    limit: 7,
+    limit: 20,
     templates: {
       suggestion: function(data){
             return '<a href="/solr-search?q=%28' + encodeURIComponent(data) + '%29"><div>' + data + '</div></a>';
