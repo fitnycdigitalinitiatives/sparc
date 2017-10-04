@@ -89,6 +89,10 @@ header .navbar-brand img {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 }
+.form-control:focus {
+  border-color: #ccc;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
 /*! Caret */
 .tt-menu::before {
   position: absolute;
