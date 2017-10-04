@@ -81,7 +81,7 @@
     source: tags,
     templates: {
       suggestion: function(data){
-            return '<div>I am testing you</div>';
+            return '<div>' console.log(data) '</div>';
       }
     }
     });
