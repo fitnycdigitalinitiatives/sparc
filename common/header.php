@@ -80,8 +80,8 @@
     name: 'tags',
     source: tags,
     templates: {
-      suggestion: function (data) {
-          console.log(data);
+      suggestion: function(data){
+            return 'I am testing you';
       }
     }
     });
