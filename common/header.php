@@ -81,7 +81,7 @@
     source: tags,
     templates: {
       suggestion: function(data){
-            return '<div>' + console.log(data) + '</div>';
+            return '<div>' + data + ' is eating you</div>';
       }
     }
     });
