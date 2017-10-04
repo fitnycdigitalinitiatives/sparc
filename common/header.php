@@ -81,7 +81,7 @@
     source: tags,
     templates: {
       suggestion: function(data){
-            return '<div><a href="/solr-search?q=%28' + encodeURIComponent(data) + '%29">' + data + '</a></div>';
+            return '<a href="/solr-search?q=%28' + encodeURIComponent(data) + '%29"><div>' + data + '</div></a>';
       }
     }
     });
