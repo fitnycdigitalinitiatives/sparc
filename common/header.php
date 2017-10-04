@@ -392,7 +392,7 @@
       "Zou Zou":1};
     // constructs the suggestion engine
     var tags = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.whitespace,
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('tags[0]'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     local: tags
     });
