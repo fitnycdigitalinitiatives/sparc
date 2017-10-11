@@ -72,7 +72,7 @@
     });
 
     $('.input-group #query').typeahead({
-    hint: true,
+    hint: false,
     highlight: true,
     minLength: 1
     },
