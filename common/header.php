@@ -83,7 +83,7 @@
     limit: 7,
     templates: {
       suggestion: function(data){
-            return '<a href="/solr-search?q=%28' + encodeURIComponent(data.tag) + '%29"><div>' + data.tag + '&nbsp;<span class="badge tag-count">' + data.count + '</span></div></a>';
+            return '<a href="/solr-search?q=%28' + encodeURIComponent(data.tag) + '%29"><div><span class="badge tag-count pull-right">' + data.count + '</span>' + data.tag + '</div></a>';
       }
     }
     });
