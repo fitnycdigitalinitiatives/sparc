@@ -200,11 +200,6 @@ body#home {
 #home form.navbar-form {
   display: none;
 }
-@media (min-width: 768px) {
-	#home .jumbotron .form-control {
-		font-size: 18px;
-	}
-}
 #home .footer.common {
   bottom: -150px;
 }
