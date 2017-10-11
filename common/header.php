@@ -83,7 +83,7 @@
     limit: 7,
     templates: {
       suggestion: function(data){
-            return '<a href="/solr-search?q=%28' + encodeURIComponent(data.tag) + '%29"><div>' + data.tag + '</div></a>';
+            return '<a href="/solr-search?q=%28' + encodeURIComponent(data) + '%29"><div>' + data + '</div></a>';
       }
     }
     });
