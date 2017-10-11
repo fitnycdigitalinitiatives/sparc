@@ -80,6 +80,7 @@
     name: 'tags',
     source: tags,
     limit: 20
+    }
     });
   });
   </script>
