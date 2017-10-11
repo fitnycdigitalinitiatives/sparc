@@ -71,7 +71,7 @@
     prefetch: '<?php echo src('autocomplete_tags_counts', 'javascripts/lib/typeahead', 'json'); ?>'
     });
 
-    $('.input-group #query').typeahead({
+    $('.form-group #query').typeahead({
     hint: false,
     highlight: true,
     minLength: 1
