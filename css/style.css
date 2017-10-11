@@ -75,8 +75,7 @@ header .navbar-brand img {
 	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
 	-moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
 	box-shadow: 0 5px 10px rgba(0,0,0,.2);
-	width: 195px;
-	min-width: 100%;
+	width: 100%;
 }
 .navbar .twitter-typeahead .tt-suggestion div, #home .jumbotron .twitter-typeahead .tt-suggestion div {
 	padding: 2px 12px;
