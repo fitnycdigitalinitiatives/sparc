@@ -66,7 +66,7 @@
   jQuery(document).ready(function($){
     // constructs the suggestion engine
     var tags = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.whitespace,
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('tag'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: '<?php echo src('autocomplete_tags', 'javascripts/lib/typeahead', 'json'); ?>'
     });
@@ -78,11 +78,12 @@
     },
     {
     name: 'tags',
+    display: 'tag',
     source: tags,
     limit: 7,
     templates: {
       suggestion: function(data){
-            return '<a href="/solr-search?q=%28' + encodeURIComponent(data) + '%29"><div>' + data + '</div></a>';
+            return '<a href="/solr-search?q=%28' + encodeURIComponent(data.tag) + '%29"><div>' + data.tag + '<span class="badge tag-count">' + data.tag + '</span></div></a>';
       }
     }
     });
