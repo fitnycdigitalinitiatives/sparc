@@ -116,6 +116,12 @@ header .navbar-brand img {
   border-left: 10px solid transparent;
   content: '';
 }
+/*! Display autocomplete on mobile */
+@media (max-width: 767px) {
+	.navbar-collapse.in {
+		overflow-y: initial;
+	}
+}
 /*! Sticky footer */
 html {
   position: relative;
