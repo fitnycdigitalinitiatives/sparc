@@ -215,8 +215,10 @@ body#home {
 }
 #home .jumbotron {
   background-color: transparent;
-  color: #fff;
 	margin-top: 100px;
+}
+#home .jumbotron h2 {
+	color: #fff;
 }
 @media (max-width: 767px) {
 	#home .jumbotron {
