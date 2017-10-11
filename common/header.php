@@ -85,7 +85,7 @@
       suggestion: function(data){
             return '<a href="/solr-search?q=%28' + encodeURIComponent(data.tag) + '%29"><div><span class="badge tag-count pull-right">' + data.count + '</span>' + data.tag + '</div></a>';
       },
-      header: '<h5>Suggested Tags</h5>'
+      header: '<div><strong>Suggested Tags</strong></div>'
     }
     });
   });
