@@ -24,7 +24,7 @@
     <?php
         queue_css_url('//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic');
         queue_css_file('lib/bootstrap.min');
-        queue_css_file('style');
+        queue_css_file('style-1');
         queue_css_file('fonts/font-awesome/css/font-awesome.min');
         echo head_css();
     ?>
@@ -33,6 +33,7 @@
     <!-- Need more JavaScript files? Include them here -->
     <?php
         queue_js_file('lib/bootstrap.min');
+        queue_js_file('lib/typeahead/typeahead.bundle.min');
         echo head_js();
     ?>
     <script>
@@ -61,6 +62,33 @@
     })
 	})
 	</script>
+  <script>
+  jQuery(document).ready(function($){
+    // constructs the suggestion engine
+    var tags = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('tag'),
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    prefetch: '<?php echo src('autocomplete_tags_counts', 'javascripts/lib/typeahead', 'json'); ?>'
+    });
+
+    $('.form-group #query').typeahead({
+    hint: false,
+    highlight: true,
+    minLength: 1
+    },
+    {
+    name: 'tags',
+    display: 'tag',
+    source: tags,
+    limit: 7,
+    templates: {
+      suggestion: function(data){
+            return '<a href=\'/solr-search?q=&facet=tag%3A"' + encodeURIComponent(data.tag) + '"\'><div><span class="badge tag-count pull-right">' + data.count + '</span>' + data.tag + '</div></a>';
+      }
+    }
+    });
+  });
+  </script>
 
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
