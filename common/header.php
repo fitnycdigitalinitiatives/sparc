@@ -86,6 +86,8 @@
             return '<a href=\'/solr-search?q=&facet=tag%3A"' + encodeURIComponent(data.tag) + '"\'><div><span class="badge tag-count pull-right">' + data.count + '</span>' + data.tag + '</div></a>';
       }
     }
+    }).bind('typeahead:select', function(ev, suggestion) {
+      console.log('Selection: ' + suggestion);
     });
   });
   </script>
