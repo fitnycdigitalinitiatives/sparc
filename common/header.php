@@ -80,7 +80,12 @@
     name: 'tags',
     display: 'tag',
     source: tags,
-    limit: 7
+    limit: 7,
+    templates: {
+      suggestion: function(data){
+            return '<div><span class="badge tag-count pull-right">' + data.count + '</span>' + data.tag + '</div>';
+      }
+    }
   }).bind('typeahead:select', function(ev, data) {
       var search_url = '/solr-search?q=&facet=tag%3A%22' + encodeURIComponent(data.tag) + '%22';
       window.location.href = search_url;
