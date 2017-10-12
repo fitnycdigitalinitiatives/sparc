@@ -87,7 +87,8 @@
       }
     }
     }).bind('typeahead:select', function(ev, suggestion) {
-      console.log('Selection: ' + suggestion.tag);
+      var search_url = '/solr-search?q=&facet=tag%3A%20' + encodeURIComponent(data.tag) + '%20';
+      window.location.href = search_url;
     });
   });
   </script>
