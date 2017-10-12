@@ -24,7 +24,7 @@
     <?php
         queue_css_url('//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic');
         queue_css_file('lib/bootstrap.min');
-        queue_css_file('style-2');
+        queue_css_file('style-3');
         queue_css_file('fonts/font-awesome/css/font-awesome.min');
         echo head_css();
     ?>
@@ -80,7 +80,12 @@
     name: 'tags',
     display: 'tag',
     source: tags,
-    limit: 7
+    limit: 7,
+    templates: {
+      suggestion: function(data){
+            return '<div><span class="badge tag-count pull-right">' + data.count + '</span>' + data.tag + '</div>';
+      }
+    }
   }).bind('typeahead:select', function(ev, data) {
       var search_url = '/solr-search?q=&facet=tag%3A%22' + encodeURIComponent(data.tag) + '%22';
       window.location.href = search_url;
