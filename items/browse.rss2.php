@@ -1,2 +1,3 @@
 <?php
-echo sparc_render_rss2($items);
+$convert = new Output_ItemRss2_Custom;
+echo $convert->render($items);
