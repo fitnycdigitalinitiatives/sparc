@@ -456,8 +456,7 @@ class Output_ItemRss2_Custom
             $entries[] = $this->itemToRss($record);
             release_object($record);
         }
-        $headers = $this->buildRSSHeaders();
-        echo $headers;
+        echo $entries;
     }
     protected function buildRSSHeaders()
     {
