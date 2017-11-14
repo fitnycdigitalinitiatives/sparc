@@ -457,6 +457,7 @@ function sparc_render_rss2(array $records)
     $headers = sparc_buildRSSHeaders();
     $headers['entries'] = $entries;
     $feed = Zend_Feed::importArray($headers, 'rss');
+    echo 'This is a test'
     return $feed->saveXML();
 }
 function sparc_buildRSSHeaders()
