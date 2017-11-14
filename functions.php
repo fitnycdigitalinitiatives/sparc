@@ -451,15 +451,7 @@ class Output_ItemRss2_Custom
 {
     public function render(array $records)
     {
-        $entries = array();
-        foreach ($records as $record) {
-            $entries[] = $this->itemToRss($record);
-            release_object($record);
-        }
-        $headers = $this->buildRSSHeaders();
-        $headers['entries'] = $entries;
-        $feed = Zend_Feed::importArray($headers, 'rss');
-        return 'wasssup';
+        echo "testing";
     }
     protected function buildRSSHeaders()
     {
