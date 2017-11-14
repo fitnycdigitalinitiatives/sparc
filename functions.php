@@ -454,7 +454,7 @@ function sparc_render_rss2(array $records)
         $entries[] = sparc_itemToRss($record);
         release_object($record);
     }
-    $headers = $this->sparc_buildRSSHeaders();
+    $headers = sparc_buildRSSHeaders();
     $headers['entries'] = $entries;
     $feed = Zend_Feed::importArray($headers, 'rss');
     return $feed->saveXML();
@@ -487,7 +487,7 @@ function sparc_itemToRSS($item)
     set_current_record('item', $item, true);
     // Title is a CDATA section, so no need for extra escaping.
     $entry['title'] = metadata($item, 'display_title', array('no_escape' => true));
-    $entry['description'] = $this->buildDescription($item);
+    $entry['description'] = sparc_buildDescription($item);
     $entry['link'] = xml_escape(record_url($item, null, true));
     $entry['lastUpdate'] = strtotime($item->added);
     //List the first file as an enclosure (only one per RSS feed)
