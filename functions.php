@@ -451,7 +451,13 @@ class Output_ItemRss2_Custom
 {
     public function render(array $records)
     {
-        echo "testing";
+        $entries = array();
+        foreach ($records as $record) {
+            $entries[] = $this->itemToRss($record);
+            release_object($record);
+        }
+        $headers = $this->buildRSSHeaders();
+        echo $headers;
     }
     protected function buildRSSHeaders()
     {
