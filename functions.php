@@ -451,7 +451,7 @@ function sparc_render_rss2(array $records)
 {
     $entries = array();
     foreach ($records as $record) {
-        $entries[] = $this->sparc_itemToRss($record);
+        $entries[] = sparc_itemToRss($record);
         release_object($record);
     }
     $headers = $this->sparc_buildRSSHeaders();
