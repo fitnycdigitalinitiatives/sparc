@@ -459,7 +459,7 @@ class Output_ItemRss2_Custom
         $headers = $this->buildRSSHeaders();
         $headers['entries'] = $entries;
         $feed = Zend_Feed::importArray($headers, 'rss');
-        return $feed->saveXML();
+        return 'wasssup';
     }
     protected function buildRSSHeaders()
     {
