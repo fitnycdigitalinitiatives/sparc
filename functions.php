@@ -349,6 +349,14 @@ function mdid_image_tag($item, $class)
 
 	}
 }
+function mdid_rss_image_tag($item)
+{
+	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
+		$html = '<img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/600x600/" class="rss" alt="' . metadata($item, array('Dublin Core', 'Title')) . '">';
+		return $html;
+
+	}
+}
 function mdid_thumbnail_tag($item, $class)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
@@ -435,4 +443,61 @@ function social_tags($bodyclass) {
 		}
 	}
 	return $html;
+}
+
+// Creates custom RSS2 feed.
+
+function sparc_render_rss2(array $records)
+{
+    $entries = array();
+    foreach ($records as $record) {
+        $entries[] = $this->sparc_itemToRss($record);
+        release_object($record);
+    }
+    $headers = $this->sparc_buildRSSHeaders();
+    $headers['entries'] = $entries;
+    $feed = Zend_Feed::importArray($headers, 'rss');
+    return $feed->saveXML();
+}
+function sparc_buildRSSHeaders()
+{
+    $headers = array();
+    // How do we determine what title to give the RSS feed?
+    $headers['title'] = option('site_title');
+    $headers['link'] = xml_escape(get_view()->serverUrl(isset($_SERVER['REQUEST_URI'])));
+    $headers['lastUpdate'] = time();
+    $headers['charset'] = "UTF-8";
+    // Feed could have a description, where would it be stored ?
+    // $headers['description'] = ""
+    $headers['author'] = option('site_title');
+    $headers['email'] = option('administrator_email');
+    $headers['copyright'] = option('copyright');
+    //How do we determine how long a feed can be cached?
+    //$headers['ttl'] =
+    return $headers;
+}
+function sparc_buildDescription($item)
+{
+    $description = mdid_rss_image_tag($item);
+    return $description;
+}
+function sparc_itemToRSS($item)
+{
+    $entry = array();
+    set_current_record('item', $item, true);
+    // Title is a CDATA section, so no need for extra escaping.
+    $entry['title'] = metadata($item, 'display_title', array('no_escape' => true));
+    $entry['description'] = $this->buildDescription($item);
+    $entry['link'] = xml_escape(record_url($item, null, true));
+    $entry['lastUpdate'] = strtotime($item->added);
+    //List the first file as an enclosure (only one per RSS feed)
+    if (($files = $item->Files) && ($file = current($files))) {
+        $entry['enclosure'] = array();
+        $fileDownloadUrl = file_display_url($file);
+        $enc['url'] = $fileDownloadUrl;
+        $enc['type'] = $file->mime_type;
+        $enc['length'] = (int) $file->size;
+        $entry['enclosure'][] = $enc;
+    }
+    return $entry;
 }
