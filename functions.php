@@ -461,7 +461,7 @@ class Output_ItemRss2_Custom
         $feed = Zend_Feed::importArray($headers, 'rss');
         return $feed->saveXML();
     }
-    protected function buildRSSHeaders_custom()
+    public function buildRSSHeaders_custom()
     {
         $headers = array();
         // How do we determine what title to give the RSS feed?
@@ -478,14 +478,14 @@ class Output_ItemRss2_Custom
         //$headers['ttl'] =
         return $headers;
     }
-    protected function buildDescription_custom($item)
+    public function buildDescription_custom($item)
     {
         $description = all_element_texts($item);
         //Output HTML that would display all the files in whatever way is possible
         $description .= file_markup($item->Files);
         return $description;
     }
-    protected function itemToRSS_custom($item)
+    public function itemToRSS_custom($item)
     {
         $entry = array();
         set_current_record('item', $item, true);
