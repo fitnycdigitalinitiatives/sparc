@@ -490,7 +490,6 @@ class Output_ItemRss2_Custom
         $entry['description'] = $this->buildDescription_custom($item);
         $entry['link'] = xml_escape(record_url($item, null, true));
         $entry['lastUpdate'] = strtotime($item->added);
-        }
         return $entry;
     }
 }
