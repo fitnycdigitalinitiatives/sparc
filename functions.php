@@ -449,16 +449,19 @@ function social_tags($bodyclass) {
 
 class Output_ItemRss2_Custom
 {
-    public function render(array $records)
+    public function render_custom(array $records)
     {
         $entries = array();
         foreach ($records as $record) {
-            $entries[] = $this->itemToRss($record);
+            $entries[] = $this->itemToRSS_custom($record);
             release_object($record);
         }
-        echo $entries;
+        $headers = $this->buildRSSHeaders_custom();
+        $headers['entries'] = $entries;
+        $feed = Zend_Feed::importArray($headers, 'rss');
+        return $feed->saveXML();
     }
-    protected function buildRSSHeaders()
+    protected function buildRSSHeaders_custom()
     {
         $headers = array();
         // How do we determine what title to give the RSS feed?
@@ -475,20 +478,20 @@ class Output_ItemRss2_Custom
         //$headers['ttl'] =
         return $headers;
     }
-    protected function buildDescription($item)
+    protected function buildDescription_custom($item)
     {
         $description = all_element_texts($item);
         //Output HTML that would display all the files in whatever way is possible
         $description .= file_markup($item->Files);
         return $description;
     }
-    protected function itemToRSS($item)
+    protected function itemToRSS_custom($item)
     {
         $entry = array();
         set_current_record('item', $item, true);
         // Title is a CDATA section, so no need for extra escaping.
         $entry['title'] = metadata($item, 'display_title', array('no_escape' => true));
-        $entry['description'] = $this->buildDescription($item);
+        $entry['description'] = $this->buildDescription_custom($item);
         $entry['link'] = xml_escape(record_url($item, null, true));
         $entry['lastUpdate'] = strtotime($item->added);
         //List the first file as an enclosure (only one per RSS feed)
