@@ -364,7 +364,6 @@ function mdid_thumbnail_tag($item, $class)
 	}
   else {
     $html = '<div class="thumbnail-container"><img src="' . img("fallback-image.png") . '" class="' . $class . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '"></div>';
-
 		return $html;
   }
 }
@@ -380,7 +379,6 @@ function mdid_square_thumbnail_tag($item, $class)
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
 		$html = '<div class="thumbnail-container"><img src="https://fitdil.fitnyc.edu/media/thumb/' . $record_id . '/' . $record_name . '/?square" class="' . $class . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '"></div>';
 		return $html;
-
 	}
 }
 function get_exhibit_item ($exhibit)
