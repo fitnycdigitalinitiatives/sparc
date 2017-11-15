@@ -488,6 +488,7 @@ class Output_ItemRss2_Custom
     public function itemToRSS_custom($item)
     {
         $entry = array();
+        set_current_record('item', $item, true);
         // Title is a CDATA section, so no need for extra escaping.
         $entry['title'] = metadata($item, 'display_title', array('no_escape' => true));
         $entry['description'] = $this->buildDescription_custom($item);
