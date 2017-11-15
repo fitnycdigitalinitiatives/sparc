@@ -346,15 +346,14 @@ function mdid_image_tag($item, $class)
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
 		$html = '<img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/" class="' . $class . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '">';
 		return $html;
-
 	}
 }
 function mdid_rss_image_tag($item)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
-		$html = '<img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/600x600/" class="rss" alt="' . metadata($item, array('Dublin Core', 'Title')) . '">';
+		$img = '<img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/600x600/" class="rss" alt="' . metadata($item, array('Dublin Core', 'Title')) . '">';
+    $html = link_to_item($img, array(), 'show', $item);
 		return $html;
-
 	}
 }
 function mdid_thumbnail_tag($item, $class)
@@ -365,6 +364,7 @@ function mdid_thumbnail_tag($item, $class)
 	}
   else {
     $html = '<div class="thumbnail-container"><img src="' . img("fallback-image.png") . '" class="' . $class . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '"></div>';
+
 		return $html;
   }
 }
@@ -480,9 +480,7 @@ class Output_ItemRss2_Custom
     }
     public function buildDescription_custom($item)
     {
-        $description = all_element_texts($item);
-        //Output HTML that would display all the files in whatever way is possible
-        $description .= file_markup($item->Files);
+        $description = mdid_rss_image_tag($item);
         return $description;
     }
     public function itemToRSS_custom($item)
@@ -494,14 +492,6 @@ class Output_ItemRss2_Custom
         $entry['description'] = $this->buildDescription_custom($item);
         $entry['link'] = xml_escape(record_url($item, null, true));
         $entry['lastUpdate'] = strtotime($item->added);
-        //List the first file as an enclosure (only one per RSS feed)
-        if (($files = $item->Files) && ($file = current($files))) {
-            $entry['enclosure'] = array();
-            $fileDownloadUrl = file_display_url($file);
-            $enc['url'] = $fileDownloadUrl;
-            $enc['type'] = $file->mime_type;
-            $enc['length'] = (int) $file->size;
-            $entry['enclosure'][] = $enc;
         }
         return $entry;
     }
