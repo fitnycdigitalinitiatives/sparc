@@ -351,8 +351,8 @@ function mdid_image_tag($item, $class)
 function mdid_rss_image_tag($item)
 {
 	if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
-		$img = '<img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/600x600/" class="rss" alt="' . metadata($item, array('Dublin Core', 'Title')) . '">';
-    $html = link_to_item($img, array(), 'show', $item);
+    $url = record_url($item, null, true);
+		$html = '<a href="' . $url . '"><img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/600x600/" class="rss" alt="' . metadata($item, array('Dublin Core', 'Title')) . '"></a>';
 		return $html;
 	}
 }
