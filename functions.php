@@ -474,7 +474,7 @@ class Output_ItemRss2_Custom
         $headers['copyright'] = option('copyright');
         //How do we determine how long a feed can be cached?
         //$headers['ttl'] =
-        return 'I am a test';
+        return $headers;
     }
     public function buildDescription_custom($item)
     {
