@@ -479,7 +479,7 @@ class Output_ItemRss2_Custom
     public function buildDescription_custom($item)
     {
         $description = mdid_rss_image_tag($item);
-        return "I am a test. Please check to see if this works correctly.";
+        return $description;
     }
     public function itemToRSS_custom($item)
     {
