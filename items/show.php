@@ -18,12 +18,12 @@
       <!-- Go to www.addthis.com/dashboard to customize your tools -->
 			<div class="addthis_sharing_toolbox"></div>
     </div>
-    <div class="row">
-      <div class="col-sm-12 download">
-        <?php echo public_domain_download($item); ?>
-      </div>
-    </div>
 	</div>
+  <div class="row">
+    <div class="col-sm-12 download">
+      <?php echo public_domain_download($item); ?>
+    </div>
+  </div>
 	<div class="row" id="meta-related">
 		<div class="col-md-8">
 			<div class="panel panel-default">
