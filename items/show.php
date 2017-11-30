@@ -8,11 +8,6 @@
 			<?php echo $this->openseadragon($item); ?>
         </div>
 	</div>
-  <div class="row">
-    <div class="col-sm-12 download text-right">
-      <?php echo public_domain_download($item); ?>
-    </div>
-  </div>
 	<div class="row">
 		<div class="col-sm-6 palette">
 			<?php if (metadata('item', array('Item Type Metadata', 'Color Data'))): ?>
@@ -22,6 +17,11 @@
 		<div class="col-sm-6">
       <!-- Go to www.addthis.com/dashboard to customize your tools -->
 			<div class="addthis_sharing_toolbox"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 download">
+        <?php echo public_domain_download($item); ?>
+      </div>
     </div>
 	</div>
 	<div class="row" id="meta-related">
