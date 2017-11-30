@@ -9,12 +9,15 @@
         </div>
 	</div>
 	<div class="row">
-		<div class="col-sm-6 palette">
+		<div class="col-sm-4 palette">
 			<?php if (metadata('item', array('Item Type Metadata', 'Color Data'))): ?>
 				<?php echo palette('item'); ?>
 			<?php endif; ?>
 		</div>
-		<div class="col-sm-6">
+    <div class="col-sm-4">
+      <?php echo public_domain_download($item); ?>
+    </div>
+		<div class="col-sm-4">
       <!-- Go to www.addthis.com/dashboard to customize your tools -->
 			<div class="addthis_sharing_toolbox"></div>
     </div>

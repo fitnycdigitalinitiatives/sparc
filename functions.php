@@ -381,6 +381,18 @@ function mdid_square_thumbnail_tag($item, $class)
 		return $html;
 	}
 }
+function public_domain_download($item)
+{
+  $rights = metadata($item, array('Dublin Core', 'Rights'), array('all' => true));
+  if (in_array("Public Domain", $rights)) {
+    if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
+      $url = 'https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/?forcedl';
+      $html = '<a href="' . $url . '"><span class="glyphicon glyphicon-download" aria-hidden="true"></span>High Resolution Public Domain Image</a>';
+      return $html;
+    }
+  }
+
+}
 function get_exhibit_item ($exhibit)
 {
   $page = $exhibit->getFirstTopPage();
