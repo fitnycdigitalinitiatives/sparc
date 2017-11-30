@@ -440,6 +440,11 @@ body#home {
 	margin-bottom: 20px;
 	float: right;
 }
+#pd-download {
+	font-size: 1.2em;
+	color: #cccccc;
+	font-weight: bold;
+}
 #meta-related {
 	margin-bottom: 20px;
 }
