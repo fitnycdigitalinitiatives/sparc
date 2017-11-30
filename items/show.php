@@ -9,7 +9,7 @@
         </div>
 	</div>
   <div class="row">
-    <div class="col-sm-12 download">
+    <div class="col-sm-12 download text-right">
       <?php echo public_domain_download($item); ?>
     </div>
   </div>
