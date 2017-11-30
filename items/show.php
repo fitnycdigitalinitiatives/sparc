@@ -8,6 +8,11 @@
 			<?php echo $this->openseadragon($item); ?>
         </div>
 	</div>
+  <div class="row">
+    <div class="col-sm-12 download">
+      <?php echo public_domain_download($item); ?>
+    </div>
+  </div>
 	<div class="row">
 		<div class="col-sm-6 palette">
 			<?php if (metadata('item', array('Item Type Metadata', 'Color Data'))): ?>
@@ -19,11 +24,6 @@
 			<div class="addthis_sharing_toolbox"></div>
     </div>
 	</div>
-  <div class="row">
-    <div class="col-sm-12 download">
-      <?php echo public_domain_download($item); ?>
-    </div>
-  </div>
 	<div class="row" id="meta-related">
 		<div class="col-md-8">
 			<div class="panel panel-default">
