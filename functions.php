@@ -503,7 +503,7 @@ class Output_ItemRss2_Custom
         set_current_record('item', $item, true);
         // Title is a CDATA section, so no need for extra escaping.
         $date = metadata($item, array('Dublin Core', 'Date'), array('no_escape' => true));
-        $entry['title'] = metadata($item, array('Dublin Core', 'Title'), array('no_escape' => true)) . ($date ? '(' . $date . ')':'') ;
+        $entry['title'] = metadata($item, array('Dublin Core', 'Title'), array('no_escape' => true)) . ($date ? ' (' . $date . ')':'') ;
         $entry['description'] = $this->buildDescription_custom($item);
         $entry['link'] = xml_escape(record_url($item, null, true));
         $entry['lastUpdate'] = strtotime($item->added);
