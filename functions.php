@@ -493,7 +493,7 @@ class Output_ItemRss2_Custom
         $description = mdid_rss_image_tag($item);
         $date = metadata($item, array('Dublin Core', 'Date'), array('no_escape' => true));
         $creator = metadata($item, array('Dublin Core', 'Creator'), array('no_escape' => true));
-        $description .= '<div>' . if ($date) {echo $date} . if ($date) {echo $creator} . '</div>';
+        $description .= '<div>' . ($date ? $date:'') . ($creator ? $creator:'')  . '</div>';
         $description .= '<div>This image was provided by the FIT Library\'s Special Collections and College Archives. View more at <a href="https://sparcdigital.fitnyc.edu">sparcdigital.fitnyc.edu</a>.</div>';
         return $description;
     }
