@@ -451,6 +451,9 @@ body#home {
 	color: #fff;
 	font-weight: bold;
 }
+#pd-download .tooltip-inner {
+	min-width: 200px;
+}
 #meta-related {
 	margin-bottom: 20px;
 }
