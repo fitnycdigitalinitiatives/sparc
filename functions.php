@@ -491,10 +491,7 @@ class Output_ItemRss2_Custom
     public function buildDescription_custom($item)
     {
         $description = mdid_rss_image_tag($item);
-
-        $creator = metadata($item, array('Dublin Core', 'Creator'), array('no_escape' => true));
-        $description .= '<div>' . ($creator ? $creator:'')  . '</div>';
-        $description .= '<div>This image was provided by the FIT Library\'s Special Collections and College Archives. View more at <a href="https://sparcdigital.fitnyc.edu">sparcdigital.fitnyc.edu</a>.</div>';
+        $description .= '<div id="rss-citation">This image was provided by the FIT Library\'s Special Collections and College Archives. View more at <a href="https://sparcdigital.fitnyc.edu">sparcdigital.fitnyc.edu</a>.</div>';
         return $description;
     }
     public function itemToRSS_custom($item)
@@ -503,7 +500,8 @@ class Output_ItemRss2_Custom
         set_current_record('item', $item, true);
         // Title is a CDATA section, so no need for extra escaping.
         $date = metadata($item, array('Dublin Core', 'Date'), array('no_escape' => true));
-        $entry['title'] = metadata($item, array('Dublin Core', 'Title'), array('no_escape' => true)) . ($date ? ' (' . $date . ')':'') ;
+        $creator = metadata($item, array('Dublin Core', 'Creator'), array('no_escape' => true));
+        $entry['title'] = metadata($item, array('Dublin Core', 'Title'), array('no_escape' => true)) . ($date ? ' (' . $date . ')':'') . ($creator ? ' /' . $creator . ')':'');
         $entry['description'] = $this->buildDescription_custom($item);
         $entry['link'] = xml_escape(record_url($item, null, true));
         $entry['lastUpdate'] = strtotime($item->added);
