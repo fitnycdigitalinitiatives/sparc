@@ -4,15 +4,11 @@
 	<h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
     <div class="row">
         <div class="col-sm-12">
-			<!-- Fire OpenSeadragon Separately from other plugins for placement -->
-			<?php echo $this->openseadragon($item); ?>
+    			<!-- Fire OpenSeadragon Separately from other plugins for placement -->
+    			<?php echo $this->openseadragon($item); ?>
+          <?php echo public_domain_download($item); ?>
         </div>
 	</div>
-  <div class="row">
-    <div class="col-sm-12 download text-right">
-      <?php echo public_domain_download($item); ?>
-    </div>
-  </div>
 	<div class="row">
 		<div class="col-sm-6 palette">
 			<?php if (metadata('item', array('Item Type Metadata', 'Color Data'))): ?>

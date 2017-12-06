@@ -387,7 +387,7 @@ function public_domain_download($item)
   if (in_array("Public Domain", $rights)) {
     if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
       $url = 'https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/?forcedl';
-      $html = '<a id="pd-download" href="' . $url . '"><i class="fa fa-download" aria-hidden="true"></i> Download</a>';
+      $html = '<div id="pd-download"><a href="' . $url . '"><i class="fa fa-download" aria-hidden="true"></i> Download</a></div>';
       return $html;
     }
   }
