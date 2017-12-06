@@ -441,7 +441,10 @@ body#home {
 	float: right;
 }
 #pd-download {
-
+	position: absolute;
+	z-index: 100;
+	right: 25px;
+	bottom: 25px;
 }
 #pd-download a {
 	font-size: 1.2em;
