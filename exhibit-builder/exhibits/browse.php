@@ -5,7 +5,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 
 <div class="row results">
   <div class="col-xs-9">
-    <h4>Showing <?php echo $total_results; ?> exhibit total</h4>
+    <h4>Showing <?php echo $total_results; ?> exhibits total</h4>
   </div>
   <div class="col-xs-12">
     <?php /* Drop-down sort isn't needed at the moment
