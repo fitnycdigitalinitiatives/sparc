@@ -491,6 +491,7 @@ class Output_ItemRss2_Custom
     public function buildDescription_custom($item)
     {
         $description = mdid_rss_image_tag($item);
+        $description .= '<div>This image was provided by the FIT Library\'s Special Collections and College Archives. View more at <a href="https://sparcdigital.fitnyc.edu">sparcdigital.fitnyc.edu</a>.</div>'
         return $description;
     }
     public function itemToRSS_custom($item)
