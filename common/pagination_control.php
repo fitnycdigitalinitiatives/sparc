@@ -52,7 +52,7 @@ if ($this->pageCount > 1):
         <?php endif; ?>
     </ul>
 </nav>
-<!-- Floating Arrows --> 
+<!-- Floating Arrows -->
 <div class="row browse-nav">
     <div class="col-xs-12">
       <!-- Previous page link -->
