@@ -69,7 +69,7 @@
     var tags = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('tag'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
-    prefetch: '<?php echo src('autocomplete_tags_counts_07-06-2018', 'javascripts/lib/typeahead', 'json'); ?>'
+    prefetch: '<?php echo src('autocomplete_tags_counts_07-31-2018', 'javascripts/lib/typeahead', 'json'); ?>'
     });
 
     $('.form-group #query').typeahead({
