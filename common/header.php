@@ -97,25 +97,26 @@
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
+    <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
     <header role="banner">
-	<!-- Fixed navbar -->
-	<nav class="navbar navbar-inverse navbar-static-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<?php echo link_to_home_page('<img src="' . img('sparc_digital_header.png') . '" srcset="' . img('sparc_digital_header.png') . ' 1x, ' . img('sparc_digital_header_retina.png') . ' 2x" alt="SPARC Digital">', array('class' => 'navbar-brand')); ?>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<?php echo public_nav_main_bootstrap(); ?>
-				<?php echo search_form(array('show_advanced' => false, 'form_attributes' => array('class' => 'navbar-form navbar-right', 'role' => 'search'))); ?>
-			</div><!--/.nav-collapse -->
-		</div>
-	</nav>
+    	<!-- Fixed navbar -->
+    	<nav class="navbar navbar-inverse navbar-static-top">
+    		<div class="container">
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    					<span class="sr-only">Toggle navigation</span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    				<?php echo link_to_home_page('<img src="' . img('sparc_digital_header.png') . '" srcset="' . img('sparc_digital_header.png') . ' 1x, ' . img('sparc_digital_header_retina.png') . ' 2x" alt="SPARC Digital">', array('class' => 'navbar-brand')); ?>
+    			</div>
+    			<div id="navbar" class="navbar-collapse collapse">
+    				<?php echo public_nav_main_bootstrap(); ?>
+    				<?php echo search_form(array('show_advanced' => false, 'form_attributes' => array('class' => 'navbar-form navbar-right', 'role' => 'search'))); ?>
+    			</div><!--/.nav-collapse -->
+    		</div>
+    	</nav>
 
     </header>
     <main id="content" role="main">
