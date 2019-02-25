@@ -97,7 +97,7 @@
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
-    <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
     <header role="banner">
     	<!-- Fixed navbar -->
     	<nav class="navbar navbar-inverse navbar-static-top">
