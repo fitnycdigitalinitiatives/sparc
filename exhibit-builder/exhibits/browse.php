@@ -39,7 +39,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 			<?php if ($item = get_exhibit_item ($exhibit)): ?>
 				<?php echo exhibit_builder_link_to_exhibit($exhibit, mdid_thumbnail_tag($item, 'img-responsive') . '<div class="caption"><h5>' . metadata('exhibit', 'title') . '</h5></div>', array('class' => 'thumbnail')); ?>
 			<?php else: ?>
-				<?php echo exhibit_builder_link_to_exhibit($exhibit, '<div class="thumbnail-container"><img src="' . img('fallback-image.png') . '" /><div class="thumbnail-container"><div class="caption"><h5>' . metadata('exhibit', 'title') . '</h5></div>', array('class' => 'thumbnail')); ?>
+				<?php echo exhibit_builder_link_to_exhibit($exhibit, '<div class="thumbnail-container"><img src="' . img('fallback-image.png') . '" /></div><div class="caption"><h5>' . metadata('exhibit', 'title') . '</h5></div>', array('class' => 'thumbnail')); ?>
 			<?php endif; ?>
 		</div>
 		<?php endforeach; ?>
