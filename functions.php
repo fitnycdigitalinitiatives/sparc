@@ -396,13 +396,13 @@ function public_domain_download($item)
 function get_exhibit_item ($exhibit)
 {
   $page = $exhibit->getFirstTopPage();
-  $attachments = $page->getAllAttachments();
-  if ($attachments) {
-    $item = $attachments[0]->getItem();
-    return $item;
-  } else {
-    return null;
-  }  
+  if ($page) {
+    $attachments = $page->getAllAttachments();
+    if ($attachments) {
+      $item = $attachments[0]->getItem();
+      return $item;
+    }
+  }
 }
 function tag_search ($tag) {
   $paramArray = array('tags' => htmlspecialchars_decode($tag, ENT_QUOTES));
