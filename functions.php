@@ -397,8 +397,12 @@ function get_exhibit_item ($exhibit)
 {
   $page = $exhibit->getFirstTopPage();
   $attachments = $page->getAllAttachments();
-  $item = $attachments[0]->getItem();
-  return $item;
+  if ($attachments) {
+    $item = $attachments[0]->getItem();
+    return $item;
+  } else {
+    return null;
+  }  
 }
 function tag_search ($tag) {
   $paramArray = array('tags' => htmlspecialchars_decode($tag, ENT_QUOTES));
