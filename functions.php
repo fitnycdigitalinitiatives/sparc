@@ -170,9 +170,8 @@ function item_search_filters_bootstrap(array $params = null)
                   $advancedArray[$i] = $advancedValue;
                 }
                 else {
-                  $advancedValue = $element . ' ' . $type;
                   if (isset($row['terms'])) {
-                      $advancedValue .= ' "' . html_escape($row['terms']) . '"';
+                      $advancedValue = '"' . html_escape($row['terms']) . '"';
                   }
                   $advancedArray[$i] = '<span class="advanced">' . $advancedValue . '</span> ';
                 }
@@ -412,6 +411,21 @@ function tag_search ($tag) {
 	$html .= $url;
 	$html .= '">';
 	$html .= $tag;
+	$html .= '</a>';
+	return $html;
+}
+// Given an metadata element and term, returns a search of all items that match that term.
+function heading_links($setName, $elementName, $text) {
+	$element = get_db()->getTable('Element')->findByElementSetNameAndElementName($setName, $elementName);
+	$id = $element->id;
+	$advanced[] = array('element_id' => $id, 'terms' => htmlspecialchars_decode($text, ENT_QUOTES), 'type' => 'is exactly');
+	$paramArray = array('search' => '', 'advanced' => $advanced);
+	$params = http_build_query($paramArray);
+	$url = url('/items/browse?') . $params;
+	$html = '<a href="';
+	$html .= $url;
+	$html .= '">';
+	$html .= $text;
 	$html .= '</a>';
 	return $html;
 }
