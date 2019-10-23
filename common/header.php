@@ -65,11 +65,11 @@
   <script>
   jQuery(document).ready(function($){
     // constructs the suggestion engine
-    // /terms?terms.fl=tag&terms.limit=-1&omitHeader=true&indent=true&wt=json&json.nl=arrntv
+    // /solr/omeka/terms?terms.fl=tag&terms.limit=-1&omitHeader=true&indent=true&wt=json&json.nl=arrntv
     var tags = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('tag'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
-    prefetch: '<?php echo src('autocomplete_tags_counts_07-08-2019', 'javascripts/lib/typeahead', 'json'); ?>'
+    prefetch: '<?php echo src('autocomplete_tags_counts_10-23-2019', 'javascripts/lib/typeahead', 'json'); ?>'
     });
 
     $('.form-group #query').typeahead({
