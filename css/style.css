@@ -182,7 +182,7 @@ body#home {
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('../images/background4.jpg');
+    ), url('../images/background6.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -193,7 +193,7 @@ body#home {
 		background-image: linear-gradient(
 	      rgba(0, 0, 0, 0.5),
 	      rgba(0, 0, 0, 0.5)
-	    ), url('../images/background4_mobile.jpg');
+	    ), url('../images/background6_mobile.jpg');
 	}
 }
 #home form.navbar-form {
