@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="<?php echo get_html_lang(); ?>">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107096384-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-107096384-1');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +18,9 @@
 
     <!-- Will build the page <title> -->
     <?php
-        if (isset($title)) { $titleParts[] = strip_formatting($title); }
+        if (isset($title)) {
+            $titleParts[] = strip_formatting($title);
+        }
         $titleParts[] = option('site_title');
     ?>
     <title><?php echo implode(' &middot; ', $titleParts); ?></title>
@@ -23,76 +35,11 @@
     <!-- Need to add custom and third-party CSS files? Include them here -->
     <?php
         queue_css_url('//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic');
-        queue_css_file('lib/bootstrap.min');
+        queue_css_url('//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css');
         queue_css_file('style');
         queue_css_file('fonts/font-awesome/css/font-awesome.min');
         echo head_css();
     ?>
-
-
-    <!-- Need more JavaScript files? Include them here -->
-    <?php
-        queue_js_file('lib/bootstrap.min');
-        queue_js_file('lib/typeahead/typeahead.bundle.min');
-        echo head_js();
-    ?>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-107096384-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	<script type='text/javascript'>
-    jQuery(function ($) {
-	  $('[data-toggle="tooltip"]').tooltip()
-	})
-	</script>
-  <script type='text/javascript'>
-    jQuery(function ($) {
-	  $('[data-toggle="popover"]').popover({
-    container: 'body'
-    })
-	})
-	</script>
-  <script>
-  jQuery(document).ready(function($){
-    // constructs the suggestion engine
-    // /solr/omeka/terms?terms.fl=tag&terms.limit=-1&omitHeader=true&indent=true&wt=json&json.nl=arrntv
-    var tags = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('tag'),
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    prefetch: '<?php echo src('autocomplete_tags_counts_2020-01-03', 'javascripts/lib/typeahead', 'json'); ?>'
-    });
-
-    $('.form-group #query').typeahead({
-    hint: false,
-    highlight: true,
-    minLength: 1
-    },
-    {
-    name: 'tags',
-    display: 'tag',
-    source: tags,
-    limit: 7,
-    templates: {
-      suggestion: function(data){
-            return '<div><span class="badge tag-count pull-right">' + data.count + '</span>' + data.tag + '</div>';
-      }
-    }
-  }).bind('typeahead:select', function(ev, data) {
-      var search_url = '/solr-search?q=&facet=tag%3A%22' + encodeURIComponent(data.tag) + '%22';
-      window.location.href = search_url;
-    });
-  });
-  </script>
 
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
