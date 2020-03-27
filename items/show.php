@@ -16,7 +16,7 @@
 			<?php endif; ?>
 		</div>
 		<div class="col-sm-6">
-      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <!-- Go to www.addthis.com/dashboard to customize your tools. -->
 			<div class="addthis_sharing_toolbox"></div>
     </div>
 	</div>
