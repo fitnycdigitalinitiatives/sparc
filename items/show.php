@@ -4,8 +4,11 @@
 	<h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
     <div class="row">
         <div class="col-sm-12">
-    			<!-- Fire OpenSeadragon Separately from other plugins for placement -->
-    			<?php echo $this->openseadragon($item); ?>
+    			<div class="openseadragon-frame">
+            <div class="loader"></div>
+            <div class="openseadragon" id="openseadragon_single" data-record_id="<?php echo metadata('item', array('Item Type Metadata', 'Record ID')); ?>" data-record_name="<?php echo metadata('item', array('Item Type Metadata', 'Record Name')); ?>">
+            </div>
+          </div>
           <?php echo public_domain_download($item); ?>
         </div>
 	</div>
