@@ -387,10 +387,20 @@ body#home {
   right: 16px;
 }
 
+.item-thumb .caption {
+  display: flex;
+  align-items: center;
+  -ms-flex-align: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  height: 60px;
+}
+
 .item-thumb .caption h5 {
-  white-space: nowrap;
+  text-align: center;
   overflow: hidden;
-  text-overflow: ellipsis;
+  font-weight: bold;
+  margin: 0;
 }
 
 .item-thumb .glyphicon-info-sign {
