@@ -698,6 +698,10 @@ body.exhibits.summary, body.exhibits.show {
   margin-bottom: 0;
 }
 
+.exhibits footer .navbar-static-bottom #sub-navbar .navbar-nav {
+  float: none;
+}
+
 .exhibits footer .dropdown-menu {
   right: 10px;
   left: initial;
