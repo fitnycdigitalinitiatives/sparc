@@ -1,39 +1,42 @@
-[
-  {
+[{
     "tag": "Drawings",
-    "count": 5800
+    "count": 6011
   },
   {
     "tag": "Women's clothing",
-    "count": 5068
+    "count": 5533
   },
   {
     "tag": "Alexander, Pearl Levy",
     "count": 4176
   },
   {
-    "tag": "Andr\u00e9 (Firm)",
+    "tag": "André (Firm)",
     "count": 4176
   },
   {
     "tag": "Hats",
-    "count": 3464
+    "count": 3790
   },
   {
     "tag": "Coats",
-    "count": 3206
-  },
-  {
-    "tag": "Dress accessories",
-    "count": 795
+    "count": 3424
   },
   {
     "tag": "Watercolor",
-    "count": 776
+    "count": 985
+  },
+  {
+    "tag": "Dresses",
+    "count": 965
   },
   {
     "tag": "Pencil",
-    "count": 762
+    "count": 948
+  },
+  {
+    "tag": "Dress accessories",
+    "count": 804
   },
   {
     "tag": "Photographs",
@@ -44,24 +47,28 @@
     "count": 711
   },
   {
-    "tag": "Dresses",
-    "count": 692
+    "tag": "Suits",
+    "count": 620
   },
   {
-    "tag": "Suits",
-    "count": 597
+    "tag": "Prints",
+    "count": 610
   },
   {
     "tag": "Jackets",
-    "count": 560
+    "count": 604
   },
   {
     "tag": "Skirts",
-    "count": 556
+    "count": 584
   },
   {
     "tag": "Headwear",
-    "count": 516
+    "count": 541
+  },
+  {
+    "tag": "Ink",
+    "count": 502
   },
   {
     "tag": "Halston, 1932-1990",
@@ -72,24 +79,16 @@
     "count": 400
   },
   {
+    "tag": "Shoes",
+    "count": 335
+  },
+  {
     "tag": "Mixed media",
-    "count": 329
+    "count": 330
   },
   {
     "tag": "Footwear",
     "count": 313
-  },
-  {
-    "tag": "Shoes",
-    "count": 307
-  },
-  {
-    "tag": "Prints",
-    "count": 303
-  },
-  {
-    "tag": "Ink",
-    "count": 302
   },
   {
     "tag": "Miller, Jerry, 1927-",
@@ -100,28 +99,44 @@
     "count": 272
   },
   {
-    "tag": "Gouache",
-    "count": 230
+    "tag": "Children's clothing",
+    "count": 263
   },
   {
-    "tag": "Children's clothing",
-    "count": 222
+    "tag": "Gouache",
+    "count": 237
+  },
+  {
+    "tag": "A. Beller & Co.",
+    "count": 220
+  },
+  {
+    "tag": "Paper",
+    "count": 207
+  },
+  {
+    "tag": "Outerwear",
+    "count": 206
   },
   {
     "tag": "Joseph Love, Inc.",
-    "count": 200
+    "count": 202
   },
   {
     "tag": "Love, Joseph, 1891?-1971",
     "count": 200
   },
   {
-    "tag": "Eveningwear",
-    "count": 167
+    "tag": "Meyer, Max, 1876-1953",
+    "count": 200
   },
   {
-    "tag": "Outerwear",
-    "count": 144
+    "tag": "Eveningwear",
+    "count": 182
+  },
+  {
+    "tag": "Men's clothing",
+    "count": 118
   },
   {
     "tag": "Halston Studio",
@@ -129,15 +144,19 @@
   },
   {
     "tag": "Schiaparelli, Elsa, 1890-1973",
-    "count": 92
+    "count": 93
+  },
+  {
+    "tag": "Jewelry",
+    "count": 82
+  },
+  {
+    "tag": "Marker",
+    "count": 76
   },
   {
     "tag": "Pochoir",
     "count": 71
-  },
-  {
-    "tag": "Marker",
-    "count": 70
   },
   {
     "tag": "Barbier, George, 1882-1932",
@@ -152,7 +171,11 @@
     "count": 66
   },
   {
-    "tag": "Gr\u00e8s, Alix, 1903-1993",
+    "tag": "Lithograph",
+    "count": 66
+  },
+  {
+    "tag": "Grès, Alix, 1903-1993",
     "count": 65
   },
   {
@@ -168,19 +191,31 @@
     "count": 56
   },
   {
+    "tag": "Molyneux, Edward Henry, 1891-1974",
+    "count": 54
+  },
+  {
+    "tag": "Engraving",
+    "count": 53
+  },
+  {
     "tag": "Mainbocher, 1891-1976",
     "count": 52
   },
   {
-    "tag": "Engraving",
+    "tag": "Wash",
+    "count": 51
+  },
+  {
+    "tag": "Chanel, Coco, 1883-1971",
     "count": 50
   },
   {
-    "tag": "Men's clothing",
-    "count": 49
+    "tag": "Charcoal",
+    "count": 50
   },
   {
-    "tag": "Molyneux, Edward Henry, 1891-1974",
+    "tag": "Scarves",
     "count": 49
   },
   {
@@ -188,31 +223,27 @@
     "count": 48
   },
   {
-    "tag": "Wash",
-    "count": 48
-  },
-  {
-    "tag": "Lithograph",
-    "count": 46
-  },
-  {
     "tag": "Sandals",
     "count": 46
   },
   {
-    "tag": "Charcoal",
-    "count": 45
+    "tag": "Pants",
+    "count": 44
   },
   {
-    "tag": "Besan\u00e7on de Wagner, Maggy",
+    "tag": "Besançon de Wagner, Maggy",
     "count": 42
   },
   {
-    "tag": "Pants",
+    "tag": "Patou, Jean, 1887-1936",
+    "count": 41
+  },
+  {
+    "tag": "Hair ornaments",
     "count": 40
   },
   {
-    "tag": "Chanel, Coco, 1883-1971",
+    "tag": "Le Goût Parisien",
     "count": 39
   },
   {
@@ -224,11 +255,11 @@
     "count": 37
   },
   {
-    "tag": "Lipnitzki, Boris",
+    "tag": "Handbags",
     "count": 36
   },
   {
-    "tag": "Scarves",
+    "tag": "Lipnitzki, Boris",
     "count": 36
   },
   {
@@ -244,20 +275,20 @@
     "count": 33
   },
   {
-    "tag": "Patou, Jean, 1887-1936",
-    "count": 33
-  },
-  {
     "tag": "Pastel",
-    "count": 31
+    "count": 33
   },
   {
     "tag": "Francevramant (Firm)",
     "count": 30
   },
   {
-    "tag": "Handbags",
-    "count": 30
+    "tag": "Shirts",
+    "count": 27
+  },
+  {
+    "tag": "Vionnet, Madeleine",
+    "count": 27
   },
   {
     "tag": "Lopez, Antonio, 1943-1987",
@@ -276,15 +307,23 @@
     "count": 24
   },
   {
+    "tag": "House of Worth (Firm)",
+    "count": 24
+  },
+  {
     "tag": "Dior, Christian",
     "count": 23
   },
   {
-    "tag": "La Belle Assembl\u00e9e, or Bell's Court and Fashionable Magazine",
+    "tag": "La Belle Assemblée, or Bell's Court and Fashionable Magazine",
     "count": 23
   },
   {
-    "tag": "Dess\u00e8s, Jean, 1904-1970",
+    "tag": "Sportswear",
+    "count": 23
+  },
+  {
+    "tag": "Dessès, Jean, 1904-1970",
     "count": 22
   },
   {
@@ -292,16 +331,16 @@
     "count": 22
   },
   {
+    "tag": "Paray, Lucile",
+    "count": 22
+  },
+  {
     "tag": "Whitehead, Joseph",
     "count": 22
   },
   {
-    "tag": "Paray, Lucile",
+    "tag": "Cloaks",
     "count": 21
-  },
-  {
-    "tag": "A. Beller & Co.",
-    "count": 20
   },
   {
     "tag": "Boyd, Harvey",
@@ -312,19 +351,27 @@
     "count": 20
   },
   {
+    "tag": "Vernor, Hood & Sharpe, Poultry",
+    "count": 20
+  },
+  {
+    "tag": "Boots",
+    "count": 19
+  },
+  {
+    "tag": "Frances Neady collection of original fashion illustrations, 1913-",
+    "count": 19
+  },
+  {
     "tag": "Saint Laurent, Yves",
     "count": 19
   },
   {
-    "tag": "Shirts",
-    "count": 19
-  },
-  {
-    "tag": "Hair ornaments",
+    "tag": "Belts",
     "count": 18
   },
   {
-    "tag": "Jewelry",
+    "tag": "Galerie des Modes et Costumes Français, Dessinés D'Après Nature, 1778-1787",
     "count": 18
   },
   {
@@ -332,23 +379,15 @@
     "count": 18
   },
   {
-    "tag": "Vionnet, Madeleine",
-    "count": 18
-  },
-  {
-    "tag": "Belts",
-    "count": 17
-  },
-  {
     "tag": "Cornu, Paul, 1881-1914",
     "count": 17
   },
   {
-    "tag": "Galerie des Modes et Costumes Fran\u00e7ais, Dessin\u00e9s D'Apr\u00e8s Nature, 1778-1787",
+    "tag": "Gazette du Bon Ton",
     "count": 17
   },
   {
-    "tag": "Gazette du Bon Ton",
+    "tag": "Lanvin, Jeanne, 1867-1946",
     "count": 17
   },
   {
@@ -368,7 +407,7 @@
     "count": 16
   },
   {
-    "tag": "House of Worth (Firm)",
+    "tag": "Observateur des Modes",
     "count": 16
   },
   {
@@ -376,7 +415,7 @@
     "count": 15
   },
   {
-    "tag": "Boots",
+    "tag": "Callot Soeurs (Firm)",
     "count": 15
   },
   {
@@ -384,7 +423,7 @@
     "count": 15
   },
   {
-    "tag": "Modes et Mani\u00e8res d'Aujourd'hui",
+    "tag": "Modes et Manières d'Aujourd'hui",
     "count": 15
   },
   {
@@ -412,10 +451,6 @@
     "count": 14
   },
   {
-    "tag": "Sportswear",
-    "count": 14
-  },
-  {
     "tag": "Stavrinos, George, 1948-",
     "count": 14
   },
@@ -436,11 +471,15 @@
     "count": 13
   },
   {
+    "tag": "Poiret, Paul",
+    "count": 13
+  },
+  {
     "tag": "Jumpers",
     "count": 12
   },
   {
-    "tag": "Kessl\u00e9re, G. Maillard (George Maillard)",
+    "tag": "Kesslére, G. Maillard (George Maillard)",
     "count": 12
   },
   {
@@ -456,15 +495,19 @@
     "count": 11
   },
   {
+    "tag": "Fans",
+    "count": 11
+  },
+  {
     "tag": "La Moda Elegante Ilustrada",
     "count": 11
   },
   {
-    "tag": "Fans",
+    "tag": "Griffe, Jacques",
     "count": 10
   },
   {
-    "tag": "Griffe, Jacques",
+    "tag": "Gustafson, Mats, 1951-",
     "count": 10
   },
   {
@@ -480,6 +523,10 @@
     "count": 10
   },
   {
+    "tag": "Ladies' Friend",
+    "count": 10
+  },
+  {
     "tag": "Ricci, Nina",
     "count": 10
   },
@@ -492,7 +539,11 @@
     "count": 10
   },
   {
-    "tag": "Bouch\u00e9, Ren\u00e9, 1906-1963",
+    "tag": "Bouché, René, 1906-1963",
+    "count": 9
+  },
+  {
+    "tag": "Chéruit, Louise, 1866-1955",
     "count": 9
   },
   {
@@ -504,8 +555,20 @@
     "count": 9
   },
   {
-    "tag": "Lanvin, Jeanne, 1867-1946",
+    "tag": "Lefranco",
     "count": 9
+  },
+  {
+    "tag": "Blouses",
+    "count": 8
+  },
+  {
+    "tag": "Costume",
+    "count": 8
+  },
+  {
+    "tag": "David, Jules, 1808-1892",
+    "count": 8
   },
   {
     "tag": "Eric (Erickson), Carl",
@@ -516,7 +579,7 @@
     "count": 8
   },
   {
-    "tag": "Gustavson, Mats, 1951-",
+    "tag": "Jenny",
     "count": 8
   },
   {
@@ -532,6 +595,14 @@
     "count": 8
   },
   {
+    "tag": "Paintings",
+    "count": 8
+  },
+  {
+    "tag": "Paquin, Jeanne 1869-1936",
+    "count": 8
+  },
+  {
     "tag": "Pierce, Daren",
     "count": 8
   },
@@ -541,6 +612,10 @@
   },
   {
     "tag": "Rompers",
+    "count": 8
+  },
+  {
+    "tag": "Scott's Mirror of Fashion",
     "count": 8
   },
   {
@@ -556,15 +631,19 @@
     "count": 7
   },
   {
+    "tag": "Doeuillet",
+    "count": 7
+  },
+  {
     "tag": "Fourrures Max (Firm)",
     "count": 7
   },
   {
-    "tag": "F\u00e9lix, Auguste",
+    "tag": "Félix, Auguste",
     "count": 7
   },
   {
-    "tag": "Gazette du Bon Ton: Arts, Modes & Frivolit\u00e9s",
+    "tag": "Gazette du Bon Ton: Arts, Modes & Frivolités",
     "count": 7
   },
   {
@@ -572,11 +651,11 @@
     "count": 7
   },
   {
-    "tag": "Moss, Seymour",
+    "tag": "La Moda Cubana",
     "count": 7
   },
   {
-    "tag": "Paper",
+    "tag": "Moss, Seymour",
     "count": 7
   },
   {
@@ -588,7 +667,27 @@
     "count": 7
   },
   {
-    "tag": "Watteau, Fran\u00e7ois, 1758-1823",
+    "tag": "Pimsler, Alvin",
+    "count": 7
+  },
+  {
+    "tag": "Sleepwear",
+    "count": 7
+  },
+  {
+    "tag": "Swimwear",
+    "count": 7
+  },
+  {
+    "tag": "The Herald of Fashion",
+    "count": 7
+  },
+  {
+    "tag": "Watteau, François, 1758-1823",
+    "count": 7
+  },
+  {
+    "tag": "Wedding costume",
     "count": 7
   },
   {
@@ -596,11 +695,15 @@
     "count": 6
   },
   {
-    "tag": "Courr\u00e8ges, Andr\u00e9",
+    "tag": "Courrèges, André",
     "count": 6
   },
   {
     "tag": "Dormoy, Marcelle",
+    "count": 6
+  },
+  {
+    "tag": "Drecoll",
     "count": 6
   },
   {
@@ -628,6 +731,10 @@
     "count": 6
   },
   {
+    "tag": "Pen",
+    "count": 6
+  },
+  {
     "tag": "Preval, E.",
     "count": 6
   },
@@ -640,11 +747,11 @@
     "count": 6
   },
   {
-    "tag": "Sleepwear",
+    "tag": "The Journal of Fashion and Tailoring",
     "count": 6
   },
   {
-    "tag": "Swimwear",
+    "tag": "Toudouze, Anaïs Colin, 1822-1899",
     "count": 6
   },
   {
@@ -656,11 +763,23 @@
     "count": 5
   },
   {
-    "tag": "David, Jules, 1808-1892",
+    "tag": "Halston Studio for Partos",
     "count": 5
   },
   {
-    "tag": "Halston Studio for Partos",
+    "tag": "Heim",
+    "count": 5
+  },
+  {
+    "tag": "Il Mondo Elegante",
+    "count": 5
+  },
+  {
+    "tag": "Ladies Pocket Magazine",
+    "count": 5
+  },
+  {
+    "tag": "Ladies' Cabinet",
     "count": 5
   },
   {
@@ -668,7 +787,7 @@
     "count": 5
   },
   {
-    "tag": "Les Id\u00e9es Nouvelles de la Mode",
+    "tag": "Les Idées Nouvelles de la Mode",
     "count": 5
   },
   {
@@ -680,11 +799,19 @@
     "count": 5
   },
   {
+    "tag": "Miler Soeurs (Firm)",
+    "count": 5
+  },
+  {
     "tag": "Modes et Manieres d'Aujord'hui",
     "count": 5
   },
   {
-    "tag": "Panorama dramatique : Casanova, d\u00e9cors et costumes",
+    "tag": "Neue Wiener Modelle",
+    "count": 5
+  },
+  {
+    "tag": "Panorama dramatique : Casanova, décors et costumes",
     "count": 5
   },
   {
@@ -696,7 +823,7 @@
     "count": 5
   },
   {
-    "tag": "Poiret, Paul",
+    "tag": "Rolande",
     "count": 5
   },
   {
@@ -704,11 +831,15 @@
     "count": 5
   },
   {
-    "tag": "Tr\u00e8s Parisien: La Mode, le Chic l'\u00c9l\u00e9gance",
+    "tag": "Très Parisien: La Mode, le Chic l'Élégance",
     "count": 5
   },
   {
-    "tag": "Callot Soeurs (Firm)",
+    "tag": "Vernet, Horace, 1789-1863",
+    "count": 5
+  },
+  {
+    "tag": "Carette",
     "count": 4
   },
   {
@@ -717,6 +848,18 @@
   },
   {
     "tag": "Drivon, Charles",
+    "count": 4
+  },
+  {
+    "tag": "Engelmann, G. (Godefroy), 1788-1839",
+    "count": 4
+  },
+  {
+    "tag": "Erté",
+    "count": 4
+  },
+  {
+    "tag": "Germaine",
     "count": 4
   },
   {
@@ -740,11 +883,23 @@
     "count": 4
   },
   {
-    "tag": "La France \u00c9l\u00e9gante",
+    "tag": "L'Iris, Journal de Modes et d'Arts",
+    "count": 4
+  },
+  {
+    "tag": "La France Élégante",
+    "count": 4
+  },
+  {
+    "tag": "Ladies' Fair",
     "count": 4
   },
   {
     "tag": "Larson, Esther",
+    "count": 4
+  },
+  {
+    "tag": "Le Bon Ton, Journal de Modes",
     "count": 4
   },
   {
@@ -772,10 +927,6 @@
     "count": 4
   },
   {
-    "tag": "Pen",
-    "count": 4
-  },
-  {
     "tag": "Perfume",
     "count": 4
   },
@@ -784,7 +935,11 @@
     "count": 4
   },
   {
-    "tag": "Pimsler, Alvin",
+    "tag": "Philippe et Gaston",
+    "count": 4
+  },
+  {
+    "tag": "Premet",
     "count": 4
   },
   {
@@ -796,6 +951,10 @@
     "count": 4
   },
   {
+    "tag": "Stipelman, Steven",
+    "count": 4
+  },
+  {
     "tag": "Sweaters",
     "count": 4
   },
@@ -804,15 +963,27 @@
     "count": 4
   },
   {
+    "tag": "The Paris Album of Fashions",
+    "count": 4
+  },
+  {
+    "tag": "Théorie de l'Art du Tailleur",
+    "count": 4
+  },
+  {
     "tag": "Tissue",
     "count": 4
   },
   {
-    "tag": "Toudouze, Anais (Colon, Adele Anais)",
+    "tag": "Townsend's Monthly Selection of Parisian Costumes",
     "count": 4
   },
   {
-    "tag": "Townsend's Monthly Selection of Parisian Costumes",
+    "tag": "Underwear",
+    "count": 4
+  },
+  {
+    "tag": "Valentino, 1932-",
     "count": 4
   },
   {
@@ -828,7 +999,15 @@
     "count": 3
   },
   {
+    "tag": "Barnard, William S., approximately 1809-",
+    "count": 3
+  },
+  {
     "tag": "Borea, Vera",
+    "count": 3
+  },
+  {
+    "tag": "Capes",
     "count": 3
   },
   {
@@ -856,7 +1035,15 @@
     "count": 3
   },
   {
+    "tag": "Gatine, Georges Jacques, 1773-1831",
+    "count": 3
+  },
+  {
     "tag": "Geizinger, Jack",
+    "count": 3
+  },
+  {
+    "tag": "Georgette",
     "count": 3
   },
   {
@@ -865,6 +1052,10 @@
   },
   {
     "tag": "Gonin, G.",
+    "count": 3
+  },
+  {
+    "tag": "Goupy",
     "count": 3
   },
   {
@@ -877,6 +1068,22 @@
   },
   {
     "tag": "Hattie Carnegie, Inc.",
+    "count": 3
+  },
+  {
+    "tag": "Hayward",
+    "count": 3
+  },
+  {
+    "tag": "Headbands",
+    "count": 3
+  },
+  {
+    "tag": "Hickson",
+    "count": 3
+  },
+  {
+    "tag": "Jays",
     "count": 3
   },
   {
@@ -900,6 +1107,10 @@
     "count": 3
   },
   {
+    "tag": "Pearlman, Barbara",
+    "count": 3
+  },
+  {
     "tag": "Pencil and watercolor on paper",
     "count": 3
   },
@@ -912,7 +1123,15 @@
     "count": 3
   },
   {
+    "tag": "Psyche, Journal des Modes",
+    "count": 3
+  },
+  {
     "tag": "Resortwear",
+    "count": 3
+  },
+  {
+    "tag": "Sartain's union magazine of literature and art",
     "count": 3
   },
   {
@@ -920,23 +1139,15 @@
     "count": 3
   },
   {
-    "tag": "Stipelman, Steven",
+    "tag": "The New Monthly Belle Assemblée",
     "count": 3
   },
   {
-    "tag": "The New Monthly Belle Assembl\u00e9e",
+    "tag": "Uniforms",
     "count": 3
   },
   {
-    "tag": "Underwear",
-    "count": 3
-  },
-  {
-    "tag": "Valentino, 1932-",
-    "count": 3
-  },
-  {
-    "tag": "Vernet, Horace, 1789-1863",
+    "tag": "Wiener Modezeichner",
     "count": 3
   },
   {
@@ -952,11 +1163,11 @@
     "count": 2
   },
   {
-    "tag": "Blouses",
+    "tag": "Cardin, Pierre, 1922-",
     "count": 2
   },
   {
-    "tag": "Cardin, Pierre, 1922-",
+    "tag": "Carpenter, Mia",
     "count": 2
   },
   {
@@ -980,11 +1191,19 @@
     "count": 2
   },
   {
+    "tag": "Doucet",
+    "count": 2
+  },
+  {
     "tag": "Drian",
     "count": 2
   },
   {
     "tag": "Grammer, June",
+    "count": 2
+  },
+  {
+    "tag": "Greenhill, Fred",
     "count": 2
   },
   {
@@ -1020,7 +1239,11 @@
     "count": 2
   },
   {
-    "tag": "La Go\u0171t du Jour",
+    "tag": "L'Elegant, Journal des Tailleurs",
+    "count": 2
+  },
+  {
+    "tag": "La Goűt du Jour",
     "count": 2
   },
   {
@@ -1032,7 +1255,23 @@
     "count": 2
   },
   {
-    "tag": "Lefranco",
+    "tag": "Lafayette",
+    "count": 2
+  },
+  {
+    "tag": "Le Beau Monde, or Literary & Fashionable Magazine",
+    "count": 2
+  },
+  {
+    "tag": "Le Cabinet de Lecture et le Voleur réunis",
+    "count": 2
+  },
+  {
+    "tag": "Le Conseiller des Graces",
+    "count": 2
+  },
+  {
+    "tag": "Le Monde Élégant Courrier de la Mode",
     "count": 2
   },
   {
@@ -1044,7 +1283,15 @@
     "count": 2
   },
   {
+    "tag": "Mayer, M",
+    "count": 2
+  },
+  {
     "tag": "Monarch Tailoring Co.",
+    "count": 2
+  },
+  {
+    "tag": "Monjaret, Madelaine",
     "count": 2
   },
   {
@@ -1080,6 +1327,10 @@
     "count": 2
   },
   {
+    "tag": "Revue des Modes et de la Littérature",
+    "count": 2
+  },
+  {
     "tag": "Sandoz, Emile-Auguste, 1901-1964",
     "count": 2
   },
@@ -1092,7 +1343,7 @@
     "count": 2
   },
   {
-    "tag": "Sim\u00e9on, Fernand, 1884-1928",
+    "tag": "Siméon, Fernand, 1884-1928",
     "count": 2
   },
   {
@@ -1104,15 +1355,19 @@
     "count": 2
   },
   {
+    "tag": "Umbrellas",
+    "count": 2
+  },
+  {
     "tag": "Unidentified French publication",
     "count": 2
   },
   {
-    "tag": "Vernor, Hood & Sharpe, Poultry",
+    "tag": "Wax Pencils",
     "count": 2
   },
   {
-    "tag": "Wax Pencils",
+    "tag": "Wiener Mode-Album",
     "count": 2
   },
   {
@@ -1136,7 +1391,7 @@
     "count": 1
   },
   {
-    "tag": "Agnes-Dr\u00e9coll (Firm)",
+    "tag": "Agnes-Drécoll (Firm)",
     "count": 1
   },
   {
@@ -1148,11 +1403,15 @@
     "count": 1
   },
   {
-    "tag": "American Fashion Review \/ Sartorial Art Journal",
+    "tag": "American Fashion Review / Sartorial Art Journal",
     "count": 1
   },
   {
     "tag": "American Gentleman and Sartorial Art Journal",
+    "count": 1
+  },
+  {
+    "tag": "Anglo Fabrics Company, Inc.",
     "count": 1
   },
   {
@@ -1168,11 +1427,19 @@
     "count": 1
   },
   {
-    "tag": "Bakst, L\u00e9\u0081on, 1866-1924",
+    "tag": "Bakst, Léon, 1866-1924",
     "count": 1
   },
   {
     "tag": "Blau, Tom",
+    "count": 1
+  },
+  {
+    "tag": "Block, Kenneth Paul",
+    "count": 1
+  },
+  {
+    "tag": "Bogart, De Foret",
     "count": 1
   },
   {
@@ -1192,7 +1459,11 @@
     "count": 1
   },
   {
-    "tag": "Capes",
+    "tag": "Bracelets",
+    "count": 1
+  },
+  {
+    "tag": "Bérard, Christian, 1902-1949",
     "count": 1
   },
   {
@@ -1212,11 +1483,19 @@
     "count": 1
   },
   {
-    "tag": "Cloaks",
+    "tag": "Compte-Calix, François Claudius, 1813-1880",
     "count": 1
   },
   {
-    "tag": "Compte-Calix, Fran\u00e7ois Claudius, 1813-1880",
+    "tag": "Condé Nast Publications",
+    "count": 1
+  },
+  {
+    "tag": "Cornelia",
+    "count": 1
+  },
+  {
+    "tag": "Costumes d’ouvrières parisiennes",
     "count": 1
   },
   {
@@ -1244,7 +1523,7 @@
     "count": 1
   },
   {
-    "tag": "Doeuillet",
+    "tag": "Die Modenwelt",
     "count": 1
   },
   {
@@ -1260,7 +1539,23 @@
     "count": 1
   },
   {
+    "tag": "Earrings",
+    "count": 1
+  },
+  {
     "tag": "Eisenstaedt, Alfred",
+    "count": 1
+  },
+  {
+    "tag": "El Correo de la Moda",
+    "count": 1
+  },
+  {
+    "tag": "El Salon de la Moda",
+    "count": 1
+  },
+  {
+    "tag": "Elaine",
     "count": 1
   },
   {
@@ -1280,7 +1575,7 @@
     "count": 1
   },
   {
-    "tag": "Erte\u0301-de Tirtoff, Romain",
+    "tag": "Erté-de Tirtoff, Romain",
     "count": 1
   },
   {
@@ -1304,6 +1599,18 @@
     "count": 1
   },
   {
+    "tag": "G. Cowie, and Co.",
+    "count": 1
+  },
+  {
+    "tag": "G. Gonin",
+    "count": 1
+  },
+  {
+    "tag": "Galeries Lafayette",
+    "count": 1
+  },
+  {
     "tag": "Gallenga, Maria Monica",
     "count": 1
   },
@@ -1312,7 +1619,15 @@
     "count": 1
   },
   {
+    "tag": "Gedding",
+    "count": 1
+  },
+  {
     "tag": "Genio C. Scott",
+    "count": 1
+  },
+  {
+    "tag": "Giornale delle Donne",
     "count": 1
   },
   {
@@ -1348,7 +1663,11 @@
     "count": 1
   },
   {
-    "tag": "Greenhill, Fred",
+    "tag": "Groult, Nicole (1990-1940)",
+    "count": 1
+  },
+  {
+    "tag": "Guerouite",
     "count": 1
   },
   {
@@ -1357,6 +1676,10 @@
   },
   {
     "tag": "H. Ch. [H. Charle]",
+    "count": 1
+  },
+  {
+    "tag": "H. Charles",
     "count": 1
   },
   {
@@ -1376,11 +1699,11 @@
     "count": 1
   },
   {
-    "tag": "Halston Studio for Jane Derby\/Oscar Delarenta",
+    "tag": "Halston Studio for Jane Derby/Oscar Delarenta",
     "count": 1
   },
   {
-    "tag": "Halston Studio for Partos\/Vogue",
+    "tag": "Halston Studio for Partos/Vogue",
     "count": 1
   },
   {
@@ -1416,6 +1739,10 @@
     "count": 1
   },
   {
+    "tag": "Helene and Helene",
+    "count": 1
+  },
+  {
     "tag": "Heliochrome",
     "count": 1
   },
@@ -1432,7 +1759,15 @@
     "count": 1
   },
   {
-    "tag": "Il Mondo Elegante",
+    "tag": "Incroyable",
+    "count": 1
+  },
+  {
+    "tag": "Irene Dana",
+    "count": 1
+  },
+  {
+    "tag": "Irfé (Firm)",
     "count": 1
   },
   {
@@ -1440,7 +1775,19 @@
     "count": 1
   },
   {
+    "tag": "Joal Ber",
+    "count": 1
+  },
+  {
     "tag": "Johnson, Doug",
+    "count": 1
+  },
+  {
+    "tag": "Journal des Modes et de la Littérature",
+    "count": 1
+  },
+  {
+    "tag": "Journaux des Modes",
     "count": 1
   },
   {
@@ -1448,15 +1795,11 @@
     "count": 1
   },
   {
-    "tag": "L'Art et la mode: Reproduction en noir et en couleurs de costumes, d'ameublements, de joyaux et de tous objets d'art servant de cadre \u0155 l'el'egance et \u0155 la beaut'e de la femme",
+    "tag": "L'Art et la mode: Reproduction en noir et en couleurs de costumes, d'ameublements, de joyaux et de tous objets d'art servant de cadre ŕ l'el'egance et ŕ la beaut'e de la femme",
     "count": 1
   },
   {
     "tag": "L'Illustrateur des Dames",
-    "count": 1
-  },
-  {
-    "tag": "La Moda Cubana",
     "count": 1
   },
   {
@@ -1468,6 +1811,10 @@
     "count": 1
   },
   {
+    "tag": "La Moda del Correo de Ultramar",
+    "count": 1
+  },
+  {
     "tag": "La Mode Elegante Illustrada",
     "count": 1
   },
@@ -1476,7 +1823,19 @@
     "count": 1
   },
   {
+    "tag": "La Reunion, Journal Littéraire et des Modes",
+    "count": 1
+  },
+  {
+    "tag": "La Toilette de Paris",
+    "count": 1
+  },
+  {
     "tag": "Lachasse, Ltd.",
+    "count": 1
+  },
+  {
+    "tag": "Ladies Treasury",
     "count": 1
   },
   {
@@ -1488,11 +1847,11 @@
     "count": 1
   },
   {
-    "tag": "Le Beau Monde, or Literary & Fashionable Magazine",
+    "tag": "Le Conseiller des Dames",
     "count": 1
   },
   {
-    "tag": "Le Conseiller des Dames",
+    "tag": "Le Conseiller des Familles",
     "count": 1
   },
   {
@@ -1500,7 +1859,15 @@
     "count": 1
   },
   {
+    "tag": "Le Journal des Dames et des Demoiselles",
+    "count": 1
+  },
+  {
     "tag": "Le Lion",
+    "count": 1
+  },
+  {
+    "tag": "Le Messager des Salons",
     "count": 1
   },
   {
@@ -1508,11 +1875,31 @@
     "count": 1
   },
   {
+    "tag": "Le Moniteur des Modes des Dames et des Demoiselles",
+    "count": 1
+  },
+  {
     "tag": "Le Salon de la Mode",
     "count": 1
   },
   {
-    "tag": "Leloir, H\u00e9lo\u010fse Colin, 1820-1873",
+    "tag": "Le Tailleur, Journal des Quatre Saisons",
+    "count": 1
+  },
+  {
+    "tag": "Le Tour du Monde",
+    "count": 1
+  },
+  {
+    "tag": "Le mercure des Salons",
+    "count": 1
+  },
+  {
+    "tag": "Leloir, Héloïse Colin, 1820-1873",
+    "count": 1
+  },
+  {
+    "tag": "Leloir, Héloďse Colin, 1820-1873",
     "count": 1
   },
   {
@@ -1524,7 +1911,11 @@
     "count": 1
   },
   {
-    "tag": "Les Robes de Paul Poiret \/ Racont\u00e9es par Paul Iribe",
+    "tag": "Les Robes de Paul Poiret / Racontées par Paul Iribe",
+    "count": 1
+  },
+  {
+    "tag": "Les Tailleurs Nouveaux",
     "count": 1
   },
   {
@@ -1552,7 +1943,7 @@
     "count": 1
   },
   {
-    "tag": "Marty, A.-E. (Andr\u00e9\u0081-Edouard), 1882-1974",
+    "tag": "Marty, A.-E. (André-Edouard), 1882-1974",
     "count": 1
   },
   {
@@ -1560,11 +1951,27 @@
     "count": 1
   },
   {
+    "tag": "Maurer",
+    "count": 1
+  },
+  {
     "tag": "Mendel",
     "count": 1
   },
   {
-    "tag": "Modes et Mani\u00e8res du Jour",
+    "tag": "Miler London",
+    "count": 1
+  },
+  {
+    "tag": "Modes Parisiennes Reunies",
+    "count": 1
+  },
+  {
+    "tag": "Modes et Manières du Jour",
+    "count": 1
+  },
+  {
+    "tag": "Monte Santo",
     "count": 1
   },
   {
@@ -1573,6 +1980,14 @@
   },
   {
     "tag": "Moutet, C.",
+    "count": 1
+  },
+  {
+    "tag": "New York Times",
+    "count": 1
+  },
+  {
+    "tag": "Nina Rich (Firm)",
     "count": 1
   },
   {
@@ -1592,7 +2007,11 @@
     "count": 1
   },
   {
-    "tag": "Paquin, Jeanne 1869-1936",
+    "tag": "Passatino, Robert",
+    "count": 1
+  },
+  {
+    "tag": "Philippe",
     "count": 1
   },
   {
@@ -1616,6 +2035,22 @@
     "count": 1
   },
   {
+    "tag": "Renee",
+    "count": 1
+  },
+  {
+    "tag": "Robert",
+    "count": 1
+  },
+  {
+    "tag": "Robes",
+    "count": 1
+  },
+  {
+    "tag": "Royant",
+    "count": 1
+  },
+  {
     "tag": "Rozerwriski, Alex",
     "count": 1
   },
@@ -1632,10 +2067,6 @@
     "count": 1
   },
   {
-    "tag": "Scott's Mirror of Fashion",
-    "count": 1
-  },
-  {
     "tag": "Silkscreen",
     "count": 1
   },
@@ -1645,6 +2076,10 @@
   },
   {
     "tag": "Souchet, A.",
+    "count": 1
+  },
+  {
+    "tag": "Stein and Blaine",
     "count": 1
   },
   {
@@ -1664,7 +2099,39 @@
     "count": 1
   },
   {
-    "tag": "Toudouze, Ana\u010fs Colin, 1822-1899",
+    "tag": "The Glass of Fashion",
+    "count": 1
+  },
+  {
+    "tag": "The Ladies Treasury",
+    "count": 1
+  },
+  {
+    "tag": "The Lady's Monthly Museum",
+    "count": 1
+  },
+  {
+    "tag": "The Season",
+    "count": 1
+  },
+  {
+    "tag": "Theatre de Vaudeville",
+    "count": 1
+  },
+  {
+    "tag": "Tho & Crabb",
+    "count": 1
+  },
+  {
+    "tag": "Tiffany and Company",
+    "count": 1
+  },
+  {
+    "tag": "Toledo, Rubin",
+    "count": 1
+  },
+  {
+    "tag": "Torre, Rosemary",
     "count": 1
   },
   {
@@ -1673,6 +2140,14 @@
   },
   {
     "tag": "Vests",
+    "count": 1
+  },
+  {
+    "tag": "Weeks",
+    "count": 1
+  },
+  {
+    "tag": "Wraps",
     "count": 1
   },
   {
