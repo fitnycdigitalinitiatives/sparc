@@ -3,11 +3,15 @@
     <?php foreach ($setElements as $elementName => $elementInfo): ?>
       <?php if (($setName == "Dublin Core") and (($elementName == "Subject") or ($elementName == "Creator") or ($elementName == "Contributor") or ($elementName == "Source") or ($elementName == "Format") or ($elementName == "Medium") or ($elementName == "Spatial Coverage") or ($elementName == "Temporal Coverage"))): ?>
         <div id="<?php echo text_to_id(html_escape("$setName $elementName")); ?>" class="element">
+          <?php if ($elementName == "Creator"): ?>
+            <dt>Names</dt>
+          <?php else: ?>
             <dt><?php echo html_escape(__($elementName)); ?></dt>
+          <?php endif; ?>
             <dd class="element-text">
               <ul class="list-unstyled">
                 <?php foreach ($elementInfo['texts'] as $text): ?>
-                    <li><?php echo tag_search ($text); ?></li>
+                    <li><?php echo tag_search($text); ?></li>
                 <?php endforeach; ?>
               </ul>
             </dd>
