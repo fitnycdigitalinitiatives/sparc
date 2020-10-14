@@ -11,7 +11,7 @@
             <dd class="element-text">
               <ul class="list-unstyled">
                 <?php foreach ($elementInfo['texts'] as $text): ?>
-                    <li><?php echo tag_search($text); ?></li>
+                    <li><?php echo tag_search($text, $elementName); ?></li>
                 <?php endforeach; ?>
               </ul>
             </dd>
