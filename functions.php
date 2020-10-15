@@ -404,9 +404,9 @@ function get_exhibit_item($exhibit)
 function tag_search($text, $elementName)
 {
     // check if creator field has role which we don't want to include in the tag search
-    if ((($elementName == "Creator") or ($elementName == "Contributor")) and strpos($text, ' [') !== false) {
-        $explode = explode(" [", $text);
-        $tag = $explode[0];
+    if ((($elementName == "Creator") or ($elementName == "Contributor")) and strpos($text, '[') !== false) {
+        $explode = explode("[", $text);
+        $tag = trim($explode[0]);
         $role = $explode[1];
         $role = trim($role, "]");
         $text = $tag . " (" . $role . ")";
