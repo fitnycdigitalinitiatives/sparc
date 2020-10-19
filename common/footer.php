@@ -98,7 +98,7 @@
         }
       }
     }).bind('typeahead:select', function(ev, data) {
-        var search_url = '/solr-search?q=&facet=tag%3A%22' + encodeURIComponent(data.tag) + '%22';
+        var search_url = '/solr-search?q=&facet=tag%3A%22' + encodeURIComponent(data.name) + '%22';
         window.location.href = search_url;
       });
     });
