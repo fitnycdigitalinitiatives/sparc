@@ -72,9 +72,14 @@
       // constructs the suggestion engine
       // /solr/omeka/terms?terms.fl=tag&terms.limit=-1&omitHeader=true&indent=true&wt=json&json.nl=arrntv
       var tags = new Bloodhound({
-      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('tag'),
+      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
       queryTokenizer: Bloodhound.tokenizers.whitespace,
-      prefetch: '<?php echo src('autocomplete_tags_counts_2020-10-11', 'javascripts/lib/typeahead', 'json'); ?>'
+      prefetch: {
+        url: '<?php echo src('autocomplete_tags_counts_2020-10-19', 'javascripts/lib/typeahead', 'json'); ?>',
+        transform: function(response) {
+          return response.terms.tag;
+        }
+      }
       });
 
       $('.form-group #query').typeahead({
@@ -89,7 +94,7 @@
       limit: 7,
       templates: {
         suggestion: function(data){
-              return '<div><span class="badge tag-count pull-right">' + data.count + '</span>' + data.tag + '</div>';
+              return '<div><span class="badge tag-count pull-right">' + data.value + '</span>' + data.name + '</div>';
         }
       }
     }).bind('typeahead:select', function(ev, data) {

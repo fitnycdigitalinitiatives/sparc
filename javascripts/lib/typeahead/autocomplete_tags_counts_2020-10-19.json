@@ -1,0 +1,2695 @@
+{
+  "terms": {
+    "tag": [{
+        "name": "Drawings",
+        "type": "int",
+        "value": 6010
+      },
+      {
+        "name": "Women's clothing",
+        "type": "int",
+        "value": 5533
+      },
+      {
+        "name": "Alexander, Pearl Levy",
+        "type": "int",
+        "value": 4176
+      },
+      {
+        "name": "André (Firm)",
+        "type": "int",
+        "value": 4176
+      },
+      {
+        "name": "Hats",
+        "type": "int",
+        "value": 3790
+      },
+      {
+        "name": "Coats",
+        "type": "int",
+        "value": 3424
+      },
+      {
+        "name": "Watercolor",
+        "type": "int",
+        "value": 985
+      },
+      {
+        "name": "Dresses",
+        "type": "int",
+        "value": 965
+      },
+      {
+        "name": "Pencil",
+        "type": "int",
+        "value": 948
+      },
+      {
+        "name": "Dress accessories",
+        "type": "int",
+        "value": 804
+      },
+      {
+        "name": "Photographs",
+        "type": "int",
+        "value": 725
+      },
+      {
+        "name": "Photograph",
+        "type": "int",
+        "value": 711
+      },
+      {
+        "name": "Suits",
+        "type": "int",
+        "value": 620
+      },
+      {
+        "name": "Prints",
+        "type": "int",
+        "value": 610
+      },
+      {
+        "name": "Jackets",
+        "type": "int",
+        "value": 604
+      },
+      {
+        "name": "Skirts",
+        "type": "int",
+        "value": 584
+      },
+      {
+        "name": "Headwear",
+        "type": "int",
+        "value": 541
+      },
+      {
+        "name": "Ink",
+        "type": "int",
+        "value": 502
+      },
+      {
+        "name": "Halston, 1932-1990",
+        "type": "int",
+        "value": 439
+      },
+      {
+        "name": "Bergdorf Goodman (New York, N.Y.)",
+        "type": "int",
+        "value": 400
+      },
+      {
+        "name": "Shoes",
+        "type": "int",
+        "value": 335
+      },
+      {
+        "name": "Mixed media",
+        "type": "int",
+        "value": 330
+      },
+      {
+        "name": "Footwear",
+        "type": "int",
+        "value": 313
+      },
+      {
+        "name": "Miller, Jerry, 1927-",
+        "type": "int",
+        "value": 300
+      },
+      {
+        "name": "Bergdorf Goodman",
+        "type": "int",
+        "value": 272
+      },
+      {
+        "name": "Children's clothing",
+        "type": "int",
+        "value": 263
+      },
+      {
+        "name": "Gouache",
+        "type": "int",
+        "value": 237
+      },
+      {
+        "name": "A. Beller & Co.",
+        "type": "int",
+        "value": 220
+      },
+      {
+        "name": "Meyer, Max, 1876-1953",
+        "type": "int",
+        "value": 216
+      },
+      {
+        "name": "Paper",
+        "type": "int",
+        "value": 207
+      },
+      {
+        "name": "Outerwear",
+        "type": "int",
+        "value": 206
+      },
+      {
+        "name": "Joseph Love, Inc.",
+        "type": "int",
+        "value": 202
+      },
+      {
+        "name": "Love, Joseph, 1891?-1971",
+        "type": "int",
+        "value": 200
+      },
+      {
+        "name": "Eveningwear",
+        "type": "int",
+        "value": 182
+      },
+      {
+        "name": "Men's clothing",
+        "type": "int",
+        "value": 118
+      },
+      {
+        "name": "Halston Studio",
+        "type": "int",
+        "value": 114
+      },
+      {
+        "name": "Schiaparelli, Elsa, 1890-1973",
+        "type": "int",
+        "value": 93
+      },
+      {
+        "name": "Jewelry",
+        "type": "int",
+        "value": 82
+      },
+      {
+        "name": "Marker",
+        "type": "int",
+        "value": 76
+      },
+      {
+        "name": "Pochoir",
+        "type": "int",
+        "value": 71
+      },
+      {
+        "name": "Barbier, George, 1882-1932",
+        "type": "int",
+        "value": 68
+      },
+      {
+        "name": "Heim, Jacques",
+        "type": "int",
+        "value": 68
+      },
+      {
+        "name": "Illustrated books",
+        "type": "int",
+        "value": 66
+      },
+      {
+        "name": "Lithograph",
+        "type": "int",
+        "value": 66
+      },
+      {
+        "name": "Grès, Alix, 1903-1993",
+        "type": "int",
+        "value": 65
+      },
+      {
+        "name": "Paquin (Firm)",
+        "type": "int",
+        "value": 64
+      },
+      {
+        "name": "Balenciaga, Cristobal, 1895-1972",
+        "type": "int",
+        "value": 59
+      },
+      {
+        "name": "Rochas, Marcel",
+        "type": "int",
+        "value": 56
+      },
+      {
+        "name": "Molyneux, Edward Henry, 1891-1974",
+        "type": "int",
+        "value": 54
+      },
+      {
+        "name": "Engraving",
+        "type": "int",
+        "value": 53
+      },
+      {
+        "name": "Mainbocher, 1891-1976",
+        "type": "int",
+        "value": 52
+      },
+      {
+        "name": "Wash",
+        "type": "int",
+        "value": 51
+      },
+      {
+        "name": "Chanel, Coco, 1883-1971",
+        "type": "int",
+        "value": 50
+      },
+      {
+        "name": "Charcoal",
+        "type": "int",
+        "value": 50
+      },
+      {
+        "name": "Scarves",
+        "type": "int",
+        "value": 49
+      },
+      {
+        "name": "Piguet, Robert",
+        "type": "int",
+        "value": 48
+      },
+      {
+        "name": "Sandals",
+        "type": "int",
+        "value": 46
+      },
+      {
+        "name": "Pants",
+        "type": "int",
+        "value": 44
+      },
+      {
+        "name": "Besançon de Wagner, Maggy",
+        "type": "int",
+        "value": 42
+      },
+      {
+        "name": "Patou, Jean, 1887-1936",
+        "type": "int",
+        "value": 41
+      },
+      {
+        "name": "Hair ornaments",
+        "type": "int",
+        "value": 40
+      },
+      {
+        "name": "Le Goût Parisien",
+        "type": "int",
+        "value": 39
+      },
+      {
+        "name": "Lucile, 1862-1935",
+        "type": "int",
+        "value": 37
+      },
+      {
+        "name": "Lucile, Ltd.",
+        "type": "int",
+        "value": 37
+      },
+      {
+        "name": "Handbags",
+        "type": "int",
+        "value": 36
+      },
+      {
+        "name": "Lipnitzki, Boris",
+        "type": "int",
+        "value": 36
+      },
+      {
+        "name": "Morris, Leslie",
+        "type": "int",
+        "value": 35
+      },
+      {
+        "name": "Christian Dior, Inc.",
+        "type": "int",
+        "value": 34
+      },
+      {
+        "name": "Creed",
+        "type": "int",
+        "value": 33
+      },
+      {
+        "name": "Pastel",
+        "type": "int",
+        "value": 33
+      },
+      {
+        "name": "Francevramant (Firm)",
+        "type": "int",
+        "value": 30
+      },
+      {
+        "name": "Shirts",
+        "type": "int",
+        "value": 27
+      },
+      {
+        "name": "Vionnet, Madeleine",
+        "type": "int",
+        "value": 27
+      },
+      {
+        "name": "Lopez, Antonio, 1943-1987",
+        "type": "int",
+        "value": 26
+      },
+      {
+        "name": "Bruyere, Marie-Louise",
+        "type": "int",
+        "value": 25
+      },
+      {
+        "name": "Balmain, Pierre, 1914-1982",
+        "type": "int",
+        "value": 24
+      },
+      {
+        "name": "Graphite",
+        "type": "int",
+        "value": 24
+      },
+      {
+        "name": "House of Worth (Firm)",
+        "type": "int",
+        "value": 24
+      },
+      {
+        "name": "Dior, Christian",
+        "type": "int",
+        "value": 23
+      },
+      {
+        "name": "La Belle Assemblée, or Bell's Court and Fashionable Magazine",
+        "type": "int",
+        "value": 23
+      },
+      {
+        "name": "Sportswear",
+        "type": "int",
+        "value": 23
+      },
+      {
+        "name": "Dessès, Jean, 1904-1970",
+        "type": "int",
+        "value": 22
+      },
+      {
+        "name": "Ink and watercolor on paper",
+        "type": "int",
+        "value": 22
+      },
+      {
+        "name": "Paray, Lucile",
+        "type": "int",
+        "value": 22
+      },
+      {
+        "name": "Whitehead, Joseph",
+        "type": "int",
+        "value": 22
+      },
+      {
+        "name": "Cloaks",
+        "type": "int",
+        "value": 21
+      },
+      {
+        "name": "Boyd, Harvey",
+        "type": "int",
+        "value": 20
+      },
+      {
+        "name": "Mr. Eric",
+        "type": "int",
+        "value": 20
+      },
+      {
+        "name": "Vernor, Hood & Sharpe, Poultry",
+        "type": "int",
+        "value": 20
+      },
+      {
+        "name": "Boots",
+        "type": "int",
+        "value": 19
+      },
+      {
+        "name": "Frances Neady collection of original fashion illustrations, 1913-",
+        "type": "int",
+        "value": 19
+      },
+      {
+        "name": "Saint Laurent, Yves",
+        "type": "int",
+        "value": 19
+      },
+      {
+        "name": "Belts",
+        "type": "int",
+        "value": 18
+      },
+      {
+        "name": "Galerie des Modes et Costumes Français, Dessinés D'Après Nature, 1778-1787",
+        "type": "int",
+        "value": 18
+      },
+      {
+        "name": "Laroche, Guy",
+        "type": "int",
+        "value": 18
+      },
+      {
+        "name": "Cornu, Paul, 1881-1914",
+        "type": "int",
+        "value": 17
+      },
+      {
+        "name": "Gazette du Bon Ton",
+        "type": "int",
+        "value": 17
+      },
+      {
+        "name": "Lanvin, Jeanne, 1867-1946",
+        "type": "int",
+        "value": 17
+      },
+      {
+        "name": "Lelong, Lucien, 1889-1958",
+        "type": "int",
+        "value": 17
+      },
+      {
+        "name": "Lepape, Georges, 1887-1971",
+        "type": "int",
+        "value": 17
+      },
+      {
+        "name": "Valente, Alfredo",
+        "type": "int",
+        "value": 17
+      },
+      {
+        "name": "Colored Pencils",
+        "type": "int",
+        "value": 16
+      },
+      {
+        "name": "Observateur des Modes",
+        "type": "int",
+        "value": 16
+      },
+      {
+        "name": "Barrios, Pedro",
+        "type": "int",
+        "value": 15
+      },
+      {
+        "name": "Callot Soeurs (Firm)",
+        "type": "int",
+        "value": 15
+      },
+      {
+        "name": "Iribe, Paul, 1883-1935",
+        "type": "int",
+        "value": 15
+      },
+      {
+        "name": "Modes et Manières d'Aujourd'hui",
+        "type": "int",
+        "value": 15
+      },
+      {
+        "name": "Wedding costumes",
+        "type": "int",
+        "value": 15
+      },
+      {
+        "name": "Chidnoff, Irving",
+        "type": "int",
+        "value": 14
+      },
+      {
+        "name": "Esta",
+        "type": "int",
+        "value": 14
+      },
+      {
+        "name": "Fabiani, Alberto",
+        "type": "int",
+        "value": 14
+      },
+      {
+        "name": "L'Eventail et la fourrure chez Paquin",
+        "type": "int",
+        "value": 14
+      },
+      {
+        "name": "Pochoir over lithograph",
+        "type": "int",
+        "value": 14
+      },
+      {
+        "name": "Stavrinos, George, 1948-",
+        "type": "int",
+        "value": 14
+      },
+      {
+        "name": "Associated Fabrics Corp.",
+        "type": "int",
+        "value": 13
+      },
+      {
+        "name": "Givenchy, Hubert de, 1927-",
+        "type": "int",
+        "value": 13
+      },
+      {
+        "name": "Halston Studio for Jerry Silverman",
+        "type": "int",
+        "value": 13
+      },
+      {
+        "name": "Journal des Demoiselles",
+        "type": "int",
+        "value": 13
+      },
+      {
+        "name": "Poiret, Paul",
+        "type": "int",
+        "value": 13
+      },
+      {
+        "name": "Jumpers",
+        "type": "int",
+        "value": 12
+      },
+      {
+        "name": "Kesslére, G. Maillard (George Maillard)",
+        "type": "int",
+        "value": 12
+      },
+      {
+        "name": "Beaton, Cecil, 1904-1980",
+        "type": "int",
+        "value": 11
+      },
+      {
+        "name": "Clogs",
+        "type": "int",
+        "value": 11
+      },
+      {
+        "name": "Cosmetics",
+        "type": "int",
+        "value": 11
+      },
+      {
+        "name": "Fans",
+        "type": "int",
+        "value": 11
+      },
+      {
+        "name": "La Moda Elegante Ilustrada",
+        "type": "int",
+        "value": 11
+      },
+      {
+        "name": "Paquin, Jeanne, 1869-1936",
+        "type": "int",
+        "value": 11
+      },
+      {
+        "name": "Griffe, Jacques",
+        "type": "int",
+        "value": 10
+      },
+      {
+        "name": "Gustafson, Mats, 1951-",
+        "type": "int",
+        "value": 10
+      },
+      {
+        "name": "Halston Studio for Luksus",
+        "type": "int",
+        "value": 10
+      },
+      {
+        "name": "Hood, Dorothy",
+        "type": "int",
+        "value": 10
+      },
+      {
+        "name": "Journal des Dames et des Modes",
+        "type": "int",
+        "value": 10
+      },
+      {
+        "name": "Ladies' Friend",
+        "type": "int",
+        "value": 10
+      },
+      {
+        "name": "Ricci, Nina",
+        "type": "int",
+        "value": 10
+      },
+      {
+        "name": "Rosevienne (Firm)",
+        "type": "int",
+        "value": 10
+      },
+      {
+        "name": "The Queen",
+        "type": "int",
+        "value": 10
+      },
+      {
+        "name": "Bouché, René, 1906-1963",
+        "type": "int",
+        "value": 9
+      },
+      {
+        "name": "Chéruit, Louise, 1866-1955",
+        "type": "int",
+        "value": 9
+      },
+      {
+        "name": "Crayon",
+        "type": "int",
+        "value": 9
+      },
+      {
+        "name": "Draz, Tod",
+        "type": "int",
+        "value": 9
+      },
+      {
+        "name": "Lefranco",
+        "type": "int",
+        "value": 9
+      },
+      {
+        "name": "Blouses",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Costume",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "David, Jules, 1808-1892",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Eric (Erickson), Carl",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Gloves",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Jenny",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "La Gazette Rose",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Lanvin (Firm)",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "LeClere, Pierre-Thomas",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Paintings",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Pierce, Daren",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Rauch, Madeleine de",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Rompers",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Scott's Mirror of Fashion",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Shabazz, Jamel (1960-)",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Covers (gathered matter components)",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Crawford, Jay",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Doeuillet",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Fourrures Max (Firm)",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Félix, Auguste",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Gazette du Bon Ton: Arts, Modes & Frivolités",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "La Guirlande des Mois",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "La Moda Cubana",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Moss, Seymour",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Patou (Firm)",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Pencil, watercolor and gouache on paper",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Pimsler, Alvin",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Sleepwear",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Swimwear",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "The Herald of Fashion",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Watteau, François, 1758-1823",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Wedding costume",
+        "type": "int",
+        "value": 7
+      },
+      {
+        "name": "Corriere delle Dame",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Courrèges, André",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Dormoy, Marcelle",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Drecoll",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Fath, Jacques, 1912-1954",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Fur garments",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Gaston (Firm)",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Ink on paper",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "La Mode",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Le Follet",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Pen",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Preval, E.",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Schnieder, Max",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Simonetta",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "The Journal of Fashion and Tailoring",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Toudouze, Anaïs Colin, 1822-1899",
+        "type": "int",
+        "value": 6
+      },
+      {
+        "name": "Blair, Mary",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Collage",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Halston Studio for Partos",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Heim",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Il Mondo Elegante",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Ladies Pocket Magazine",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Ladies' Cabinet",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Le Bonheur du Jour",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Les Idées Nouvelles de la Mode",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Lingerie",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Magasin des Demoiselles",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Miler Soeurs (Firm)",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Modes et Manieres d'Aujord'hui",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Neue Wiener Modelle",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Panorama dramatique : Casanova, décors et costumes",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Pencil on vellum",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Pertegaz, Manuel, 1917-",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Rolande",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Swatches",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Très Parisien: La Mode, le Chic l'Élégance",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Vernet, Horace, 1789-1863",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Carette",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "De Juan, Eric",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Drivon, Charles",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Engelmann, G. (Godefroy), 1788-1839",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Erté",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Germaine",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Giese, Al",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Halston Studio for Adele Simpson",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "James, Charles, 1906-1978",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Jodelle",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "King, Muriel",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "L'Iris, Journal de Modes et d'Arts",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "La France Élégante",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Ladies' Fair",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Larson, Esther",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Le Bon Ton, Journal de Modes",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Le Journal des Dames et des Modes",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Manuscripts",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Martine",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Neckties",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Parfums de Rosine (Firm)",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Perfume",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Petit Courrier des Dames",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Philippe et Gaston",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Premet",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Scaasi, Arnold",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Smocks",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Stipelman, Steven",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Sweaters",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Tempera and swatches on printed paper",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "The Paris Album of Fashions",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Théorie de l'Art du Tailleur",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Tissue",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Townsend's Monthly Selection of Parisian Costumes",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Underwear",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Valentino, 1932-",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Watercolor on vellum",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Wood",
+        "type": "int",
+        "value": 4
+      },
+      {
+        "name": "Amies, Hardy, 1909-2003",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Barnard, William S., approximately 1809-",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Borea, Vera",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Capes",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Cashin, Bonnie",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Chaumont, Marcelle, 1871-",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Ely, Richard",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Esler, Ronald",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Fur coats",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Galitzine, Irene, 1918-2006",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Gatine, Georges Jacques, 1773-1831",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Geizinger, Jack",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Georgette",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Goldberg, Maurice",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Gonin, G.",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Goupy",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Halston Studio for Oscar Delarenta",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Halston Studio for Talmack",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Hattie Carnegie, Inc.",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Hayward",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Headbands",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Hickson",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Jays",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Kaish, Morton",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "L'Art et la Mode",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Martial et Armand (Firm)",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Monte Sano & Pruzan, Ltd.",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Nei, Carlos",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Pearlman, Barbara",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Pencil and watercolor on paper",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Perl, Erica",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Peterson's Magazine",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Psyche, Journal des Modes",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Resortwear",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Sartain's union magazine of literature and art",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Staffs (Sticks, canes, etc.)",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "The New Monthly Belle Assemblée",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Uniforms",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "Wiener Modezeichner",
+        "type": "int",
+        "value": 3
+      },
+      {
+        "name": "A la Reine d'Angleterre (Firm)",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Aquatint",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Black and white phototransfer",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Cardin, Pierre, 1922-",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Carpenter, Mia",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Chaillot, A.",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Charle, H.",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Creed, Charles, 1909-",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Croland, David",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "De Beer (Firm)",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Desrais, Claude-Louis",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Doucet",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Drian",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Grammer, June",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Greenhill, Fred",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "H & G Breman",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Halston Studio for Jane Derby",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Halston Studio for Kahan-Bill Smith",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Halston Studio for Teal Traina",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Incroyables et Merveilleuses",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Jenny (Firm)",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Kapp, Annaliese",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Klepper, Esther",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "L'Elegant, Journal des Tailleurs",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "La Goût du Jour",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "La Mode Artistique",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "La Mode Pratique: Journal de la Femme et de la Maison",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Lafayette",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Le Beau Monde, or Literary & Fashionable Magazine",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Le Cabinet de Lecture et le Voleur réunis",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Le Conseiller des Graces",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Le Monde Élégant Courrier de la Mode",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Lucy",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Marker on paper",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Mayer, M",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Monarch Tailoring Co.",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Monjaret, Madelaine",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Mooring, Mark",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Muray, Nickolas, 1892-1965",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Papinoff",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Parker, Bob",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Pauquet, A.",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Philip Sills & Co.",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Printed paper",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Purnell, Catherine",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Revue des Modes et de la Littérature",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Sandoz, Emile-Auguste, 1901-1964",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Schatt, Roy",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Shorts",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Siméon, Fernand, 1884-1928",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Tempera on printed paper",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Textiles on type-written paper",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Umbrellas",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Unidentified French publication",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Wax Pencils",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Wiener Mode-Album",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Wilson, Carl",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "A.C.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Ackermann's Repository of Arts, Literature, Commerce, Manufactures, Fashion, and Politics",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Ackermann, Rudolph, 1764-1834",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Acrylic",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Agnes-Drécoll (Firm)",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Allen, Ted",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Allgemeine Moden-Zeitung",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "American Fashion Review / Sartorial Art Journal",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "American Gentleman and Sartorial Art Journal",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Anglo Fabrics Company, Inc.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Apparel Arts",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Ardanse (Firm)",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Bailey, Germaine",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Bakst, Léon, 1866-1924",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Blau, Tom",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Block, Kenneth Paul",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Bogart, De Foret",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Bohan, Marc, 1926-",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Boulanger, Louise",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Boutet de Monvel, Bernard",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Bow ties",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Bracelets",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Bérard, Christian, 1902-1949",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Cavalier",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Chanel, Gabrielle (1883-1971)",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Cheriut (Firm)",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Compte-Calix, François Claudius, 1813-1880",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Condé Nast Publications",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Cornelia",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Costumes d’ouvrières parisiennes",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Court Magazine, Monthly Critic, Lady's Magazine and Museum",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "De Casimacker",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Deferneville, P.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Der Bazar",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Der Tage einer Dame",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Desjardins, T.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Die Modenwelt",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Dressing gowns",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Dunton, Marjorie",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Earley, Donald",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Earrings",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Eisenstaedt, Alfred",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "El Correo de la Moda",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "El Salon de la Moda",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Elaine",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Elia, Albert",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Elkus, Bruce",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Endpapers",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "English Women's Domestic Magazine",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Erté-de Tirtoff, Romain",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Eyewear",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Falbalas et Fanfreluches",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Fourrures Weil (Firm)",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Fox, Barbara",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Frank Leslie's Ladies Gazette of Fashion",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "G. Cowie, and Co.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "G. Gonin",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Galeries Lafayette",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Gallenga, Maria Monica",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Gavarni (Chevalier, Hippolyte-Guillaume-Sulpice)",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Gedding",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Genio C. Scott",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Giornale delle Donne",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Glax, Stephanie",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Gleason, Mary",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Glitter",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Godey's Lady's Book",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Gouache with acetate overlay",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Graham's Magazine",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Grangier, Jean",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Green, Norman",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Groult, Nicole, 1887-1967",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Guerouite",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Guijol, A.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "H. Charles",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Hall, Arnold",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Halston Publicity",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Halston Studio Partos",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Halston Studio for Bill Smith",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Halston Studio for Jane Derby/Oscar Delarenta",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Halston Studio for Partos/Vogue",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Halston Studio for Revlon",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Halston Studio for Samuel R.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Halston Studio for Sarmi",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Halston Studio for Utre",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Hand-tinted print",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Hannett, A.T.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Hartnell, Norman",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Hat",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Helene and Helene",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Heliochrome",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Hosiery",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Howard, Jim",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Hurrell, George, 1904-1992",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Incroyable",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Irene Dana",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Irfé (Firm)",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Jno. J. Mitchell Co.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Joal Ber",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Johnson, Doug",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Journal des Modes et de la Littérature",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Journaux des Modes",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "L'Ami des Dames",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "L'Art et la mode: Reproduction en noir et en couleurs de costumes, d'ameublements, de joyaux et de tous objets d'art servant de cadre ŕ l'el'egance et ŕ la beaut'e de la femme",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "L'Illustrateur des Dames",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "La Moda Elegante Illustrada",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "La Moda Elegante llustrada",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "La Moda del Correo de Ultramar",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "La Mode Elegante Illustrada",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "La Mode: Revue des Modes, Galerie des Moeurs, Album des Salons",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "La Reunion, Journal Littéraire et des Modes",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "La Toilette de Paris",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Lachasse, Ltd.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Ladies Treasury",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Lante, Louis-Marie",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Laverriere",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le Conseiller des Dames",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le Conseiller des Familles",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le Follet: journal du Grand Monde, Fashion, Polite Literature, Beaux Arts, etc.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le Journal des Dames et des Demoiselles",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le Lion",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le Messager des Salons",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le Moniteur de la Mode",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le Moniteur des Modes des Dames et des Demoiselles",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le Salon de la Mode",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le Tailleur, Journal des Quatre Saisons",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le Tour du Monde",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Le mercure des Salons",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Leloir, Héloïse Colin, 1820-1873",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Leloir, Héloďse Colin, 1820-1873",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Lelong, Lucien",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Les Choses de Paul Poiret Vues par Georges Lepape",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Les Robes de Paul Poiret / Racontées par Paul Iribe",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Les Tailleurs Nouveaux",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Lickona, Cheryl",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Lloyd, Gene",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Luigi",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Maguy, Alex",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Mark, Mona",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Marker, textile swatch and leather on paper",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Marty, A.-E. (André-Edouard), 1882-1974",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Mathieu, Dora",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Maurer",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Mendel",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Miler London",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Modes Parisiennes Reunies",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Modes et Manières du Jour",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Monte Santo",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Morrow, Tom, -1994",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Moutet, C.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "New York Times",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Nina Rich (Firm)",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Numa, Pierre",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "O'Rossen, Louis",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Obi",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Olman Brothers",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Paquin, Jeanne 1869-1936",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Passatino, Robert",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Philippe",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Phillip Sills & Co.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Photocopies",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Photograph and collage",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Phototypie",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Raincoats",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Renee",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Robert",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Robes",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Royant",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Rozerwriski, Alex",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Ruegg",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Sands, R.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Scott's Fashions",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Silkscreen",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Socks",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Souchet, A.",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Stein and Blaine",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Sunshine, Bob",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Tempera",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Textile on printed paper",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "The Court Magazine",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "The Glass of Fashion",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "The Ladies Treasury",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "The Lady's Monthly Museum",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "The Season",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Theatre de Vaudeville",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Tho & Crabb",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Tiffany and Company",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Toledo, Rubin",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Torre, Rosemary",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Venet, Philippe",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Vests",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Weeks",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Wraps",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Zou Zou",
+        "type": "int",
+        "value": 1
+      }
+    ]
+  }
+}
