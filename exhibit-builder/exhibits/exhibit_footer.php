@@ -47,41 +47,6 @@
         })
     	})
   	</script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-      // constructs the suggestion engine
-      // /solr/omeka/terms?terms.fl=tag&terms.limit=-1&omitHeader=true&indent=true&wt=json&json.nl=arrntv
-      var tags = new Bloodhound({
-      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
-      queryTokenizer: Bloodhound.tokenizers.whitespace,
-      prefetch: {
-        url: '<?php echo src('autocomplete_tags_counts_2020-10-19', 'javascripts/lib/typeahead', 'json'); ?>',
-        transform: function(response) {
-          return response.terms.tag;
-        }
-      }
-      });
-
-      $('.form-group #query').typeahead({
-      hint: false,
-      highlight: true,
-      minLength: 1
-      },
-      {
-      name: 'tags',
-      display: 'tag',
-      source: tags,
-      limit: 7,
-      templates: {
-        suggestion: function(data){
-              return '<div><span class="badge tag-count pull-right">' + data.value + '</span>' + data.name + '</div>';
-        }
-      }
-    }).bind('typeahead:select', function(ev, data) {
-        var search_url = '/solr-search?q=&facet=tag%3A%22' + encodeURIComponent(data.name) + '%22';
-        window.location.href = search_url;
-      });
-    });
-    </script>
+    <?php echo $this->partial('common/typeahead-partial.phtml'); ?>
   </body>
   </html>
