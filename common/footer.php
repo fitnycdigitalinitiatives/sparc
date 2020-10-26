@@ -74,5 +74,6 @@
         $clamp(currentCaption, {clamp: 2, useNativeClamp: true});
       });
     </script>
+    <?php echo head_js($includeDefaults = false); ?>
 </body>
 </html>

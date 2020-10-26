@@ -347,6 +347,20 @@ function mdid_image_tag($item, $class)
         return $html;
     }
 }
+function mdid_medium_image_tag($item, $class)
+{
+    if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
+        $html = '<img src="https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/800x800" class="' . $class . '" alt="' . metadata($item, array('Dublin Core', 'Title')) . '">';
+        return $html;
+    }
+}
+function mdid_medium_image_url($item)
+{
+    if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {
+        $url = 'https://fitdil.fitnyc.edu/media/get/' . $record_id . '/' . $record_name . '/800x800/';
+        return $url;
+    }
+}
 function mdid_rss_image_tag($item)
 {
     if (($record_name = metadata($item, array('Item Type Metadata', 'Record Name'))) && ($record_id = metadata($item, array('Item Type Metadata', 'Record ID')))) {

@@ -48,5 +48,6 @@
     	})
   	</script>
     <?php echo $this->partial('common/typeahead-partial.phtml'); ?>
+    <?php echo head_js($includeDefaults = false); ?>
   </body>
   </html>
