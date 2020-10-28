@@ -9,7 +9,7 @@
 	<form id="search-form" name="search-form" role="search" action="<?php echo $url; ?>" method="get">
 		<div class="form-group has-feedback">
 			<input type="text" name="query" id="query" value="" class="form-control" placeholder="Search the collection" aria-label="Search">
-			<span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+			<i class="fas fa-search form-control-feedback" aria-hidden="true"></i>
 		</div>
 	</form>
 </div>

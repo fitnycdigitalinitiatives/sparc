@@ -20,7 +20,7 @@
   <div class="row summary-nav">
 		<div class="col-xs-12">
       <?php $firstPage = $exhibit->getFirstTopPage(); ?>
-      <?php echo exhibit_builder_link_to_exhibit($exhibit, '<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">Next</span>', array('type' => 'button', 'class' => 'btn btn-default btn-lg btn-round next', 'role' => 'button'), $firstPage); ?>
+      <?php echo exhibit_builder_link_to_exhibit($exhibit, '<i class="fas fa-angle-right" aria-hidden="true"></i><span class="sr-only">Next</span>', array('type' => 'button', 'class' => 'btn btn-default btn-lg btn-round next', 'role' => 'button'), $firstPage); ?>
     </div>
   </div>
 
@@ -28,13 +28,13 @@
     $slug = $exhibit->slug;
     $bg_image = $slug . '_exhibition.jpg';
     try {
-      $bg_image_url = img($bg_image);
-      $html = '<div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\'';
-      $html .= $bg_image_url;
-      $html .= '\');"></div>';
-      echo $html;
+        $bg_image_url = img($bg_image);
+        $html = '<div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\'';
+        $html .= $bg_image_url;
+        $html .= '\');"></div>';
+        echo $html;
     } catch (Exception $e) {
-      echo '<div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));"></div>';
+        echo '<div id="exhibition_background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));"></div>';
     }
   ?>
 
