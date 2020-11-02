@@ -63,6 +63,11 @@ header .navbar-brand img {
   height: 30px;
 }
 
+/* Searchbar */
+#search-form .form-control-feedback {
+  line-height: 34px;
+}
+
 /* Autocomplete fix */
 .navbar .twitter-typeahead, #home .jumbotron .twitter-typeahead {
   vertical-align: middle;
