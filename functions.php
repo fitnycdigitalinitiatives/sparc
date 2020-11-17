@@ -406,12 +406,14 @@ function public_domain_download($item)
 }
 function get_exhibit_item($exhibit)
 {
-    $page = $exhibit->getFirstTopPage();
-    if ($page) {
-        $attachments = $page->getAllAttachments();
-        if ($attachments) {
-            $item = $attachments[0]->getItem();
-            return $item;
+    $pages = $exhibit->getPages();
+    if ($pages) {
+        foreach ($pages as $page) {
+            $attachments = $page->getAllAttachments();
+            if ($attachments) {
+                $item = $attachments[0]->getItem();
+                return $item;
+            }
         }
     }
 }
