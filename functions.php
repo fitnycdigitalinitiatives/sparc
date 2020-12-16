@@ -406,13 +406,19 @@ function public_domain_download($item)
 }
 function get_exhibit_item($exhibit)
 {
-    $pages = $exhibit->getPages();
-    if ($pages) {
-        foreach ($pages as $page) {
-            $attachments = $page->getAllAttachments();
-            if ($attachments) {
-                $item = $attachments[0]->getItem();
-                return $item;
+    $item = null;
+    // exception for Beller exhibition—very embarassing code
+    if (($exhibit->slug == 'meyer-beller') && ($item = get_record('Item', array('advanced' => array(array('element_id' => 50, 'type' => 'is exactly', 'terms' => 'Original Illustration of a Woman in a Chanel Day Suit')))))) {
+        return $item;
+    } else {
+        $pages = $exhibit->getPages();
+        if ($pages) {
+            foreach ($pages as $page) {
+                $attachments = $page->getAllAttachments();
+                if ($attachments) {
+                    $item = $attachments[0]->getItem();
+                    return $item;
+                }
             }
         }
     }
