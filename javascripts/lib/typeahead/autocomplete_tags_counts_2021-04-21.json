@@ -3,47 +3,62 @@
     "tag": [{
         "name": "Drawings",
         "type": "int",
-        "value": 6010
+        "value": 7257
       },
       {
         "name": "Women's clothing",
         "type": "int",
-        "value": 5533
+        "value": 6862
       },
       {
         "name": "Alexander, Pearl Levy",
         "type": "int",
-        "value": 4176
+        "value": 5422
       },
       {
         "name": "André (Firm)",
         "type": "int",
-        "value": 4176
+        "value": 5422
       },
       {
         "name": "Hats",
         "type": "int",
-        "value": 3790
+        "value": 4836
       },
       {
         "name": "Coats",
         "type": "int",
-        "value": 3424
-      },
-      {
-        "name": "Watercolor",
-        "type": "int",
-        "value": 985
+        "value": 4376
       },
       {
         "name": "Dresses",
         "type": "int",
-        "value": 965
+        "value": 1044
+      },
+      {
+        "name": "Watercolor",
+        "type": "int",
+        "value": 986
+      },
+      {
+        "name": "Suits",
+        "type": "int",
+        "value": 964
       },
       {
         "name": "Pencil",
         "type": "int",
-        "value": 948
+        "value": 949
+      },
+      {
+        "name": "Jackets",
+        "type": "int",
+        "value": 926
+      },
+      {
+        "name": "Skirts",
+        "type": "int",
+        "value": 920
       },
       {
         "name": "Dress accessories",
@@ -61,9 +76,9 @@
         "value": 711
       },
       {
-        "name": "Suits",
+        "name": "Headwear",
         "type": "int",
-        "value": 620
+        "value": 632
       },
       {
         "name": "Prints",
@@ -71,24 +86,9 @@
         "value": 610
       },
       {
-        "name": "Jackets",
-        "type": "int",
-        "value": 604
-      },
-      {
-        "name": "Skirts",
-        "type": "int",
-        "value": 584
-      },
-      {
-        "name": "Headwear",
-        "type": "int",
-        "value": 541
-      },
-      {
         "name": "Ink",
         "type": "int",
-        "value": 502
+        "value": 503
       },
       {
         "name": "Halston, 1932-1990",
@@ -103,7 +103,7 @@
       {
         "name": "Shoes",
         "type": "int",
-        "value": 335
+        "value": 338
       },
       {
         "name": "Mixed media",
@@ -138,22 +138,27 @@
       {
         "name": "A. Beller & Co.",
         "type": "int",
-        "value": 220
+        "value": 221
       },
       {
         "name": "Meyer, Max, 1876-1953",
         "type": "int",
-        "value": 216
+        "value": 217
       },
       {
         "name": "Paper",
         "type": "int",
-        "value": 207
+        "value": 208
       },
       {
         "name": "Outerwear",
         "type": "int",
         "value": 206
+      },
+      {
+        "name": "Eveningwear",
+        "type": "int",
+        "value": 204
       },
       {
         "name": "Joseph Love, Inc.",
@@ -166,9 +171,9 @@
         "value": 200
       },
       {
-        "name": "Eveningwear",
+        "name": "Belts",
         "type": "int",
-        "value": 182
+        "value": 118
       },
       {
         "name": "Men's clothing",
@@ -186,9 +191,29 @@
         "value": 93
       },
       {
+        "name": "Costume",
+        "type": "int",
+        "value": 90
+      },
+      {
+        "name": "FIT Fashion and Textile Studies: History, Theory, Museum Practice",
+        "type": "int",
+        "value": 82
+      },
+      {
         "name": "Jewelry",
         "type": "int",
         "value": 82
+      },
+      {
+        "name": "Textile",
+        "type": "int",
+        "value": 82
+      },
+      {
+        "name": "Heim, Jacques",
+        "type": "int",
+        "value": 77
       },
       {
         "name": "Marker",
@@ -206,9 +231,14 @@
         "value": 68
       },
       {
-        "name": "Heim, Jacques",
+        "name": "Hair ornaments",
         "type": "int",
-        "value": 68
+        "value": 67
+      },
+      {
+        "name": "Rochas, Marcel",
+        "type": "int",
+        "value": 67
       },
       {
         "name": "Illustrated books",
@@ -226,9 +256,14 @@
         "value": 65
       },
       {
+        "name": "Handbags",
+        "type": "int",
+        "value": 65
+      },
+      {
         "name": "Paquin (Firm)",
         "type": "int",
-        "value": 64
+        "value": 65
       },
       {
         "name": "Balenciaga, Cristobal, 1895-1972",
@@ -236,9 +271,9 @@
         "value": 59
       },
       {
-        "name": "Rochas, Marcel",
+        "name": "Scarves",
         "type": "int",
-        "value": 56
+        "value": 57
       },
       {
         "name": "Molyneux, Edward Henry, 1891-1974",
@@ -256,14 +291,14 @@
         "value": 52
       },
       {
-        "name": "Wash",
+        "name": "Chanel, Coco, 1883-1971",
         "type": "int",
         "value": 51
       },
       {
-        "name": "Chanel, Coco, 1883-1971",
+        "name": "Wash",
         "type": "int",
-        "value": 50
+        "value": 51
       },
       {
         "name": "Charcoal",
@@ -271,7 +306,7 @@
         "value": 50
       },
       {
-        "name": "Scarves",
+        "name": "Creed",
         "type": "int",
         "value": 49
       },
@@ -284,6 +319,16 @@
         "name": "Sandals",
         "type": "int",
         "value": 46
+      },
+      {
+        "name": "Fur garments",
+        "type": "int",
+        "value": 45
+      },
+      {
+        "name": "Gloves",
+        "type": "int",
+        "value": 44
       },
       {
         "name": "Pants",
@@ -301,7 +346,7 @@
         "value": 41
       },
       {
-        "name": "Hair ornaments",
+        "name": "Capes",
         "type": "int",
         "value": 40
       },
@@ -321,11 +366,6 @@
         "value": 37
       },
       {
-        "name": "Handbags",
-        "type": "int",
-        "value": 36
-      },
-      {
         "name": "Lipnitzki, Boris",
         "type": "int",
         "value": 36
@@ -341,11 +381,6 @@
         "value": 34
       },
       {
-        "name": "Creed",
-        "type": "int",
-        "value": 33
-      },
-      {
         "name": "Pastel",
         "type": "int",
         "value": 33
@@ -358,7 +393,7 @@
       {
         "name": "Shirts",
         "type": "int",
-        "value": 27
+        "value": 28
       },
       {
         "name": "Vionnet, Madeleine",
@@ -376,6 +411,11 @@
         "value": 25
       },
       {
+        "name": "House of Worth (Firm)",
+        "type": "int",
+        "value": 25
+      },
+      {
         "name": "Balmain, Pierre, 1914-1982",
         "type": "int",
         "value": 24
@@ -386,7 +426,7 @@
         "value": 24
       },
       {
-        "name": "House of Worth (Firm)",
+        "name": "Molyneux, Edward Henry (1891-1974)",
         "type": "int",
         "value": 24
       },
@@ -459,11 +499,6 @@
         "name": "Saint Laurent, Yves",
         "type": "int",
         "value": 19
-      },
-      {
-        "name": "Belts",
-        "type": "int",
-        "value": 18
       },
       {
         "name": "Galerie des Modes et Costumes Français, Dessinés D'Après Nature, 1778-1787",
@@ -561,6 +596,11 @@
         "value": 14
       },
       {
+        "name": "Lelong, Lucien (1889-1958)",
+        "type": "int",
+        "value": 14
+      },
+      {
         "name": "Pochoir over lithograph",
         "type": "int",
         "value": 14
@@ -596,12 +636,22 @@
         "value": 13
       },
       {
+        "name": "Wedding costume",
+        "type": "int",
+        "value": 13
+      },
+      {
         "name": "Jumpers",
         "type": "int",
         "value": 12
       },
       {
         "name": "Kesslére, G. Maillard (George Maillard)",
+        "type": "int",
+        "value": 12
+      },
+      {
+        "name": "Schiaparelli, Elsa (1890-1973)",
         "type": "int",
         "value": 12
       },
@@ -621,7 +671,17 @@
         "value": 11
       },
       {
+        "name": "Eyewear",
+        "type": "int",
+        "value": 11
+      },
+      {
         "name": "Fans",
+        "type": "int",
+        "value": 11
+      },
+      {
+        "name": "Frederick Loeser & Co.",
         "type": "int",
         "value": 11
       },
@@ -632,6 +692,11 @@
       },
       {
         "name": "Paquin, Jeanne, 1869-1936",
+        "type": "int",
+        "value": 11
+      },
+      {
+        "name": "Piguet, Robert (1901-1953)",
         "type": "int",
         "value": 11
       },
@@ -711,22 +776,12 @@
         "value": 8
       },
       {
-        "name": "Costume",
-        "type": "int",
-        "value": 8
-      },
-      {
         "name": "David, Jules, 1808-1892",
         "type": "int",
         "value": 8
       },
       {
         "name": "Eric (Erickson), Carl",
-        "type": "int",
-        "value": 8
-      },
-      {
-        "name": "Gloves",
         "type": "int",
         "value": 8
       },
@@ -777,6 +832,11 @@
       },
       {
         "name": "Shabazz, Jamel (1960-)",
+        "type": "int",
+        "value": 8
+      },
+      {
+        "name": "Vests",
         "type": "int",
         "value": 8
       },
@@ -861,11 +921,6 @@
         "value": 7
       },
       {
-        "name": "Wedding costume",
-        "type": "int",
-        "value": 7
-      },
-      {
         "name": "Corriere delle Dame",
         "type": "int",
         "value": 6
@@ -887,11 +942,6 @@
       },
       {
         "name": "Fath, Jacques, 1912-1954",
-        "type": "int",
-        "value": 6
-      },
-      {
-        "name": "Fur garments",
         "type": "int",
         "value": 6
       },
@@ -947,6 +997,11 @@
       },
       {
         "name": "Blair, Mary",
+        "type": "int",
+        "value": 5
+      },
+      {
+        "name": "Blazers",
         "type": "int",
         "value": 5
       },
@@ -1156,6 +1211,11 @@
         "value": 4
       },
       {
+        "name": "Patou, Jean (1887-1936)",
+        "type": "int",
+        "value": 4
+      },
+      {
         "name": "Perfume",
         "type": "int",
         "value": 4
@@ -1241,6 +1301,11 @@
         "value": 4
       },
       {
+        "name": "Agnes-Drécoll (Firm)",
+        "type": "int",
+        "value": 3
+      },
+      {
         "name": "Amies, Hardy, 1909-2003",
         "type": "int",
         "value": 3
@@ -1252,11 +1317,6 @@
       },
       {
         "name": "Borea, Vera",
-        "type": "int",
-        "value": 3
-      },
-      {
-        "name": "Capes",
         "type": "int",
         "value": 3
       },
@@ -1321,6 +1381,11 @@
         "value": 3
       },
       {
+        "name": "Grès, Alix (1903-1993)",
+        "type": "int",
+        "value": 3
+      },
+      {
         "name": "Halston Studio for Oscar Delarenta",
         "type": "int",
         "value": 3
@@ -1366,12 +1431,17 @@
         "value": 3
       },
       {
+        "name": "Mainbocher (1891-1976)",
+        "type": "int",
+        "value": 3
+      },
+      {
         "name": "Martial et Armand (Firm)",
         "type": "int",
         "value": 3
       },
       {
-        "name": "Monte Sano & Pruzan, Ltd.",
+        "name": "Monte-Sano & Pruzan, Ltd.",
         "type": "int",
         "value": 3
       },
@@ -1442,6 +1512,11 @@
       },
       {
         "name": "Aquatint",
+        "type": "int",
+        "value": 2
+      },
+      {
+        "name": "Besançon de Wagner, Maggy (1896-1971)",
         "type": "int",
         "value": 2
       },
@@ -1741,11 +1816,6 @@
         "value": 1
       },
       {
-        "name": "Agnes-Drécoll (Firm)",
-        "type": "int",
-        "value": 1
-      },
-      {
         "name": "Allen, Ted",
         "type": "int",
         "value": 1
@@ -1787,6 +1857,11 @@
       },
       {
         "name": "Bakst, Léon, 1866-1924",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Balenciaga, Cristobal (1895-1972)",
         "type": "int",
         "value": 1
       },
@@ -1837,6 +1912,11 @@
       },
       {
         "name": "Cavalier",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Chanel, Coco (1883-1971)",
         "type": "int",
         "value": 1
       },
@@ -1967,11 +2047,6 @@
       },
       {
         "name": "Erté-de Tirtoff, Romain",
-        "type": "int",
-        "value": 1
-      },
-      {
-        "name": "Eyewear",
         "type": "int",
         "value": 1
       },
@@ -2176,6 +2251,11 @@
         "value": 1
       },
       {
+        "name": "Hermès (Firm : Paris, France)",
+        "type": "int",
+        "value": 1
+      },
+      {
         "name": "Hosiery",
         "type": "int",
         "value": 1
@@ -2227,6 +2307,11 @@
       },
       {
         "name": "Journaux des Modes",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Jumpsuits",
         "type": "int",
         "value": 1
       },
@@ -2287,6 +2372,11 @@
       },
       {
         "name": "Ladies Treasury",
+        "type": "int",
+        "value": 1
+      },
+      {
+        "name": "Landowska",
         "type": "int",
         "value": 1
       },
@@ -2456,7 +2546,7 @@
         "value": 1
       },
       {
-        "name": "Monte Santo",
+        "name": "Monte-Sano",
         "type": "int",
         "value": 1
       },
@@ -2667,11 +2757,6 @@
       },
       {
         "name": "Venet, Philippe",
-        "type": "int",
-        "value": 1
-      },
-      {
-        "name": "Vests",
         "type": "int",
         "value": 1
       },
