@@ -196,41 +196,13 @@ function item_search_filters_bootstrap(array $params = null)
 
 function related_items($current_item)
 {
-    if (($collection = get_collection_for_item($current_item)) && ($subject_1 = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 0, 'no_escape' => true)))) {
-        $related_items_1 = get_records('Item', array('collection' => metadata($collection, 'id'), 'tags' => $subject_1, 'sort_field' => 'random'), 5);
-    } else {
-        $related_items_1 = array();
-    }
-    if (($collection = get_collection_for_item($current_item)) && ($subject_2 = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 1, 'no_escape' => true)))) {
-        $related_items_2 = get_records('Item', array('collection' => metadata($collection, 'id'), 'tags' => $subject_2, 'sort_field' => 'random'), 5);
-    } else {
-        $related_items_2 = array();
-    }
-    if ($subject_1 = metadata($current_item, array('Dublin Core', 'Subject'), array('index' => 0, 'no_escape' => true))) {
-        $related_items_3 = get_records('Item', array('tags' => $subject_1, 'sort_field' => 'random'), 5);
-    } else {
-        $related_items_3 = array();
-    }
     if ($collection = get_collection_for_item($current_item)) {
-        $related_items_4 = get_records('Item', array('collection' => metadata($collection, 'id'), 'sort_field' => 'random'), 5);
-    } else {
-        $related_items_4 = array();
-    }
-    if ($medium = metadata($current_item, array('Dublin Core', 'Medium'), array('index' => 0, 'no_escape' => true))) {
-        $related_items_5 = get_records('Item', array('tags' => $medium, 'sort_field' => 'random'), 5);
-    } else {
-        $related_items_5 = array();
-    }
-    if (($related_items_1) || ($related_items_2) || ($related_items_3) || ($related_items_4) || ($related_items_5)) {
-        $related_items = array_merge(@$related_items_1, @$related_items_2, @$related_items_3, @$related_items_4, @$related_items_5);
-        $unique_related_items = array_map("unserialize", array_unique(array_map("serialize", $related_items)));
-        $sliced_related_items = array_slice($unique_related_items, 0, 7);
-        if ($sliced_related_items) {
+        $related_items = get_records('Item', array('collection' => metadata($collection, 'id'), 'sort_field' => 'random'), 7);
+        if ($related_items) {
             $html = '<div class="col-md-4 related-items"><div class="panel panel-default"><div class="panel-heading"><h4>Related Items</h4></div><div class="list-group">';
-            foreach ($sliced_related_items as $related_item) {
+            foreach ($related_items as $related_item) {
                 if ((metadata($related_item, 'id')) != (metadata($current_item, 'id'))) {
                     $html .= link_to_item('<div class="row"><div class="col-xs-4">' . mdid_square_thumbnail_tag($related_item, 'img-responsive') . '</div><div class="col-xs-8"><h3 class="list-group-item-heading">' . metadata($related_item, array('Dublin Core', 'Title')) . '</h3></div></div>', array('class'=>'list-group-item'), 'show', $related_item);
-                    release_object($related_item);
                 }
             }
             $html .= '</div></div></div>';
