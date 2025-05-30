@@ -48,7 +48,7 @@
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5661dc9df1aebb59"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js" integrity="sha384-BqvbWCNWGAf21sDh6X5DGseJPJ+iNSRIX/j6rxssCsNw1dbPRaX8TiA9gfy3Jd2F" crossorigin="anonymous"></script>
-        <script src="<?php echo src('seadragon-view', 'javascripts', 'js'); ?>"></script>
+        <script src="<?php echo src('seadragon-view', 'javascripts', 'js', '1.1.2'); ?>"></script>
         <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
         <script src="<?php echo src('download', 'javascripts', 'js'); ?>"></script>
       <?php endif; ?>

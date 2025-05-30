@@ -6,7 +6,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HN7LCC8ZDL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-HN7LCC8ZDL');
@@ -40,7 +43,7 @@
     <?php
     queue_css_url('//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic');
     queue_css_url('//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css');
-    queue_css_file('style');
+    queue_css_file('style', 'all', false, 'css', '1.1.2');
     echo head_css();
     ?>
 
