@@ -44,8 +44,6 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
       <script src="<?php echo src('typeahead.bundle.min', 'javascripts/lib/typeahead', 'js'); ?>"></script>
       <?php if (@$bodyclass == 'items show'):  ?>
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5661dc9df1aebb59"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/openseadragon@2.4/build/openseadragon/openseadragon.min.js" integrity="sha384-BqvbWCNWGAf21sDh6X5DGseJPJ+iNSRIX/j6rxssCsNw1dbPRaX8TiA9gfy3Jd2F" crossorigin="anonymous"></script>
         <script src="<?php echo src('seadragon-view', 'javascripts', 'js', '1.1.2'); ?>"></script>

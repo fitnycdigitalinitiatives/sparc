@@ -39,10 +39,10 @@
     <link rel="icon" href="<?php echo img('favicon.ico'); ?>" type="image/x-icon">
     <link rel="shortcut icon" href="<?php echo img('favicon.ico'); ?>" type="image/x-icon">
     <!-- Need to add custom and third-party CSS files? Include them here -->
-    <script src="https://kit.fontawesome.com/1ddf8635da.js" crossorigin="anonymous"></script>
     <?php
     queue_css_url('//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic');
     queue_css_url('//stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css');
+    queue_css_url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css');
     queue_css_file('style', 'all', false, 'css', '1.1.2');
     echo head_css();
     ?>

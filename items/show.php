@@ -23,10 +23,6 @@ $info_json_url = $iiifEndpoint . str_replace("/", "%2F", substr($key, 0, -4)) . 
 			<?php echo palette('item'); ?>
 		<?php endif; ?>
 	</div>
-	<div class="col-sm-6">
-		<!-- Go to www.addthis.com/dashboard to customize your tools -->
-		<div class="addthis_sharing_toolbox"></div>
-	</div>
 </div>
 <div class="row" id="meta-related">
 	<div class="col-md-8">
